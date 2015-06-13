@@ -105,8 +105,8 @@ if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
 				CHERRY_MEGA_MENU_URI . 'assets/css/cherry-ui.css', array(), '1.0.0'
 			);
 			wp_enqueue_style(
-				'fontawesome',
-				'//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array(), '4.2.0'
+				'font-awesome',
+				'//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', false, '4.3.0', 'all'
 			);
 			wp_enqueue_style(
 				'cherry_mega_menu_magnific_popup',
