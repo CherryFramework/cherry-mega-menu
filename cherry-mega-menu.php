@@ -80,7 +80,11 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 * @param  array $handles CSS handles to compile
 		 */
 		function add_style_to_compiler( $handles ) {
-			$handles['cherry-mega-menu'] = CHERRY_MEGA_MENU_URI . 'assets/public/css/style.css';
+			$handles = array_merge(
+				array( 'cherry-mega-menu' => CHERRY_MEGA_MENU_URI . 'assets/public/css/style.css',
+				$handles
+			);
+
 			return $handles;
 		}
 
