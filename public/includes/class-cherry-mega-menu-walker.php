@@ -20,7 +20,17 @@ if( ! class_exists( 'cherry_mega_menu_walker' ) ) :
  */
 class cherry_mega_menu_walker extends Walker_Nav_Menu {
 
+	/**
+	 * Check if sub grouped to cols
+	 * @var boolean
+	 */
 	private $child_columns = false;
+
+	/**
+	 * Mega submenu trigger
+	 * @var boolean
+	 */
+	private $is_mega_sub = false;
 
 	/**
 	 * Starts the list before the elements are added.
@@ -39,6 +49,12 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 		$classes  = 'cherry-mega-menu-sub level-' . $depth;
 		$effect   = cherry_mega_menu_get_option( 'mega-menu-effect', 'slide-top' );
 		$classes .= ' effect-' . $effect;
+
+		if ( true === $this->is_mega_sub ) {
+			$classes .= ' mega-sub';
+		} else {
+			$classes .= ' simple-sub';
+		}
 
 
 		$output .= "\n$indent<ul class=\"$classes\">\n";
@@ -121,6 +137,7 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 
 		if ( $depth == 0 && 'megamenu' == $mega_settings['type'] && $this->has_children ) {
 			$classes[] = 'item-type-megamenu';
+			$this->is_mega_sub = true;
 		}
 
 		if ( 'megamenu' != $mega_settings['type'] && $this->has_children ) {
