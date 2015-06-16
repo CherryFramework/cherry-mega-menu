@@ -142,6 +142,7 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 
 		if ( 'megamenu' != $mega_settings['type'] && $this->has_children ) {
 			$classes[] = 'item-type-standard';
+			$this->is_mega_sub = false;
 		}
 
 		if ( isset( $mega_settings['align']) && $mega_settings['align'] != 'left' && $depth == 0 ) {
