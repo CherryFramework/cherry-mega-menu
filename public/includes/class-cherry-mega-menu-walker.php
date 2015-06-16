@@ -79,6 +79,10 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 
 		$mega_settings = isset( $item->megamenu_settings ) ? $item->megamenu_settings : array();
 
+		if ( ! isset( $item->description ) ) {
+			$item->description = false;
+		}
+
 		$mega_settings = wp_parse_args( $mega_settings, array(
 			'align'                 => 'top-left',
 			'type'                  => '',

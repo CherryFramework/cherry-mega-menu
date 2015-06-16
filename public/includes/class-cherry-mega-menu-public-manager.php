@@ -29,7 +29,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 			add_filter( 'wp_nav_menu', array( $this, 'add_menu_mobile_label' ), 10, 2 );
 
 			require_once ( 'class-cherry-mega-menu-walker.php' );
-			require_once ( CHERRY_MEGA_MENU_DIR . '/includes/core/class-cherry-mega-menu-widget-manager.php' );
+			require_once ( CHERRY_MEGA_MENU_DIR . '/core/includes/class-cherry-mega-menu-widget-manager.php' );
 
 		}
 
@@ -47,12 +47,12 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 			);
 			wp_enqueue_style(
 				'cherry-mega-menu',
-				CHERRY_MEGA_MENU_URI . 'assets/public/css/style.css', array(), CHERRY_MEGA_MENU_VERSION
+				CHERRY_MEGA_MENU_URI . 'public/assets/css/style.css', array(), CHERRY_MEGA_MENU_VERSION
 			);
 
 			wp_enqueue_script(
 				'cherry-mega-menu',
-				CHERRY_MEGA_MENU_URI . 'assets/public/js/script.js',
+				CHERRY_MEGA_MENU_URI . 'public/assets/js/script.js',
 				array( 'jquery', 'hoverIntent' ), CHERRY_MEGA_MENU_VERSION, true
 			);
 
@@ -118,6 +118,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 
 			$new_args = array(
 				'container'  => 'ul',
+				'menu_class' => 'menu-items',
 				'items_wrap' => '<ul' . $atts . '>%3$s</ul>',
 				'walker'     => new cherry_mega_menu_walker()
 			);

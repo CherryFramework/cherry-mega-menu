@@ -53,7 +53,7 @@ if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
 		public function __construct() {
 
 			require_once ( 'class-cherry-mega-menu-tabs.php' );
-			require_once ( CHERRY_MEGA_MENU_DIR . '/includes/core/class-cherry-mega-menu-widget-manager.php' );
+			require_once ( CHERRY_MEGA_MENU_DIR . '/core/includes/class-cherry-mega-menu-widget-manager.php' );
 
 			add_action( 'admin_enqueue_scripts', array( $this, 'assets' ) );
 			add_action( 'admin_footer', array( $this, 'popups_ui_wrap' ) );
@@ -76,15 +76,15 @@ if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
 
 			wp_enqueue_script(
 				'magnific-popup',
-				CHERRY_MEGA_MENU_URI . 'assets/admin/js/jquery.magnific-popup.min.js', array( 'jquery' ), CHERRY_MEGA_MENU_VERSION, true
+				CHERRY_MEGA_MENU_URI . 'admin/assets/js/jquery.magnific-popup.min.js', array( 'jquery' ), CHERRY_MEGA_MENU_VERSION, true
 			);
 			wp_enqueue_script(
 				'cherry_mega_menu_iconpicker',
-				CHERRY_MEGA_MENU_URI . 'assets/admin/js/fontawesome-iconpicker.min.js', array( 'jquery' ), CHERRY_MEGA_MENU_VERSION, true
+				CHERRY_MEGA_MENU_URI . 'admin/assets/js/fontawesome-iconpicker.min.js', array( 'jquery' ), CHERRY_MEGA_MENU_VERSION, true
 			);
 			wp_enqueue_script(
 				'cherry_mega_menu_script',
-				CHERRY_MEGA_MENU_URI . 'assets/admin/js/script.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable', 'jquery-ui-accordion', 'jquery-ui-resizable' ), CHERRY_MEGA_MENU_VERSION, true
+				CHERRY_MEGA_MENU_URI . 'admin/assets/js/script.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable', 'jquery-ui-accordion', 'jquery-ui-resizable' ), CHERRY_MEGA_MENU_VERSION, true
 			);
 
 			global $cherry_mega_menu_total_columns;
@@ -102,7 +102,7 @@ if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
 
 			wp_enqueue_style(
 				'cherry-ui-elements',
-				CHERRY_MEGA_MENU_URI . 'assets/css/cherry-ui.css', array(), '1.0.0'
+				CHERRY_MEGA_MENU_URI . 'admin/assets/css/cherry-ui.css', array(), '1.0.0'
 			);
 			wp_enqueue_style(
 				'font-awesome',
@@ -110,11 +110,11 @@ if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
 			);
 			wp_enqueue_style(
 				'magnific-popup',
-				CHERRY_MEGA_MENU_URI . 'assets/admin/css/magnific-popup.css', array(), CHERRY_MEGA_MENU_VERSION
+				CHERRY_MEGA_MENU_URI . 'admin/assets/css/magnific-popup.css', array(), CHERRY_MEGA_MENU_VERSION
 			);
 			wp_enqueue_style(
 				'cherry_mega_menu_style',
-				CHERRY_MEGA_MENU_URI . 'assets/admin/css/style.css', array(), CHERRY_MEGA_MENU_VERSION
+				CHERRY_MEGA_MENU_URI . 'admin/assets/css/style.css', array(), CHERRY_MEGA_MENU_VERSION
 			);
 
 		}

@@ -81,7 +81,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 */
 		function add_style_to_compiler( $handles ) {
 			$handles = array_merge(
-				array( 'cherry-mega-menu' => CHERRY_MEGA_MENU_URI . 'assets/public/css/style.css' ),
+				array( 'cherry-mega-menu' => CHERRY_MEGA_MENU_URI . 'public/assets/css/style.css' ),
 				$handles
 			);
 
@@ -164,8 +164,8 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 * @since 1.0.0
 		 */
 		function includes() {
-			require_once( 'includes/core/cherry-mega-menu-core-functions.php' );
-			require_once( 'includes/core/class-cherry-mega-menu-cache.php' );
+			require_once( 'core/includes/cherry-mega-menu-core-functions.php' );
+			require_once( 'core/includes/class-cherry-mega-menu-cache.php' );
 		}
 
 		/**
@@ -175,8 +175,8 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 */
 		private function _admin() {
 
-			require_once( 'includes/admin/class-cherry-mega-menu-options.php' );
-			require_once( 'includes/admin/class-cherry-mega-menu-item-manager.php' );
+			require_once( 'admin/includes/class-cherry-mega-menu-options.php' );
+			require_once( 'admin/includes/class-cherry-mega-menu-item-manager.php' );
 			new cherry_mega_menu_item_manager();
 			new cherry_mega_menu_widget_manager();
 
@@ -196,7 +196,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 * @since 1.0.0
 		 */
 		private function _public() {
-			require_once( 'includes/public/class-cherry-mega-menu-public-manager.php' );
+			require_once( 'public/includes/class-cherry-mega-menu-public-manager.php' );
 			new cherry_mega_menu_public_manager();
 		}
 
