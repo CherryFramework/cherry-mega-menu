@@ -86,7 +86,7 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 					),
 					'max_value'		=> 1200,
 					'min_value'		=> 480,
-					'value'			=> 767
+					'value'			=> 768
 				),
 				'mega-menu-mobile-label' => array(
 					'type'			=> 'text',

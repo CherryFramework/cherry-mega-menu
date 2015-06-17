@@ -19,6 +19,8 @@
     .cherry-mega-menu.mega-menu-mobile-on li[class*="menu-columns"] {
       width: 100% !important;
       clear: both; }
+    .cherry-mega-menu.mega-menu-mobile-on .cherry-mega-menu-sub {
+      height: auto; }
   .cherry-mega-menu.mega-menu-direction-vertical {
     width: 300px; }
   .cherry-mega-menu:after {
