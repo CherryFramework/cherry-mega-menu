@@ -197,7 +197,6 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 */
 		private function _public() {
 			require_once( 'public/includes/class-cherry-mega-menu-public-manager.php' );
-			new cherry_mega_menu_public_manager();
 		}
 
 		/**

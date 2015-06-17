@@ -19,9 +19,21 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 	class cherry_mega_menu_public_manager {
 
 		/**
+		 * Class instance holder
+		 * @var object
+		 */
+		private static $instance;
+
+		/**
 		 * include necessary files. Run actions
 		 */
 		public function __construct() {
+
+			$is_enabled = cherry_mega_menu_get_option( 'mega-menu-enabled', 'true' );
+
+			if ( 'false' === $is_enabled ) {
+				return;
+			}
 
 			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ) );
 			add_filter( 'wp_nav_menu_args', array( $this, 'add_walker_to_nav_menu' ), 999 );
@@ -76,12 +88,6 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 			$mega_menu_location = cherry_mega_menu_get_option( 'mega-menu-location', 'primary' );
 
 			if ( !isset( $args['theme_location'] ) || $mega_menu_location != $args['theme_location'] ) {
-				return $args;
-			}
-
-			$is_enabled = cherry_mega_menu_get_option( 'mega-menu-enabled', 'true' );
-
-			if ( ! $is_enabled ) {
 				return $args;
 			}
 
@@ -241,6 +247,23 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 
 		}
 
+		/**
+		 * Returns the instance.
+		 *
+		 * @since  1.0.0
+		 * @return object
+		 */
+		public static function get_instance() {
+
+			// If the single instance hasn't been set, set it now.
+			if ( null == self::$instance )
+				self::$instance = new self;
+
+			return self::$instance;
+		}
+
 	}
 
 }
+
+add_action( 'init', array( 'cherry_mega_menu_public_manager', 'get_instance' ) );

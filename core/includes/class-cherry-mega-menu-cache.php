@@ -30,6 +30,12 @@ if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
 
 		function __construct() {
 
+			$menu_enabled = cherry_mega_menu_get_option( 'mega-menu-enabled', 'true' );
+
+			if ( 'false' === $menu_enabled ) {
+				return;
+			}
+
 			$cache_enabled = cherry_mega_menu_get_option( 'mega-menu-cache' );
 
 			if ( 'true' != $cache_enabled ) {
