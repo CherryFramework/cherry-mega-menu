@@ -51,7 +51,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 			add_action( 'cherry_mega_menu_after_widget_save', array( $this, 'clear_caches' ) );
 			add_action( 'cherry_mega_menu_after_widget_delete', array( $this, 'clear_caches' ) );
 
-			add_filter( 'cherry_data_manager_menu_meta', 'menu_meta_keys' );
+			add_filter( 'cherry_data_manager_menu_meta', array( $this, 'menu_meta_keys' ) );
 
 			add_filter( 'cherry_compiler_static_css', array( $this, 'add_style_to_compiler' ) );
 
