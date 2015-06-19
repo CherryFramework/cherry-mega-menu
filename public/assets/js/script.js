@@ -55,7 +55,7 @@
 			trigger_desktop    = 970,
 			trigger_tablet     = 768,
 			is_mobile          = false,
-			isTouchDevice, switchMobile, mobileOn, mobileOff, closePanels, hidePanel, showPanel, openOnClick, openOnHover, isInMegamenu, getMenuWidth, init;
+			isTouchDevice, switchMobile, mobileOn, mobileOff, closePanels, hidePanel, showPanel, openOnClick, openOnHover, isInMegamenu, getMenuWidth, doubleTapToGo, init;
 
 		menu.settings = $.extend({
 			event:  menu.data('event'),
@@ -304,50 +304,42 @@
 			if ( is_mobile == true ) {
 				anchor.siblings('.cherry-mega-menu-sub').slideDown('fast');
 			}
+
 		}
 
 		openOnClick = function() {
 			// hide menu when clicked away from
-			$(document).on('click', function(event) {
+			$(document).on('click touchstart', function(event) {
 				if (!$(event.target).closest('.cherry-mega-menu li').length) {
+					$('.mega-click-click-go').each(function(index, el) {
+						$(this).removeClass('mega-click-click-go');
+					});
 					closePanels();
 				}
 			});
 
 			$('li.cherry-mega-menu-has-children > a', menu).on({
 				click: function (e) {
-
 					if ( $(this).parent().hasClass('item-hide-mobile') ) {
 						return;
 					}
 
-					// check if is nested item in mega sub menu
-					var in_mega = isInMegamenu($(this));
-
-					if ( in_mega ) {
-						return;
-					}
-
 					// check for second click
-					if ( $(this).parent().hasClass("mega-click-click-go") ) {
-
-						if ( ! $(this).parent().hasClass("mega-toggle-on") ) {
-							e.preventDefault();
-							showPanel($(this));
-						}
-
+					if ( $(this).parent().hasClass('mega-click-click-go') ) {
+						$(this).parent().removeClass('mega-click-click-go');
 					} else {
 						e.preventDefault();
 
-						if ( $(this).parent().hasClass("mega-toggle-on") ) {
+						if ( $(this).parent().hasClass('mega-toggle-on') ) {
 							hidePanel($(this), false);
 						} else {
 							showPanel($(this));
 						}
-
+						$(this).parent().addClass('mega-click-click-go');
 					}
 				}
 			});
+
 		}
 
 		openOnHover = function() {
