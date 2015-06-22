@@ -1,291 +1,412 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: megamenu\n"
-"POT-Creation-Date: 2014-07-03 23:09-0000\n"
-"PO-Revision-Date: 2014-07-03 23:09-0000\n"
+"POT-Creation-Date: 2015-06-22 10:35+0200\n"
+"PO-Revision-Date: 2015-06-22 10:35+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: English\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPath-1: .\n"
 
-#: ../megamenu.php:357
-msgid ""
-"Mega Menu is not compatible with your version of WordPress. Please upgrade "
-"WordPress to the latest version or disable Mega Menu."
-msgstr ""
-
-#: ../megamenu.php:367
-msgid "Mega Menu is not compatible with Uber Menu. Please disable Uber Menu."
-msgstr ""
-
-#: ../classes/nav-menus.class.php:95
-msgid "Mega Menu Options"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:97
-msgid "Configure Panel Widgets for"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:101
-msgid "Sub Menu Type"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:103
-msgid "Flyout Menu"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:104
-msgid "Mega Menu Panel"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:110
-msgid "Sub Menu Position"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:112
-msgid "Left"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:113
-msgid "Right"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:119
-msgid "Menu Icon"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:124 ../classes/theme-editor.class.php:544
-msgid "Disabled"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:189
-msgid "Mega Menu Settings"
-msgstr ""
-
-#: ../classes/nav-menus.class.php:234
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:93
 msgid "Launched for Menu ID"
 msgstr ""
 
-#: ../classes/nav-menus.class.php:235
-msgid "Added to list"
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:94
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:179
+msgid "Mega Menu"
 msgstr ""
 
-#: ../classes/nav-menus.class.php:236
-msgid "Select a widget to display in the Mega Panel"
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:95
+msgid "Saving"
 msgstr ""
 
-#: ../classes/nav-menus.class.php:238
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:97
 msgid "Oops. Something went wrong. Please reload the page."
 msgstr ""
 
-#: ../classes/nav-menus.class.php:304
-msgid "This theme does not have any menu locations."
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:184
+msgid "Settings"
 msgstr ""
 
-#: ../classes/nav-menus.class.php:308
-msgid ""
-"This menu is not tagged to a location. Please tag a location to enable the "
-"Mega Menu settings."
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:189
+msgid "Media"
 msgstr ""
 
-#: ../classes/nav-menus.class.php:348 ../classes/widget-manager.class.php:470
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:258
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:451
 msgid "Save"
 msgstr ""
 
-#: ../classes/nav-menus.class.php:363
-msgid "Enable"
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:259
+msgid "Saving..."
 msgstr ""
 
-#: ../classes/nav-menus.class.php:369
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:260
+msgid "Saved"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-item-manager.php:298
+msgid "Something went wrong. Please, try again"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:47
+msgid "Select main theme menu"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:55
+msgid "Main theme menu location"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:56
+msgid "Select menu location for main theme menu"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:60
+msgid ""
+"Select menu location for main theme menu. For this location will applied "
+"mega menu"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:68
+msgid "Mega menu enabled"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:69
+#: ../admin/includes/class-cherry-mega-menu-options.php:189
+msgid "Enable / Disable"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:73
+msgid "This applys only for main site menu"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:80
+msgid "Mobile starts from"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:81
+msgid "Select window width to switch on mobile menu"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:85
+msgid "Select window width to switch on mobile menu."
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:93
+msgid "Mobile nav label"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:94
+#: ../admin/includes/class-cherry-mega-menu-options.php:98
+msgid "Enter mobile navigation label"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:100
+#: ../admin/includes/class-cherry-mega-menu-options.php:101
+#: ../public/includes/class-cherry-mega-menu-public-manager.php:151
+msgid "Menu"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:105
+msgid "Menu deirection"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:106
+msgid "Select menu items direction"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:110
+msgid "Select direction - vertical or horizontal"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:115
+msgid "Horizontal"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:116
+msgid "Vertical"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:121
+msgid "Animation effect"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:122
+msgid "Select animation effect"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:126
+msgid "Animation effect for dropdown menu"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:131
+msgid "Fade In"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:132
+msgid "Slide from top"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:133
+msgid "Slide from bottom"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:134
+msgid "Slide from left"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:135
+msgid "Slide from right"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:140
 msgid "Event"
 msgstr ""
 
-#: ../classes/nav-menus.class.php:372
+#: ../admin/includes/class-cherry-mega-menu-options.php:141
+#: ../admin/includes/class-cherry-mega-menu-options.php:145
+msgid "select activation event"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-options.php:150
 msgid "Hover"
 msgstr ""
 
-#: ../classes/nav-menus.class.php:373
+#: ../admin/includes/class-cherry-mega-menu-options.php:151
 msgid "Click"
 msgstr ""
 
-#: ../classes/nav-menus.class.php:378
-msgid "Theme"
+#: ../admin/includes/class-cherry-mega-menu-options.php:156
+msgid "Menu parent container CSS selector"
 msgstr ""
 
-#: ../classes/style-manager.class.php:45
-msgid "Default"
+#: ../admin/includes/class-cherry-mega-menu-options.php:157
+msgid "Enter CSS selector name for mega menu parent container (if needed)"
 msgstr ""
 
-#: ../classes/style-manager.class.php:326
-msgid ""
-"Warning: CSS compilation failed. Please check your changes or revert the "
-"theme."
+#: ../admin/includes/class-cherry-mega-menu-options.php:161
+msgid "Enter CSS class name for mega menu parent container (if needed)"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:273
-msgid "Mega Menu Themes"
+#: ../admin/includes/class-cherry-mega-menu-options.php:188
+msgid "Mega menu caching enabled"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:273
-msgid "Menu Themes"
+#: ../admin/includes/class-cherry-mega-menu-options.php:193
+msgid "Enable caching for mega menu items"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:297
-msgid "Select theme to edit"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:35
+msgid "Mega Menus can only be created on top level menu items."
 msgstr ""
 
-#: ../classes/theme-editor.class.php:301
-msgid "Create a new theme"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:46
+msgid "Enable Mega Menu for current item"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:324
-msgid "Failed to delete theme. The theme is in use by a menu."
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:50
+msgid "Select a Widget to add to the panel"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:328
-msgid "Theme Deleted"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:64
+msgid "No widgets found"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:332
-msgid "Theme Duplicated"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:64
+msgid "Use the Widget Selector (top right) to add a Widget to this panel."
 msgstr ""
 
-#: ../classes/theme-editor.class.php:336
-msgid "Changes Saved"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:94
+msgid "Subitems behavior"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:340
-msgid "Theme Reverted"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:95
+msgid "Standard subitems behavior"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:344
-msgid "New Theme Created"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:100
+msgid "Group sub items to columns"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:413
-msgid "General Settings"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:101
+msgid "Group standard submenu items to columns"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:417
-msgid "Menu Bar"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:106
+msgid "Columns number"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:421
-msgid "Top Level Menu Items"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:107
+msgid "Submenu items columns number"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:425
-msgid "Mega Panels"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:119
+msgid "Layout and position"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:429
-msgid "Flyout Menus"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:120
+msgid "Define layout and position options for current mega menu item"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:433
-msgid "Custom SCSS"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:125
+msgid "Submenu position"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:462
-msgid "Editing Theme: "
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:126
+msgid "Select submenu position for current menu item"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:511
-msgid "Delete Theme"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:130
+msgid "Full Width"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:515
-msgid "Revert Changes"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:131
+msgid "Center"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:519
-msgid "Duplicate Theme"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:132
+msgid "Left Edge of Menu Bar"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:586 ../classes/theme-editor.class.php:603
-msgid "Normal"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:133
+msgid "Right Edge of Menu Bar"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:587
-msgid "Bold"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:134
+msgid "Left Edge of Parent Item"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:604
-msgid "Capitalize"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:135
+msgid "Right Edge of Parent Item"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:605
-msgid "Uppercase"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:136
+msgid "Vertical - Aligned to menu top"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:606
-msgid "Lowercase"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:137
+msgid "Vertical - Aligned to parent"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:637
-msgid "Theme Default"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:141
+msgid "Set item width for 1200"
 msgstr ""
 
-#: ../classes/theme-editor.class.php:735
-msgid "Are you sure?"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:142
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:148
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:154
+msgid "Set item width for and more (100%, 400px)"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:74
-msgid "Mega Menu Widgets"
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:147
+msgid "Set item width for 980-1199"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:75
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:153
+msgid "Set item width for 768-979"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:159
+msgid "Hide submenu on mobile"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:160
+msgid "Hide this submenu item on mobile version"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:188
+msgid "Item icon"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:189
+msgid "Select FontAwesome item icon"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:195
+msgid "Item arrow"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:196
+msgid "Select FontAwesome icon for arrow"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:202
+msgid "Hide menu link text"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:203
+msgid "Hide this menu item link text"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:208
+msgid "Hide sub-menu arrow"
+msgstr ""
+
+#: ../admin/includes/class-cherry-mega-menu-tabs.php:209
+msgid "Hide sub-menu indicator arrow"
+msgstr ""
+
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:82
+msgid "Cherry Mega Menu Widgets"
+msgstr ""
+
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:83
 msgid "Do not manually edit this area."
 msgstr ""
 
-#: ../classes/widget-manager.class.php:142
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:120
 #, php-format
 msgid "Saved %s"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:143
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:121
 #, php-format
 msgid "Failed to save %s"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:167
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:146
 #, php-format
 msgid "Updated %s (new columns: %d)"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:168
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:147
 #, php-format
 msgid "Failed to update %s"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:193
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:181
 #, php-format
 msgid "Failed to add %s to %d"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:216
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:206
 #, php-format
 msgid "Deleted %s"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:217
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:207
 #, php-format
 msgid "Failed to delete %s"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:242
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:233
 #, php-format
 msgid "Moved %s to %d (%s)"
 msgstr ""
 
-#: ../classes/widget-manager.class.php:243
+#: ../core/includes/class-cherry-mega-menu-widget-manager.php:234
 #, php-format
 msgid "Failed to move %s to %d"
+msgstr ""
+
+#: ../public/includes/class-cherry-mega-menu-public-manager.php:153
+msgid "Close"
 msgstr ""
