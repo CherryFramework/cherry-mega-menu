@@ -96,7 +96,9 @@
 		&-box {
 			display: none;
 			&:checked ~ .cherry-mega-menu,
-			&:checked ~ .cherry-mega-menu-mobile-close {
+			&:checked ~ .cherry-mega-menu-mobile-close,
+			&:checked + .cherry-mega-menu,
+			&:checked + .cherry-mega-menu + .cherry-mega-menu-mobile-close {
 				display: block !important;
 			}
 		}

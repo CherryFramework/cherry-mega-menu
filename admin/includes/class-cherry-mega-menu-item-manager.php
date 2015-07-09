@@ -55,7 +55,7 @@ if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
 			require_once ( 'class-cherry-mega-menu-tabs.php' );
 			require_once ( CHERRY_MEGA_MENU_DIR . '/core/includes/class-cherry-mega-menu-widget-manager.php' );
 
-			add_action( 'admin_enqueue_scripts', array( $this, 'assets' ) );
+			add_action( 'admin_enqueue_scripts', array( $this, 'assets' ), 40 );
 			add_action( 'admin_footer', array( $this, 'popups_ui_wrap' ) );
 
 			add_action( 'wp_ajax_cherry_mega_menu_get_popup', array( $this, 'ajax_get_popup_html' ) );

@@ -46,7 +46,7 @@
     user-select: none; }
     .cherry-mega-menu-mobile-trigger-box {
       display: none; }
-      .cherry-mega-menu-mobile-trigger-box:checked ~ .cherry-mega-menu, .cherry-mega-menu-mobile-trigger-box:checked ~ .cherry-mega-menu-mobile-close {
+      .cherry-mega-menu-mobile-trigger-box:checked ~ .cherry-mega-menu, .cherry-mega-menu-mobile-trigger-box:checked ~ .cherry-mega-menu-mobile-close, .cherry-mega-menu-mobile-trigger-box:checked + .cherry-mega-menu, .cherry-mega-menu-mobile-trigger-box:checked + .cherry-mega-menu + .cherry-mega-menu-mobile-close {
         display: block !important; }
     .cherry-mega-menu-mobile-trigger.mega-menu-mobile-on {
       display: block; }
