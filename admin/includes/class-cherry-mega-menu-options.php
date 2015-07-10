@@ -192,8 +192,7 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 					'type'		=> 'text',
 					'content'	=> __( 'Enable caching for mega menu items', 'cherry-mega-menu' )
 				),
-				'value'			=> 'true',
-				'default_value'	=> 'true'
+				'value'			=> 'false',
 			);
 
 			return $options;
