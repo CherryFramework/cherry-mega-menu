@@ -4,7 +4,7 @@
  * Plugin Name: Cherry Mega Menu
  * Plugin URI:  http://www.cherryframework.com/
  * Description: A megamenu management plugin for WordPress.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Cherry Team
  * Author URI:  http://www.cherryframework.com/
  * Text Domain: cherry-mega-menu
@@ -27,7 +27,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 * @var   string
 		 * @since 1.0.0
 		 */
-		public $version = '1.0.0';
+		public $version = '1.0.1';
 
 		/**
 		 * @var   string
