@@ -53,11 +53,11 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 				'mega-menu-location' => array(
 					'type'			=> 'select',
 					'title'			=> __( 'Main theme menu location', 'cherry-mega-menu' ),
-					'label'			=> __( 'Select menu location for main theme menu', 'cherry-mega-menu' ),
+					'label'			=> __( 'Select the menu location for your main menu', 'cherry-mega-menu' ),
 					'decsription'	=> '',
 					'hint'      	=>  array(
 						'type'		=> 'text',
-						'content'	=> __( 'Select menu location for main theme menu. For this location will applied mega menu', 'cherry-mega-menu' )
+						'content'	=> __( 'Select the menu location for your main menu. Such option will be applied only to the selected menu.', 'cherry-mega-menu' )
 					),
 					'value'	        => 'primary',
 					'class'			=> 'width-full',
@@ -78,11 +78,11 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 				'mega-menu-mobile-trigger' => array(
 					'type'			=> 'slider',
 					'title'			=> __( 'Mobile starts from', 'cherry-mega-menu' ),
-					'label'			=> __( 'Select window width to switch on mobile menu', 'cherry-mega-menu' ),
+					'label'			=> __( 'Select the window dimensions for mobile menu layout switching.', 'cherry-mega-menu' ),
 					'decsription'	=> '',
 					'hint'			=>  array(
 						'type'		=> 'text',
-						'content'	=> __( 'Select window width to switch on mobile menu.', 'cherry-mega-menu' )
+						'content'	=> __( 'Select the window dimensions for mobile menu layout switching.', 'cherry-mega-menu' )
 					),
 					'max_value'		=> 1200,
 					'min_value'		=> 480,
@@ -91,23 +91,23 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 				'mega-menu-mobile-label' => array(
 					'type'			=> 'text',
 					'title'			=> __( 'Mobile nav label', 'cherry-mega-menu' ),
-					'label'			=> __( 'Enter mobile navigation label', 'cherry-mega-menu' ),
+					'label'			=> __( 'Enter the mobile navigation label ', 'cherry-mega-menu' ),
 					'decsription'	=> '',
 					'hint'      	=>  array(
 						'type'		=> 'text',
-						'content'	=> __( 'Enter mobile navigation label', 'cherry-mega-menu' )
+						'content'	=> __( 'Enter the mobile navigation label ', 'cherry-mega-menu' )
 					),
 					'value'			=> __( 'Menu', 'cherry-mega-menu' ),
 					'default_value'	=> __( 'Menu', 'cherry-mega-menu' )
 				),
 				'mega-menu-direction' => array(
 					'type'			=> 'select',
-					'title'			=> __( 'Menu deirection', 'cherry-mega-menu' ),
-					'label'			=> __( 'Select menu items direction', 'cherry-mega-menu' ),
+					'title'			=> __( 'Menu direction', 'cherry-mega-menu' ),
+					'label'			=> __( 'Select your direction: vertical or horizontal', 'cherry-mega-menu' ),
 					'decsription'	=> '',
 					'hint'      	=>  array(
 						'type'		=> 'text',
-						'content'	=> __( 'Select direction - vertical or horizontal', 'cherry-mega-menu' )
+						'content'	=> __( 'Select your direction: vertical or horizontal', 'cherry-mega-menu' )
 					),
 					'value'	        => 'horizontal',
 					'class'			=> 'width-full',
@@ -119,11 +119,11 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 				'mega-menu-effect' => array(
 					'type'			=> 'select',
 					'title'			=> __( 'Animation effect', 'cherry-mega-menu' ),
-					'label'			=> __( 'Select animation effect', 'cherry-mega-menu' ),
+					'label'			=> __( 'Animation effects for the dropdown menu', 'cherry-mega-menu' ),
 					'decsription'	=> '',
 					'hint'      	=>  array(
 						'type'		=> 'text',
-						'content'	=> __( 'Animation effect for dropdown menu', 'cherry-mega-menu' )
+						'content'	=> __( 'Animation effects for the dropdown menu', 'cherry-mega-menu' )
 					),
 					'value'	        => 'slide-top',
 					'class'			=> 'width-full',
@@ -138,11 +138,11 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 				'mega-menu-event' => array(
 					'type'			=> 'select',
 					'title'			=> __( 'Event', 'cherry-mega-menu' ),
-					'label'			=> __( 'select activation event', 'cherry-mega-menu' ),
+					'label'			=> __( 'Select an activation event', 'cherry-mega-menu' ),
 					'decsription'	=> '',
 					'hint'      	=>  array(
 						'type'		=> 'text',
-						'content'	=> __( 'select activation event', 'cherry-mega-menu' )
+						'content'	=> __( 'Select an activation event', 'cherry-mega-menu' )
 					),
 					'value'	        => 'hover',
 					'class'			=> 'width-full',
