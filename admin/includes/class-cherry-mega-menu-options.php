@@ -59,9 +59,10 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 						'type'		=> 'text',
 						'content'	=> __( 'Select the menu location for your main menu. Such option will be applied only to the selected menu.', 'cherry-mega-menu' )
 					),
-					'value'	        => 'primary',
-					'class'			=> 'width-full',
-					'options'		=> $options_menus
+					'multiple' => true,
+					'value'    => array( 'primary' ),
+					'class'    => 'cherry-multi-select',
+					'options'  => $options_menus,
 				),
 				'mega-menu-enabled' => array(
 					'type'			=> 'switcher',
