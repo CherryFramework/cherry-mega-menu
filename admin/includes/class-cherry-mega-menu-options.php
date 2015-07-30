@@ -57,7 +57,7 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 					'decsription'	=> '',
 					'hint'      	=>  array(
 						'type'		=> 'text',
-						'content'	=> __( 'Select the menu location for your main menu. Such option will be applied only to the selected menu.', 'cherry-mega-menu' )
+						'content'	=> __( 'Select menu location for main theme menu. Mega menu will be applied to this location.', 'cherry-mega-menu' )
 					),
 					'multiple' => true,
 					'value'    => array( 'primary' ),
@@ -71,7 +71,7 @@ if ( ! class_exists( 'cherry_mega_menu_options' ) ) {
 					'decsription'	=> '',
 					'hint'      	=>  array(
 						'type'		=> 'text',
-						'content'	=> __( 'This applys only for main site menu', 'cherry-mega-menu' )
+						'content'	=> __( 'This applies only to main site menu', 'cherry-mega-menu' )
 					),
 					'value'			=> 'true',
 					'default_value'	=> 'true'
