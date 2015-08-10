@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blank\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-21 10:58+0300\n"
+"POT-Creation-Date: 2015-07-30 17:29+0300\n"
 "PO-Revision-Date: 2015-04-06 06:14+0300\n"
 "Last-Translator: Vladimir Anokhin <ano.vladimir@gmail.com>\n"
 "Language-Team: Cherry Team <support@cherryframework.com>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "esc_attr__;_x:1,2c;_n:1,2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -70,141 +70,132 @@ msgid "Main theme menu location"
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:56
-msgid "Select menu location for main theme menu"
+msgid "Select the menu location for your main menu"
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:60
 msgid ""
-"Select menu location for main theme menu. For this location will applied "
-"mega menu"
-msgstr ""
-
-#: admin/includes/class-cherry-mega-menu-options.php:68
-msgid "Mega menu enabled"
+"Select menu location for main theme menu. Mega menu will be applied to "
+"this location."
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:69
-#: admin/includes/class-cherry-mega-menu-options.php:189
+msgid "Mega menu enabled"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:70
+#: admin/includes/class-cherry-mega-menu-options.php:190
 msgid "Enable / Disable"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:73
-msgid "This applys only for main site menu"
-msgstr ""
-
-#: admin/includes/class-cherry-mega-menu-options.php:80
-msgid "Mobile starts from"
+#: admin/includes/class-cherry-mega-menu-options.php:74
+msgid "This applies only to main site menu"
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:81
-msgid "Select window width to switch on mobile menu"
+msgid "Mobile starts from"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:85
-msgid "Select window width to switch on mobile menu."
-msgstr ""
-
-#: admin/includes/class-cherry-mega-menu-options.php:93
-msgid "Mobile nav label"
+#: admin/includes/class-cherry-mega-menu-options.php:82
+#: admin/includes/class-cherry-mega-menu-options.php:86
+msgid "Select the window dimensions for mobile menu layout switching."
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:94
-#: admin/includes/class-cherry-mega-menu-options.php:98
-msgid "Enter mobile navigation label"
+msgid "Mobile nav label"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:100
+#: admin/includes/class-cherry-mega-menu-options.php:95
+#: admin/includes/class-cherry-mega-menu-options.php:99
+msgid "Enter the mobile navigation label "
+msgstr ""
+
 #: admin/includes/class-cherry-mega-menu-options.php:101
-#: public/includes/class-cherry-mega-menu-public-manager.php:151
+#: admin/includes/class-cherry-mega-menu-options.php:102
+#: public/includes/class-cherry-mega-menu-public-manager.php:150
 msgid "Menu"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:105
-msgid "Menu deirection"
-msgstr ""
-
 #: admin/includes/class-cherry-mega-menu-options.php:106
-msgid "Select menu items direction"
+msgid "Menu direction"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:110
-msgid "Select direction - vertical or horizontal"
-msgstr ""
-
-#: admin/includes/class-cherry-mega-menu-options.php:115
-msgid "Horizontal"
+#: admin/includes/class-cherry-mega-menu-options.php:107
+#: admin/includes/class-cherry-mega-menu-options.php:111
+msgid "Select your direction: vertical or horizontal"
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:116
+msgid "Horizontal"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:117
 msgid "Vertical"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:121
+#: admin/includes/class-cherry-mega-menu-options.php:122
 msgid "Animation effect"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:122
-msgid "Select animation effect"
-msgstr ""
-
-#: admin/includes/class-cherry-mega-menu-options.php:126
-msgid "Animation effect for dropdown menu"
-msgstr ""
-
-#: admin/includes/class-cherry-mega-menu-options.php:131
-msgid "Fade In"
+#: admin/includes/class-cherry-mega-menu-options.php:123
+#: admin/includes/class-cherry-mega-menu-options.php:127
+msgid "Animation effects for the dropdown menu"
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:132
-msgid "Slide from top"
+msgid "Fade In"
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:133
-msgid "Slide from bottom"
+msgid "Slide from top"
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:134
-msgid "Slide from left"
+msgid "Slide from bottom"
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:135
+msgid "Slide from left"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:136
 msgid "Slide from right"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:140
+#: admin/includes/class-cherry-mega-menu-options.php:141
 msgid "Event"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:141
-#: admin/includes/class-cherry-mega-menu-options.php:145
-msgid "select activation event"
-msgstr ""
-
-#: admin/includes/class-cherry-mega-menu-options.php:150
-msgid "Hover"
+#: admin/includes/class-cherry-mega-menu-options.php:142
+#: admin/includes/class-cherry-mega-menu-options.php:146
+msgid "Select an activation event"
 msgstr ""
 
 #: admin/includes/class-cherry-mega-menu-options.php:151
+msgid "Hover"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:152
 msgid "Click"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:156
+#: admin/includes/class-cherry-mega-menu-options.php:157
 msgid "Menu parent container CSS selector"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:157
+#: admin/includes/class-cherry-mega-menu-options.php:158
 msgid "Enter CSS selector name for mega menu parent container (if needed)"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:161
+#: admin/includes/class-cherry-mega-menu-options.php:162
 msgid "Enter CSS class name for mega menu parent container (if needed)"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:188
+#: admin/includes/class-cherry-mega-menu-options.php:189
 msgid "Mega menu caching enabled"
 msgstr ""
 
-#: admin/includes/class-cherry-mega-menu-options.php:193
+#: admin/includes/class-cherry-mega-menu-options.php:194
 msgid "Enable caching for mega menu items"
 msgstr ""
 
@@ -411,6 +402,6 @@ msgstr ""
 msgid "Failed to move %s to %d"
 msgstr ""
 
-#: public/includes/class-cherry-mega-menu-public-manager.php:153
+#: public/includes/class-cherry-mega-menu-public-manager.php:152
 msgid "Close"
 msgstr ""
