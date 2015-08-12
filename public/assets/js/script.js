@@ -77,7 +77,7 @@
 		}
 
 		switchMobile = function() {
-			var width = $(document).width();
+			var width = window.innerWidth;
 			if ( width <= menu.settings.mobile ) {
 				mobileOn();
 			} else {

@@ -1,0 +1,5 @@
+<wpml-config>
+	<custom-fields>
+		<custom-field action="copy">_cherry_mega_menu</custom-field>
+	</custom-fields>
+</wpml-config>

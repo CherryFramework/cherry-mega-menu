@@ -1,15 +1,14 @@
 <?php
-
 /**
  * Plugin Name: Cherry Mega Menu
  * Plugin URI:  http://www.cherryframework.com/
  * Description: A megamenu management plugin for WordPress.
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      Cherry Team
  * Author URI:  http://www.cherryframework.com/
  * Text Domain: cherry-mega-menu
- * License:     GPL-2.0+
- * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * License:     GPL-3.0+
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Domain Path: /languages
  */
 
@@ -27,7 +26,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 * @var   string
 		 * @since 1.0.0
 		 */
-		public $version = '1.0.1';
+		public $version = '1.0.2';
 
 		/**
 		 * @var   string
