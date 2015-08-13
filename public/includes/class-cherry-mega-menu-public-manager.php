@@ -85,6 +85,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 		 */
 		public function add_walker_to_nav_menu( $args ) {
 			$mega_menu_location = cherry_mega_menu_get_option( 'mega-menu-location', array( 'primary' ) );
+			$mega_menu_location = (array) $mega_menu_location;
 
 			if ( !isset( $args['theme_location'] ) || !in_array( $args['theme_location'], $mega_menu_location ) ) {
 				return $args;
