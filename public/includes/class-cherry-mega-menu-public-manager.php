@@ -55,7 +55,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 			wp_dequeue_style( 'cherryframework4-drop-downs' );
 			wp_enqueue_style(
 				'font-awesome',
-				'//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array(), '4.2.0'
+				'//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '4.4.0'
 			);
 			wp_enqueue_style(
 				'cherry-mega-menu',
