@@ -198,11 +198,11 @@
 
 			var widget_selector = $('#' + current_popup).find('#widget_selector');
 
-			widget_selector.on('change', function() {
+			widget_selector.on('mouseup', function() {
 
 				var selector = $(this);
 
-				if (selector.val() != 'disabled') {
+				if (selector.val() != 'disabled' && selector.val() != undefined) {
 
 					start_saving();
 
