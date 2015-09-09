@@ -108,7 +108,7 @@
     visibility: hidden;
     overflow: hidden;
     opacity: 0;
-    z-index: 999;
+    z-index: -1;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -149,10 +149,14 @@
       visibility: visible !important;
       opacity: 1;
       height: auto;
-      overflow: visible; }
+      overflow: visible;
+      z-index: 999; }
+      .cherry-mega-menu-sub.active-sub .cherry-mega-menu-sub {
+        z-index: 999; }
     .cherry-mega-menu-sub.in-transition {
       height: auto;
-      overflow: visible; }
+      overflow: visible;
+      z-index: 999; }
     .cherry-mega-menu-sub.effect-slide-top {
       margin-top: -20px;
       -webkit-transition-property: margin-top, opacity, visibility;
