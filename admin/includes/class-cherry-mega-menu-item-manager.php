@@ -76,15 +76,15 @@ if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
 
 			wp_enqueue_script(
 				'magnific-popup',
-				CHERRY_MEGA_MENU_URI . 'admin/assets/js/jquery.magnific-popup.min.js', array( 'jquery' ), CHERRY_MEGA_MENU_VERSION, true
+				CHERRY_MEGA_MENU_URI . 'admin/assets/js/min/jquery.magnific-popup.min.js', array( 'jquery' ), CHERRY_MEGA_MENU_VERSION, true
 			);
 			wp_enqueue_script(
 				'cherry_mega_menu_iconpicker',
-				CHERRY_MEGA_MENU_URI . 'admin/assets/js/fontawesome-iconpicker.min.js', array( 'jquery' ), CHERRY_MEGA_MENU_VERSION, true
+				CHERRY_MEGA_MENU_URI . 'admin/assets/js/min/fontawesome-iconpicker.min.js', array( 'jquery' ), CHERRY_MEGA_MENU_VERSION, true
 			);
 			wp_enqueue_script(
 				'cherry_mega_menu_script',
-				CHERRY_MEGA_MENU_URI . 'admin/assets/js/script.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable', 'jquery-ui-accordion', 'jquery-ui-resizable' ), CHERRY_MEGA_MENU_VERSION, true
+				CHERRY_MEGA_MENU_URI . 'admin/assets/js/min/script.min.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable', 'jquery-ui-accordion', 'jquery-ui-resizable' ), CHERRY_MEGA_MENU_VERSION, true
 			);
 
 			global $cherry_mega_menu_total_columns;
