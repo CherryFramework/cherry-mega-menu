@@ -3,7 +3,11 @@
  * Plugin Name: Cherry Mega Menu
  * Plugin URI:  http://www.cherryframework.com/
  * Description: A megamenu management plugin for WordPress.
+<<<<<<< HEAD
  * Version:     1.0.3
+=======
+ * Version:     1.0.4
+>>>>>>> develop
  * Author:      Cherry Team
  * Author URI:  http://www.cherryframework.com/
  * Text Domain: cherry-mega-menu
@@ -26,7 +30,11 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 * @var   string
 		 * @since 1.0.0
 		 */
+<<<<<<< HEAD
 		public $version = '1.0.3';
+=======
+		public $version = '1.0.4';
+>>>>>>> develop
 
 		/**
 		 * @var   string

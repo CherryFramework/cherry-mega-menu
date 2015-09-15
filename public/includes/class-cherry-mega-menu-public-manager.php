@@ -64,7 +64,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 
 			wp_enqueue_script(
 				'cherry-mega-menu',
-				CHERRY_MEGA_MENU_URI . 'public/assets/js/script.js',
+				CHERRY_MEGA_MENU_URI . 'public/assets/js/min/script.min.js',
 				array( 'jquery', 'hoverIntent' ), CHERRY_MEGA_MENU_VERSION, true
 			);
 
@@ -95,7 +95,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 			$effect          = cherry_mega_menu_get_option( 'mega-menu-effect', 'slide-top' );
 			$direction       = cherry_mega_menu_get_option( 'mega-menu-direction', apply_filters( 'cherry_mega_menu_default_direction', 'horizontal', $args ) );
 			$parent_selector = cherry_mega_menu_get_option( 'mega-menu-parent-container', '.cherry-mega-menu' );
-			$mobile_trigger  = cherry_mega_menu_get_option( 'mega-menu-mobile-trigger', 767 );
+			$mobile_trigger  = cherry_mega_menu_get_option( 'mega-menu-mobile-trigger', 768 );
 
 			global $cherry_mega_menu_total_columns;
 
