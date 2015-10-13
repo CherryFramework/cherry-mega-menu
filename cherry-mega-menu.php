@@ -84,6 +84,9 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 				$handles
 			);
 
+			// Removed `drop-downs.css` from CSS-set to compile.
+			unset( $handles[ get_template() . '-drop-downs' ] );
+
 			return $handles;
 		}
 
