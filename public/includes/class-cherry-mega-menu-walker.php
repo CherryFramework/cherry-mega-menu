@@ -112,7 +112,11 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 			'item-width-fullscreen' => '100%',
 			'item-width-desktop'    => '100%',
 			'item-width-tablet'     => '100%',
-			'item-hide-mobile'      => ''
+			'item-hide-mobile'      => '',
+			'item-badge'            => '',
+			'item-badge-type'       => 'primary',
+			'item-badge-text'       => '',
+
 		) );
 
 		if ( 0 === $depth && 'sub-items-to-cols' == $mega_settings['sub-items-to-cols'] ) {
@@ -343,6 +347,31 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 
 		if ( ! $mega_settings['item-hide-text'] ) {
 			$item_output .= $link_title;
+		}
+
+		if ( ! empty( $mega_settings['item-badge'] ) ) {
+
+			/**
+			 * Filter HTML format for menu badge output
+			 *
+			 * @since  1.1.0
+			 *
+			 * @param string          default HTML format
+			 * @param object  $item   The current menu item.
+			 * @param array   $args   An array of {@see wp_nav_menu()} arguments.
+			 * @param int     $depth  Depth of menu item. Used for padding.
+			 */
+			$badge_format = apply_filters(
+				'cherry_mega_menu_badge_format',
+				'<span class="cherry-mega-menu-badge badge-%2$s">%1$s</span>',
+				$item, $args, $depth
+			);
+
+			$item_output .= sprintf(
+				$badge_format,
+				sanitize_text_field( $mega_settings['item-badge-text'] ),
+				esc_attr( $mega_settings['item-badge-type'] )
+			);
 		}
 
 		$link_after = $args->link_after;

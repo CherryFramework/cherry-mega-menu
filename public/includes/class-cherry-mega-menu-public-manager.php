@@ -36,6 +36,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 			}
 
 			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ) );
+			add_action( 'cherry_dynamic_styles_before', array( $this, 'add_dynamic_styles' ) );
 			add_filter( 'wp_nav_menu_args', array( $this, 'add_walker_to_nav_menu' ), 999 );
 			add_filter( 'wp_nav_menu_objects', array( $this, 'add_menu_objects' ), 10, 2 );
 			add_filter( 'wp_nav_menu', array( $this, 'add_menu_mobile_label' ), 10, 2 );
@@ -73,6 +74,16 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 			);
 
 			wp_localize_script( 'cherry-mega-menu', 'cherry_mega_menu_data', $data );
+		}
+
+		/**
+		 * Load Mega Menu specific dynamic CSS
+		 *
+		 * @since  1.1.0
+		 * @return void
+		 */
+		public function add_dynamic_styles() {
+			include CHERRY_MEGA_MENU_DIR . 'public/assets/css/dynamic-style.css';
 		}
 
 		/**

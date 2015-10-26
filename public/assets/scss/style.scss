@@ -192,6 +192,12 @@
 
 		&-item > a {
 			display: block;
+			&:after {
+				clear: both;
+				content: "";
+				width: 100%;
+				display: block;
+			}
 		}
 
 		// set megamenu sub width by default
@@ -393,5 +399,31 @@
 	// hide arrow for mega menu items with sub menu
 	.item-type-megamenu li & {
 		display: none !important;
+	}
+}
+
+// badges
+.cherry-mega-menu {
+	.cherry-mega-menu-top-item {
+		.cherry-mega-menu-badge {
+			display: inline-block;
+			font-size: 12px;
+			line-height: 14px;
+			vertical-align: top;
+			font-weight: normal;
+			padding: 5px 7px;
+			margin: -14px 0 0 5px;
+		}
+	}
+	.cherry-mega-menu-sub-item {
+		.cherry-mega-menu-badge {
+			display: inline-block;
+			font-size: 12px;
+			line-height: 14px;
+			vertical-align: middle;
+			font-weight: normal;
+			padding: 5px 7px;
+			margin: 0 0 0 5px;
+		}
 	}
 }

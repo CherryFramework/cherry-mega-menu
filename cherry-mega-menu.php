@@ -26,7 +26,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 * @var   string
 		 * @since 1.0.0
 		 */
-		public $version = '1.0.4';
+		public $version = '1.1.0';
 
 		/**
 		 * @var   string

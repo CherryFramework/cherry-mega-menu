@@ -174,6 +174,7 @@ if ( ! class_exists( 'cherry_mega_menu_item_tabs' ) ) {
 		 * Get media tab content
 		 *
 		 * @since  1.0.0
+		 * @since  1.1.0  Added badge-related options
 		 *
 		 * @param  int    $id    menu item ID
 		 * @param  string $title menu item title
@@ -189,27 +190,52 @@ if ( ! class_exists( 'cherry_mega_menu_item_tabs' ) ) {
 					'desc'  => __( 'Select FontAwesome item icon', 'cherry-mega-menu' ),
 					'type'  => 'icon-picker',
 					'depth' => 10,
-					'std'   => ''
+					'std'   => '',
 				),
 				'item-arrow' => array(
 					'name'    => __( 'Item arrow', 'cherry-mega-menu' ),
 					'desc'    => __( 'Select FontAwesome icon for arrow', 'cherry-mega-menu' ),
 					'type'    => 'icon-picker',
 					'depth'   => 10,
-					'std'     => ''
+					'std'     => '',
 				),
 				'item-hide-text' => array(
 					'name' => __( 'Hide menu link text', 'cherry-mega-menu' ),
 					'desc' => __( 'Hide this menu item link text', 'cherry-mega-menu' ),
 					'type' => 'checkbox',
-					'std'  => ''
+					'std'  => '',
 				),
 				'item-hide-arrow' => array(
 					'name' => __( 'Hide sub-menu arrow', 'cherry-mega-menu' ),
 					'desc' => __( 'Hide sub-menu indicator arrow', 'cherry-mega-menu' ),
 					'type' => 'checkbox',
-					'std'  => ''
-				)
+					'std'  => '',
+				),
+				'item-badge' => array(
+					'name' => __( 'Show badge', 'cherry-mega-menu' ),
+					'desc' => __( 'Show menu item badge', 'cherry-mega-menu' ),
+					'type' => 'checkbox',
+					'std'  => '',
+				),
+				'item-badge-type' => array(
+					'name'    => __( 'Badge type', 'cherry-mega-menu' ),
+					'desc'    => __( 'Select badge styling type', 'cherry-mega-menu' ),
+					'type'    => 'select',
+					'std'     => 'primary',
+					'options' => array(
+						'primary'   => __( 'Primary', 'cherry-mega-menu' ),
+						'secondary' => __( 'Secondary', 'cherry-mega-menu' ),
+						'new'       => __( 'New', 'cherry-mega-menu' ),
+						'sale'      => __( 'Sale', 'cherry-mega-menu' ),
+						'hot'       => __( 'Hot', 'cherry-mega-menu' ),
+					)
+				),
+				'item-badge-text' => array(
+					'name' => __( 'Badge text', 'cherry-mega-menu' ),
+					'desc' => __( 'Enter nebu badge text', 'cherry-mega-menu' ),
+					'type' => 'text',
+					'std'  => __( 'Hot!', 'cherry-mega-menu' ),
+				),
 			);
 
 			$fields = apply_filters( 'cherry_mega_menu_media_tab_fields', $default_fields );

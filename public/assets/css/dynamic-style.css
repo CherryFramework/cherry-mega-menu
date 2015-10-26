@@ -1,0 +1,24 @@
+.cherry-mega-menu .cherry-mega-menu-badge.badge-primary {
+	background: $color-primary;
+	color: @contrast( $color-primary, #fff, #333 );
+}
+
+.cherry-mega-menu .cherry-mega-menu-badge.badge-secondary {
+	background: $color-secondary;
+	color: @contrast( $color-secondary, #fff, #333 );
+}
+
+.cherry-mega-menu .cherry-mega-menu-badge.badge-new {
+	background: $color-success;
+	color: @contrast( $color-success, #fff, #333 );
+}
+
+.cherry-mega-menu .cherry-mega-menu-badge.badge-sale {
+	background: $color-info;
+	color: @contrast( $color-info, #fff, #333 );
+}
+
+.cherry-mega-menu .cherry-mega-menu-badge.badge-hot {
+	background: $color-danger;
+	color: @contrast( $color-danger, #fff, #333 );
+}

@@ -189,7 +189,7 @@ if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
 					'title'    => __( 'Media', 'cherry-mega-menu' ),
 					'callback' => array( $tabs_handler, 'media' ),
 					'depth'    => 10
-				)
+				),
 			);
 
 			/**
