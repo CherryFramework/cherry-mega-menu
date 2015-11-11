@@ -1,0 +1,422 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-mega-menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-09 17:54+0200\n"
+"PO-Revision-Date: 2015-11-09 17:54+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:93
+msgid "Launched for Menu ID"
+msgstr "Lanciato per Menu ID"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:94
+#: admin/includes/class-cherry-mega-menu-item-manager.php:179
+msgid "Mega Menu"
+msgstr "Mega Menu"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:95
+msgid "Saving"
+msgstr "Sta salvando"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:97
+msgid "Oops. Something went wrong. Please reload the page."
+msgstr "Oops. Qualcosa è andato storto. Si prega di ricaricare la pagina."
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:184
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:189
+msgid "Media"
+msgstr "Media"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:258
+#: core/includes/class-cherry-mega-menu-widget-manager.php:451
+msgid "Save"
+msgstr "Salva"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:259
+msgid "Saving..."
+msgstr "Sto salvando..."
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:260
+msgid "Saved"
+msgstr "Salvato"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:298
+msgid "Something went wrong. Please, try again"
+msgstr "Qualcosa è andato storto. Per favore riprova nuovamente"
+
+#: admin/includes/class-cherry-mega-menu-options.php:47
+msgid "Select main theme menu"
+msgstr "Seleziona il menu principale del theme"
+
+#: admin/includes/class-cherry-mega-menu-options.php:55
+msgid "Main theme menu location"
+msgstr "Principale posizione theme menu"
+
+#: admin/includes/class-cherry-mega-menu-options.php:56
+msgid "Select the menu location for your main menu"
+msgstr "Seleziona la posizione del menu per il tuo menu principale"
+
+#: admin/includes/class-cherry-mega-menu-options.php:60
+msgid ""
+"Select menu location for main theme menu. Mega menu will be applied to this "
+"location."
+msgstr ""
+"Seleziona posizione del menu per il menu del theme principale. Menu mega "
+"sarà applicabile a questa posizione."
+
+#: admin/includes/class-cherry-mega-menu-options.php:69
+msgid "Mega menu enabled"
+msgstr "Mega menu abilitato"
+
+#: admin/includes/class-cherry-mega-menu-options.php:70
+#: admin/includes/class-cherry-mega-menu-options.php:190
+msgid "Enable / Disable"
+msgstr "Abilitato / Disabilitato"
+
+#: admin/includes/class-cherry-mega-menu-options.php:74
+msgid "This applies only to main site menu"
+msgstr "Questo vale solo per menu del sito principale"
+
+#: admin/includes/class-cherry-mega-menu-options.php:81
+msgid "Mobile starts from"
+msgstr "Mobile inizia da"
+
+#: admin/includes/class-cherry-mega-menu-options.php:82
+#: admin/includes/class-cherry-mega-menu-options.php:86
+msgid "Select the window dimensions for mobile menu layout switching."
+msgstr ""
+"Seleziona le dimensioni della finestra per il mobile menu con il modo di "
+"dimensione tipo switching."
+
+#: admin/includes/class-cherry-mega-menu-options.php:94
+msgid "Mobile nav label"
+msgstr "L'etichetta di navigazione mobile"
+
+#: admin/includes/class-cherry-mega-menu-options.php:95
+#: admin/includes/class-cherry-mega-menu-options.php:99
+msgid "Enter the mobile navigation label "
+msgstr "Inserisci l'etichetta di navigazione mobile"
+
+#: admin/includes/class-cherry-mega-menu-options.php:101
+#: admin/includes/class-cherry-mega-menu-options.php:102
+#: public/includes/class-cherry-mega-menu-public-manager.php:151
+msgid "Menu"
+msgstr "Menu"
+
+#: admin/includes/class-cherry-mega-menu-options.php:106
+msgid "Menu direction"
+msgstr "Direzione Menu"
+
+#: admin/includes/class-cherry-mega-menu-options.php:107
+#: admin/includes/class-cherry-mega-menu-options.php:111
+msgid "Select your direction: vertical or horizontal"
+msgstr "Seleziona la tua direzione: verticale o orizzontale"
+
+#: admin/includes/class-cherry-mega-menu-options.php:116
+msgid "Horizontal"
+msgstr "Orizzontale"
+
+#: admin/includes/class-cherry-mega-menu-options.php:117
+msgid "Vertical"
+msgstr "Verticale"
+
+#: admin/includes/class-cherry-mega-menu-options.php:122
+msgid "Animation effect"
+msgstr "Effetto di animazione"
+
+#: admin/includes/class-cherry-mega-menu-options.php:123
+#: admin/includes/class-cherry-mega-menu-options.php:127
+msgid "Animation effects for the dropdown menu"
+msgstr "Gli effetti di animazione per il menu di tipo dropdown"
+
+#: admin/includes/class-cherry-mega-menu-options.php:132
+msgid "Fade In"
+msgstr "Fade In"
+
+#: admin/includes/class-cherry-mega-menu-options.php:133
+msgid "Slide from top"
+msgstr "Far scorrere dall'alto"
+
+#: admin/includes/class-cherry-mega-menu-options.php:134
+msgid "Slide from bottom"
+msgstr "Far scorrere dal basso"
+
+#: admin/includes/class-cherry-mega-menu-options.php:135
+msgid "Slide from left"
+msgstr "Far scorrere da sinistra"
+
+#: admin/includes/class-cherry-mega-menu-options.php:136
+msgid "Slide from right"
+msgstr "Far scorrere da destra"
+
+#: admin/includes/class-cherry-mega-menu-options.php:141
+msgid "Event"
+msgstr "Evento"
+
+#: admin/includes/class-cherry-mega-menu-options.php:142
+#: admin/includes/class-cherry-mega-menu-options.php:146
+msgid "Select an activation event"
+msgstr "Seleziona è attiva un evento"
+
+#: admin/includes/class-cherry-mega-menu-options.php:151
+msgid "Hover"
+msgstr "Hover"
+
+#: admin/includes/class-cherry-mega-menu-options.php:152
+msgid "Click"
+msgstr "Clicca"
+
+#: admin/includes/class-cherry-mega-menu-options.php:157
+msgid "Menu parent container CSS selector"
+msgstr "Menu parente del contenitore di selettore CSS"
+
+#: admin/includes/class-cherry-mega-menu-options.php:158
+msgid "Enter CSS selector name for mega menu parent container (if needed)"
+msgstr ""
+"Inserisci il nome di selettore CSS per mega menu parente di contenitore (se "
+"necessario)"
+
+#: admin/includes/class-cherry-mega-menu-options.php:162
+msgid "Enter CSS class name for mega menu parent container (if needed)"
+msgstr ""
+"Inserisci il nome della classe CSS per mega menu parente di contenitore (se "
+"necessario)"
+
+#: admin/includes/class-cherry-mega-menu-options.php:189
+msgid "Mega menu caching enabled"
+msgstr "Abilita caching di Mega menu"
+
+#: admin/includes/class-cherry-mega-menu-options.php:194
+msgid "Enable caching for mega menu items"
+msgstr "Abilita caching per gli elementi di mega menu"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:35
+msgid "Mega Menus can only be created on top level menu items."
+msgstr ""
+"I Mega Menu possono essere creati solo sulla parte superiore di levello "
+"degli elementi di menu."
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:46
+msgid "Enable Mega Menu for current item"
+msgstr "Abilita Mega Menu per l'elemento corrente"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:50
+msgid "Select a Widget to add to the panel"
+msgstr "Seleziona un Widget da aggiungere al pannello"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:64
+msgid "No widgets found"
+msgstr "Nessun widget trovato"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:64
+msgid "Use the Widget Selector (top right) to add a Widget to this panel."
+msgstr ""
+"Utilizza il Selettore Widget (in alto a destra) per aggiungere un Widget per "
+"questo pannello."
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:94
+msgid "Subitems behavior"
+msgstr "Comportamento sottovoci"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:95
+msgid "Standard subitems behavior"
+msgstr "Comportamento sottovoci standard"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:100
+msgid "Group sub items to columns"
+msgstr "Sub Gruppo degli elementi a colonne"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:101
+msgid "Group standard submenu items to columns"
+msgstr "Sottomenu di gruppo standard degli elementi a colonne"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:106
+msgid "Columns number"
+msgstr "Numero delle colonne"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:107
+msgid "Submenu items columns number"
+msgstr "Numero degli elementi nelle colonne di sottomenu"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:119
+msgid "Layout and position"
+msgstr "Disposizione e la posizione"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:120
+msgid "Define layout and position options for current mega menu item"
+msgstr ""
+"Definire la disposizione e le opzioni della posizione per gli elementi "
+"correnti di mega menu"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:125
+msgid "Submenu position"
+msgstr "Posizione sottomenu"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:126
+msgid "Select submenu position for current menu item"
+msgstr "Seleziona la posizione di sottomenu per l'elemento corrente di menu"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:130
+msgid "Full Width"
+msgstr "Intera Larghezza"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:131
+msgid "Center"
+msgstr "Centro"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:132
+msgid "Left Edge of Menu Bar"
+msgstr "Margine Sinistro di Menu Bar"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:133
+msgid "Right Edge of Menu Bar"
+msgstr "Margine Destro di Menu Bar"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:134
+msgid "Left Edge of Parent Item"
+msgstr "Margine Sinistro dell'Elemento Parente"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:135
+msgid "Right Edge of Parent Item"
+msgstr "Margine Destro dell'Elemento Parente"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:136
+msgid "Vertical - Aligned to menu top"
+msgstr "Verticale - Allineato in alto del menu"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:137
+msgid "Vertical - Aligned to parent"
+msgstr "Verticale - Allineato al parente"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:141
+msgid "Set item width for 1200"
+msgstr "Imposta la larghezza dell'elemento per 1200"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:142
+#: admin/includes/class-cherry-mega-menu-tabs.php:148
+#: admin/includes/class-cherry-mega-menu-tabs.php:154
+msgid "Set item width for and more (100%, 400px)"
+msgstr "Impostare la larghezza dell'elemento da e oltre (100%, 400px)"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:147
+msgid "Set item width for 980-1199"
+msgstr "Imposta larghezza dell'elemento per 980-1199"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:153
+msgid "Set item width for 768-979"
+msgstr "Imposta larghezza dell'elemento per 768-979"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:159
+msgid "Hide submenu on mobile"
+msgstr "Nascondi sottomenu sul mobile"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:160
+msgid "Hide this submenu item on mobile version"
+msgstr "Nascondi elemento di questo sottomenu in versione mobile"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:188
+msgid "Item icon"
+msgstr "Elemento icona"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:189
+msgid "Select FontAwesome item icon"
+msgstr "Seleziona FontAwesome elemento icona"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:195
+msgid "Item arrow"
+msgstr "Elemento freccia"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:196
+msgid "Select FontAwesome icon for arrow"
+msgstr "Selezionare FontAwesome icona della freccia"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:202
+msgid "Hide menu link text"
+msgstr "Nascondi menu link testo"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:203
+msgid "Hide this menu item link text"
+msgstr "Nascondi questo menu e il testo del link dell'elemento"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:208
+msgid "Hide sub-menu arrow"
+msgstr "Nascondi sottomenu a freccia"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:209
+msgid "Hide sub-menu indicator arrow"
+msgstr "Nascondi sottomenu con indicatore a freccia"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:82
+msgid "Cherry Mega Menu Widgets"
+msgstr "Cherry Mega Menu Widgets"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:83
+msgid "Do not manually edit this area."
+msgstr "Non modificare manualmente questa zona."
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:120
+#, php-format
+msgid "Saved %s"
+msgstr "Salvato %s"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:121
+#, php-format
+msgid "Failed to save %s"
+msgstr "Impossibile salvare %s"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:146
+#, php-format
+msgid "Updated %s (new columns: %d)"
+msgstr "Aggiornato %s (nuove colonne: %d)"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:147
+#, php-format
+msgid "Failed to update %s"
+msgstr "Impossibile ricaricare %s"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:181
+#, php-format
+msgid "Failed to add %s to %d"
+msgstr "Impossibile aggiungere %s to %d"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:206
+#, php-format
+msgid "Deleted %s"
+msgstr "Eliminato %s"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:207
+#, php-format
+msgid "Failed to delete %s"
+msgstr "Impossibile eliminare %s"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:233
+#, php-format
+msgid "Moved %s to %d (%s)"
+msgstr "Spostare  %s a %d (%s)"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:234
+#, php-format
+msgid "Failed to move %s to %d"
+msgstr "Impossibile spostare %s in %d"
+
+#: public/includes/class-cherry-mega-menu-public-manager.php:153
+msgid "Close"
+msgstr "Chiudere"

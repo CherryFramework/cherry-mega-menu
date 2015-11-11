@@ -1,0 +1,3452 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-mega-menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-09 17:54+0200\n"
+"PO-Revision-Date: 2015-11-09 17:54+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:93
+msgid "Launched for Menu ID"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:94
+#: admin/includes/class-cherry-mega-menu-item-manager.php:179
+msgid "Mega Menu"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:95
+msgid "Saving"
+msgstr "Zapisywanie"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:97
+msgid "Oops. Something went wrong. Please reload the page."
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:184
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:189
+msgid "Media"
+msgstr "Media"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:258
+#: core/includes/class-cherry-mega-menu-widget-manager.php:451
+msgid "Save"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:259
+msgid "Saving..."
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:260
+msgid "Saved"
+msgstr "Zapisano"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:298
+msgid "Something went wrong. Please, try again"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:47
+msgid "Select main theme menu"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:55
+msgid "Main theme menu location"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:56
+msgid "Select the menu location for your main menu"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:60
+msgid ""
+"Select menu location for main theme menu. Mega menu will be applied to this "
+"location."
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:69
+msgid "Mega menu enabled"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:70
+#: admin/includes/class-cherry-mega-menu-options.php:190
+msgid "Enable / Disable"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:74
+msgid "This applies only to main site menu"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:81
+msgid "Mobile starts from"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:82
+#: admin/includes/class-cherry-mega-menu-options.php:86
+msgid "Select the window dimensions for mobile menu layout switching."
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:94
+msgid "Mobile nav label"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:95
+#: admin/includes/class-cherry-mega-menu-options.php:99
+msgid "Enter the mobile navigation label "
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:101
+#: admin/includes/class-cherry-mega-menu-options.php:102
+#: public/includes/class-cherry-mega-menu-public-manager.php:151
+msgid "Menu"
+msgstr "Menu"
+
+#: admin/includes/class-cherry-mega-menu-options.php:106
+msgid "Menu direction"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:107
+#: admin/includes/class-cherry-mega-menu-options.php:111
+msgid "Select your direction: vertical or horizontal"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:116
+msgid "Horizontal"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:117
+msgid "Vertical"
+msgstr "Pionowo"
+
+#: admin/includes/class-cherry-mega-menu-options.php:122
+msgid "Animation effect"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:123
+#: admin/includes/class-cherry-mega-menu-options.php:127
+msgid "Animation effects for the dropdown menu"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:132
+msgid "Fade In"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:133
+msgid "Slide from top"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:134
+msgid "Slide from bottom"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:135
+msgid "Slide from left"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:136
+msgid "Slide from right"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:141
+msgid "Event"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:142
+#: admin/includes/class-cherry-mega-menu-options.php:146
+msgid "Select an activation event"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:151
+msgid "Hover"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:152
+msgid "Click"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:157
+msgid "Menu parent container CSS selector"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:158
+msgid "Enter CSS selector name for mega menu parent container (if needed)"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:162
+msgid "Enter CSS class name for mega menu parent container (if needed)"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:189
+msgid "Mega menu caching enabled"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-options.php:194
+msgid "Enable caching for mega menu items"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:35
+msgid "Mega Menus can only be created on top level menu items."
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:46
+msgid "Enable Mega Menu for current item"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:50
+msgid "Select a Widget to add to the panel"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:64
+msgid "No widgets found"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:64
+msgid "Use the Widget Selector (top right) to add a Widget to this panel."
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:94
+msgid "Subitems behavior"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:95
+msgid "Standard subitems behavior"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:100
+msgid "Group sub items to columns"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:101
+msgid "Group standard submenu items to columns"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:106
+msgid "Columns number"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:107
+msgid "Submenu items columns number"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:119
+msgid "Layout and position"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:120
+msgid "Define layout and position options for current mega menu item"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:125
+msgid "Submenu position"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:126
+msgid "Select submenu position for current menu item"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:130
+msgid "Full Width"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:131
+msgid "Center"
+msgstr "Środek"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:132
+msgid "Left Edge of Menu Bar"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:133
+msgid "Right Edge of Menu Bar"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:134
+msgid "Left Edge of Parent Item"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:135
+msgid "Right Edge of Parent Item"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:136
+msgid "Vertical - Aligned to menu top"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:137
+msgid "Vertical - Aligned to parent"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:141
+msgid "Set item width for 1200"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:142
+#: admin/includes/class-cherry-mega-menu-tabs.php:148
+#: admin/includes/class-cherry-mega-menu-tabs.php:154
+msgid "Set item width for and more (100%, 400px)"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:147
+msgid "Set item width for 980-1199"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:153
+msgid "Set item width for 768-979"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:159
+msgid "Hide submenu on mobile"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:160
+msgid "Hide this submenu item on mobile version"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:188
+msgid "Item icon"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:189
+msgid "Select FontAwesome item icon"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:195
+msgid "Item arrow"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:196
+msgid "Select FontAwesome icon for arrow"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:202
+msgid "Hide menu link text"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:203
+msgid "Hide this menu item link text"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:208
+msgid "Hide sub-menu arrow"
+msgstr ""
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:209
+msgid "Hide sub-menu indicator arrow"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:82
+msgid "Cherry Mega Menu Widgets"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:83
+msgid "Do not manually edit this area."
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:120
+#, php-format
+msgid "Saved %s"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:121
+#, php-format
+msgid "Failed to save %s"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:146
+#, php-format
+msgid "Updated %s (new columns: %d)"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:147
+#, php-format
+msgid "Failed to update %s"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:181
+#, php-format
+msgid "Failed to add %s to %d"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:206
+#, php-format
+msgid "Deleted %s"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:207
+#, php-format
+msgid "Failed to delete %s"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:233
+#, php-format
+msgid "Moved %s to %d (%s)"
+msgstr ""
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:234
+#, php-format
+msgid "Failed to move %s to %d"
+msgstr ""
+
+#: public/includes/class-cherry-mega-menu-public-manager.php:153
+msgid "Close"
+msgstr ""
+
+#~ msgid "Width"
+#~ msgstr "Szerokość"
+
+#~ msgid "Yes"
+#~ msgstr "Tak"
+
+#~ msgid "No"
+#~ msgstr "Nie"
+
+#~ msgid "Post type"
+#~ msgstr "Rodzaj wpisu"
+
+#~ msgid "Class"
+#~ msgstr "Klasa"
+
+#~ msgid "Extra CSS class"
+#~ msgstr "Dodatkowa klasa CSS"
+
+#~ msgid "Template"
+#~ msgstr "Szablon"
+
+#~ msgid "or"
+#~ msgstr "albo"
+
+#~ msgid "Height"
+#~ msgstr "Wysokość"
+
+#~ msgid "Background color"
+#~ msgstr "Kolor tła"
+
+#~ msgid "Inherit"
+#~ msgstr "Dziedziczący"
+
+#~ msgid "Left"
+#~ msgstr "Lewa"
+
+#~ msgid "Right"
+#~ msgstr "Prawa"
+
+#~ msgid "Title"
+#~ msgstr "Tytuł"
+
+#~ msgid "Label"
+#~ msgstr "Etykieta"
+
+#~ msgid "Icon"
+#~ msgstr "Ikona"
+
+#~ msgid "None"
+#~ msgstr "Żaden"
+
+#~ msgid "All"
+#~ msgstr "Wszystko"
+
+#~ msgid "Limit"
+#~ msgstr "Limit"
+
+#~ msgid "Descending"
+#~ msgstr "Malejąco"
+
+#~ msgid "Ascending"
+#~ msgstr "Rosnąco"
+
+#~ msgid "Order"
+#~ msgstr "Kolejność"
+
+#~ msgid "Posts order"
+#~ msgstr "Kolejność wpisów"
+
+#~ msgid "Post ID"
+#~ msgstr "ID wpisu"
+
+#~ msgid "Post author"
+#~ msgstr "Autora wpisu"
+
+#~ msgid "Post title"
+#~ msgstr "Tytułu wpisu"
+
+#~ msgid "Post slug"
+#~ msgstr "Slug'a wpisu"
+
+#~ msgid "Date"
+#~ msgstr "Daty"
+
+#~ msgid "Last modified date"
+#~ msgstr "Daty ostatniej modyfikacji"
+
+#~ msgid "Random"
+#~ msgstr "Losowo"
+
+#~ msgid "Comments number"
+#~ msgstr "Liczby komentarzy"
+
+#~ msgid "Order by"
+#~ msgstr "Porządkuj według"
+
+#~ msgid "Order posts by"
+#~ msgstr "Porządkuj wpisy według"
+
+#~ msgid "Category"
+#~ msgstr "Kategoria"
+
+#~ msgid "Choose file"
+#~ msgstr "Wybierz plik"
+
+#~ msgid "Insert"
+#~ msgstr "Wprowadź"
+
+#~ msgid "Select images"
+#~ msgstr "Wybierz obrazy"
+
+#~ msgid "Add selected images"
+#~ msgstr "Dodaj zaznaczone obrazy"
+
+#~ msgid "Please enter a name for new preset"
+#~ msgstr "Proszę, wprowadź nazwę dla nowych ustawień"
+
+#~ msgid "New preset"
+#~ msgstr "Nowe ustawienia"
+
+#~ msgid "Last used settings"
+#~ msgstr "Ostatnio używane ustawienia"
+
+#~ msgid "Content"
+#~ msgstr "Treść"
+
+#~ msgid "Other"
+#~ msgstr "Inny"
+
+#~ msgid "Solid"
+#~ msgstr "Jednolity"
+
+#~ msgid "Dotted"
+#~ msgstr "Kropkowane"
+
+#~ msgid "Dashed"
+#~ msgstr "Kreskowanie"
+
+#~ msgid "Double"
+#~ msgstr "Podwójne"
+
+#~ msgid "Groove"
+#~ msgstr "Wgłębiony"
+
+#~ msgid "Ridge"
+#~ msgstr "Wypukłe"
+
+#~ msgid "Row"
+#~ msgstr "Rząd"
+
+#~ msgid "Type"
+#~ msgstr "Rodzaj"
+
+#~ msgid "Anchor"
+#~ msgstr "Kotwica"
+
+#~ msgid "Row for flexible columns"
+#~ msgstr "Rząd na konfigurowalne kolumny"
+
+#~ msgid "Column"
+#~ msgstr "Kolumna"
+
+#~ msgid "Size"
+#~ msgstr "Rozmiar"
+
+#~ msgid "Offset"
+#~ msgstr "Przesunięcie"
+
+#~ msgid "Column content"
+#~ msgstr "Treść kolumny"
+
+#~ msgid "Flexible and responsive columns"
+#~ msgstr "Konfigurowalne i responsywne kolumny"
+
+#~ msgid "Spacer"
+#~ msgstr "Rozpórka"
+
+#~ msgid "You can upload custom icon for this button or pick a built-in icon"
+#~ msgstr ""
+#~ "Możesz załadować własną ikonę dla tego przycisku, albo wybrać ją spośród "
+#~ "ikon wbudowanych"
+
+#~ msgid "Icon size"
+#~ msgstr "Rozmiar ikony"
+
+#~ msgid "Box"
+#~ msgstr "Pole"
+
+#~ msgid "Auto"
+#~ msgstr "Auto"
+
+#~ msgid "Text color"
+#~ msgstr "Kolor tekstu"
+
+#~ msgid "Title text color"
+#~ msgstr "Kolor tekstu tytułowego"
+
+#~ msgid "Dropcap"
+#~ msgstr "Inicjał"
+
+#~ msgid "Align"
+#~ msgstr "Wyrównanie"
+
+#~ msgid "Button"
+#~ msgstr "Przycisk"
+
+#~ msgid "Button text"
+#~ msgstr "Tekst przycisku"
+
+#~ msgid "Link"
+#~ msgstr "Link"
+
+#~ msgid "Button link"
+#~ msgstr "Link przycisku"
+
+#~ msgid "Default"
+#~ msgstr "Domyślny"
+
+#~ msgid "Success"
+#~ msgstr "Sukces"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "Warning"
+#~ msgstr "Ostrzeżenie"
+
+#~ msgid "Style"
+#~ msgstr "Styl"
+
+#~ msgid "Inline"
+#~ msgstr "Inline"
+
+#~ msgid "Centered"
+#~ msgstr "Wyśrodkowanie"
+
+#~ msgid "Is button centered on the page"
+#~ msgstr "Czy przycisk, ma być na stronie wyśrodkowany?"
+
+#~ msgid "Fluid"
+#~ msgstr "Rozlany"
+
+#~ msgid "Top"
+#~ msgstr "Góra"
+
+#~ msgid "Bottom"
+#~ msgstr "Dół"
+
+#~ msgid "Description"
+#~ msgstr "Opis"
+
+#~ msgid "Background"
+#~ msgstr "Tło"
+
+#~ msgid "Button background color"
+#~ msgstr "Kolor tła przycisku"
+
+#~ msgid "Button text color"
+#~ msgstr "Kolor tekstu przycisku"
+
+#~ msgid "Same tab"
+#~ msgstr "Ta zakładka"
+
+#~ msgid "New tab"
+#~ msgstr "Nowa zakładka"
+
+#~ msgid "Target"
+#~ msgstr "Cel"
+
+#~ msgid "Button link target"
+#~ msgstr "Miejsce otwarcia linka, tego przycisku"
+
+#~ msgid "Rel attribute"
+#~ msgstr "Atrybut rel"
+
+#~ msgid "Styled button"
+#~ msgstr "Wygląd przycisku"
+
+#~ msgid "List"
+#~ msgstr "Lista"
+
+#~ msgid "Posts per page"
+#~ msgstr "Wpisów na stronę"
+
+#~ msgid ""
+#~ "Specify number of posts that you want to show. Enter -1 to get all posts"
+#~ msgstr ""
+#~ "Określ ilość wpisów, które chcesz wyświetlić. Wprowadź -1 aby wyświetlić "
+#~ "wszystkie wpisy"
+
+#~ msgid "Post types"
+#~ msgstr "Rodzaje wpisów"
+
+#~ msgid "Select post types. Hold Ctrl key to select multiple post types"
+#~ msgstr ""
+#~ "Wybierz rodzaj wpisów. Przytrzymaj klawisz Ctrl, aby wybrać wiele "
+#~ "rodzajów wpisów"
+
+#~ msgid "Taxonomy"
+#~ msgstr "Taksonomia"
+
+#~ msgid "Select taxonomy to show posts from"
+#~ msgstr "Wybierz taksonomie, z której mają zostać wyświetlone wpisy"
+
+#~ msgid "Terms"
+#~ msgstr "Określenia"
+
+#~ msgid "Select terms to show posts from"
+#~ msgstr ""
+#~ "Wybierz określenia odnoszące się do wpisów, które mają zostać wyświetlone"
+
+#~ msgid "Taxonomy term operator"
+#~ msgstr "Operator logiczny taksonomii"
+
+#~ msgid "Authors"
+#~ msgstr "Autorzy"
+
+#~ msgid "Enter here comma-separated list of author's IDs. Example: 1,7,18"
+#~ msgstr ""
+#~ "Wprowadź, oddzielone przecinkami, listę z ID-kami autorów. Przykładowo: "
+#~ "1,7,18"
+
+#~ msgid "Specify offset to start posts loop not from first post"
+#~ msgstr ""
+#~ "Określ przesunięcie, od którego rozpocznie działanie pętla pobierająca "
+#~ "wpisy - nie będzie to pierwszy wpis"
+
+#~ msgid "Post parent"
+#~ msgstr "Rodzic wpisu"
+
+#~ msgid "Menu order"
+#~ msgstr "Kolejności w menu"
+
+#~ msgid "Published"
+#~ msgstr "Opublikowane"
+
+#~ msgid "Pending"
+#~ msgstr "Oczekuje na przegląd"
+
+#~ msgid "Draft"
+#~ msgstr "Szkic"
+
+#~ msgid "Auto-draft"
+#~ msgstr "Automatycznie zapisany szkic"
+
+#~ msgid "Future post"
+#~ msgstr "Zaplanowany wpis"
+
+#~ msgid "Private post"
+#~ msgstr "Prywatny wpis"
+
+#~ msgid "Trashed"
+#~ msgstr "Kosz"
+
+#~ msgid "Any"
+#~ msgstr "Dowolny"
+
+#~ msgid "Post status"
+#~ msgstr "Stan wpisu"
+
+#~ msgid "Show only posts with selected status"
+#~ msgstr "Pokaż jedynie wpisy w określonych stanach"
+
+#~ msgid "Ignore sticky"
+#~ msgstr "Ignoruj przypięte wpisy"
+
+#~ msgid "Post content"
+#~ msgstr "Treść wpisu"
+
+#~ msgid "Posts"
+#~ msgstr "Wpisy"
+
+#~ msgid "Post ID's"
+#~ msgstr "ID-ki wpisów"
+
+#~ msgid "Enter comma separated ID's of the posts that you want to show"
+#~ msgstr ""
+#~ "Wprowadź, oddzielone przecinkami ID-ki wpisów, które chce wyświetlić"
+
+#~ msgid "Custom posts query with customizable template"
+#~ msgstr "Filtrowanie wpisów przez konfigurowalny szablon"
+
+#~ msgid "Tabs"
+#~ msgstr "Zakładki"
+
+#~ msgid "Simple"
+#~ msgstr "Prosty"
+
+#~ msgid "Active tab"
+#~ msgstr "Aktywna zakładka"
+
+#~ msgid "Select which tab is open by default"
+#~ msgstr "Wybierz, która zakładka ma być domyślnie otwarta "
+
+#~ msgid "Show tabs vertically"
+#~ msgstr "Wyświetl zakładki w pionie"
+
+#~ msgid ""
+#~ "[%prefix_tab title=\"Title 1\"]Content 1[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 2\"]Content 2[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Title 3\"]Content 3[/%prefix_tab]"
+#~ msgstr ""
+#~ "[%prefix_tab title=\"Tytuł 1\"]Treść 1[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Tytuł 2\"]Treść 2[/%prefix_tab]\n"
+#~ "[%prefix_tab title=\"Tytuł 3\"]Treść 3[/%prefix_tab]"
+
+#~ msgid "Tabs container"
+#~ msgstr "Kontener z zakładkami "
+
+#~ msgid "Tab"
+#~ msgstr "Zakładka"
+
+#~ msgid "Tab name"
+#~ msgstr "Nazwa zakładki"
+
+#~ msgid "Enter tab name"
+#~ msgstr "Wprowadź nazwę zakładki"
+
+#~ msgid "Disabled"
+#~ msgstr "Nieaktywna"
+
+#~ msgid "Is this tab disabled"
+#~ msgstr "Czy zakładka ma być nieaktywna?"
+
+#~ msgid ""
+#~ "You can use unique anchor for this tab to access it with hash in page "
+#~ "url. For example: type here <b%value>Hello</b> and then use url like "
+#~ "http://example.com/page-url#Hello. This tab will be activated and "
+#~ "scrolled in"
+#~ msgstr ""
+#~ "Możesz dodać unikatową kotwicę do tej zakładki, aby dotrzeć bezpośrednio "
+#~ "do niej - podając przed nazwą krzyżyk. Przykładowo: wpisz <b%value>Witaj</"
+#~ "b> a później użyj url-a w ten sposób http://example.com/url-strony#Witaj. "
+#~ "Wtedy zakładka stanie się aktywna, a przeglądarka przewinie stronę do "
+#~ "miejsca w którym się ona znajduje."
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Link target"
+#~ msgstr "Właściwość \"target\" linku"
+
+#~ msgid "Choose how to open the custom tab link"
+#~ msgstr "Wybierz w jaki sposób ma być otwierany link twojej zakładki "
+
+#~ msgid "Tab content"
+#~ msgstr "Treść zakładki"
+
+#~ msgid "Single tab"
+#~ msgstr "Pojedyncza zakładka"
+
+#~ msgid "Spoiler"
+#~ msgstr "Spojler"
+
+#~ msgid "Spoiler title"
+#~ msgstr "Tytuł spojlera"
+
+#~ msgid "Text in spoiler title"
+#~ msgstr "Tekst w tytule spojlera"
+
+#~ msgid "Open"
+#~ msgstr "Otwarty"
+
+#~ msgid "Is spoiler content visible by default"
+#~ msgstr "Czy treść spojlera ma być domyślnie widoczna?"
+
+#~ msgid "Choose style for this spoiler"
+#~ msgstr "Wybierz styl tego spojlera"
+
+#~ msgid "Hidden content"
+#~ msgstr "Schowana treść"
+
+#~ msgid "Spoiler with hidden content"
+#~ msgstr "Spojler ze schowaną treścią"
+
+#~ msgid "Accordion"
+#~ msgstr "Akordeon"
+
+#~ msgid "Accordion with spoilers"
+#~ msgstr "Akordeon ze spojlerami"
+
+#~ msgid "Map height"
+#~ msgstr "Wysokość mapy"
+
+#~ msgid "Poster"
+#~ msgstr "Poster"
+
+#~ msgid "Controls"
+#~ msgstr "Sterowanie"
+
+#~ msgid "Image"
+#~ msgstr "Obraz"
+
+#~ msgid "Media manager"
+#~ msgstr "Dodaj medium"
+
+#~ msgid "Icon picker"
+#~ msgstr "Wybierz ikonę"
+
+#~ msgid "Filter icons"
+#~ msgstr "Filtruj ikony"
+
+#~ msgid "Please wait"
+#~ msgstr "Proszę czekaj"
+
+#~ msgid "Untitled gallery"
+#~ msgstr "Galeria nienazwana"
+
+#~ msgid "Galleries not found"
+#~ msgstr "Galeria nie została znaleziona"
+
+#~ msgid "Manage galleries"
+#~ msgstr "Zarządzaj galeriamim"
+
+#~ msgid "Reload galleries"
+#~ msgstr "Załaduj ponownie galerie"
+
+#~ msgid "Horizontal offset"
+#~ msgstr "Przesunięcie w poziomie"
+
+#~ msgid "Vertical offset"
+#~ msgstr "Przesunięcie w pionie"
+
+#~ msgid "Blur"
+#~ msgstr "Rozmycie"
+
+#~ msgid "Color"
+#~ msgstr "Kolor"
+
+#~ msgid "Border width"
+#~ msgstr "Szerokość obramowania"
+
+#~ msgid "Border style"
+#~ msgstr "Styl obramowania"
+
+#~ msgid "Border color"
+#~ msgstr "Kolor obramowania"
+
+#~ msgid "Media library"
+#~ msgstr "Biblioteka mediów"
+
+#~ msgid "Recent posts"
+#~ msgstr "Ostatnie wpisy"
+
+#~ msgid "Select images source"
+#~ msgstr "Wybierz źródło obrazów"
+
+#~ msgid "Select taxonomy"
+#~ msgstr "Wybierz taksonomię"
+
+#~ msgid "Add images"
+#~ msgstr "Dodaj obrazy"
+
+#~ msgid ""
+#~ "Click the button above and select images.<br>You can select multimple "
+#~ "images with Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "W celu wybrania obrazów, kliknij przycisk powyżej.<br>Aby wybrać wiele "
+#~ "grafik jednocześnie, użyj przycisku Ctrl (Cmd)"
+
+#~ msgid ""
+#~ "Select categories to retrieve posts from.<br>You can select multiple "
+#~ "categories with Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Wybierz kategorie z których będą pobierane wpisy.<br>Aby wybrać wiele "
+#~ "kategorii jednocześnie, użyj przycisku Ctrl (Cmd)"
+
+#~ msgid ""
+#~ "Select taxonomy and it's terms.<br>You can select multiple terms with "
+#~ "Ctrl (Cmd) key"
+#~ msgstr ""
+#~ "Wybierz taksonomię i określenia.<br>Aby wybrać wiele określeń "
+#~ "jednocześnie, użyj przycisku Ctrl (Cmd)"
+
+#~ msgid "Insert shortcode"
+#~ msgstr "Wstaw shortcode"
+
+#~ msgid "Search for shortcodes"
+#~ msgstr "Wyszukaj shortcode"
+
+#~ msgid "Filter by type"
+#~ msgstr "Filtruj wg. rodzaju"
+
+#~ msgid "Shortcode not specified"
+#~ msgstr "Shortcode nie został określony"
+
+#~ msgid "Live preview"
+#~ msgstr "Podgląd na żywo"
+
+#~ msgid "Click to return to the shortcodes list"
+#~ msgstr "Kliknij, aby wrócić do listy shortcode"
+
+#~ msgid "All shortcodes"
+#~ msgstr "Wszystkie shortcode"
+
+#~ msgid "Examples of use"
+#~ msgstr "Przykłady wykorzystania"
+
+#~ msgid "Click to set this value"
+#~ msgstr "Kliknij, aby ustawić tę wartość"
+
+#~ msgid "Preview"
+#~ msgstr "Podgląd"
+
+#~ msgid "Access denied"
+#~ msgstr "Odmowa dostępu"
+
+#~ msgid "Presets"
+#~ msgstr "Ustawienia domyślne"
+
+#~ msgid "Save current settings as preset"
+#~ msgstr "Zachowaj aktualne ustawienia, jako domyśle"
+
+#~ msgid "Presets not found"
+#~ msgstr "Nie znaleziono ustawień domyślnych"
+
+#~ msgid "Posts not found"
+#~ msgstr "Wpisów nie znaleziono"
+
+#~ msgid "Tab title"
+#~ msgstr "Tytuł zakładki"
+
+#~ msgid "Plugin Settings"
+#~ msgstr "Ustawienia wtyczki"
+
+#~ msgid "Use selected file"
+#~ msgstr "Użyj zaznaczony plik "
+
+#~ msgid "Save changes"
+#~ msgstr "Zapisz zmiany"
+
+#~ msgid ""
+#~ "This action will delete all your settings. Are you sure? This action "
+#~ "cannot be undone!"
+#~ msgstr ""
+#~ "Ta czynność, skasuje wszystkie twoje ustawienia. Czy jesteś, tego pewien? "
+#~ "Tej czynności, nie można cofnąć!"
+
+#~ msgid "Restore default settings"
+#~ msgstr "Przywróć domyślne ustawienia"
+
+#~ msgid "Text field"
+#~ msgstr "Pole tekstowe"
+
+#~ msgid "Textarea field"
+#~ msgstr "Pole obszaru tekstowego"
+
+#~ msgid "Checkbox"
+#~ msgstr "Pole wyboru"
+
+#~ msgid "Color picker"
+#~ msgstr "Wybór koloru"
+
+#~ msgid "Pick a color"
+#~ msgstr "Wybierz kolor"
+
+#~ msgid ""
+#~ "For full functionality of this page it is reccomended to enable "
+#~ "javascript."
+#~ msgstr ""
+#~ "W celu skorzystania z pełnej funkcjonalności na tej stronie, zalecane "
+#~ "jest włączenie javascript."
+
+#~ msgid "Settings saved successfully"
+#~ msgstr "Ustawienia zapisano pomyślnie"
+
+#~ msgid "Settings reseted successfully"
+#~ msgstr "Ustawienia przywrócono pomyślnie"
+
+#~ msgid "option type %s is not callable"
+#~ msgstr "opcja typu %s nie jest możliwa do wywołania"
+
+#~ msgid "Title:"
+#~ msgstr "Tytuł:"
+
+#~ msgid "Square"
+#~ msgstr "Kwadrat"
+
+#~ msgid "Rounded corners"
+#~ msgstr "Zaokrąglone narożniki"
+
+#~ msgid ""
+#~ "IN - posts that have any of selected categories terms<br/>NOT IN - posts "
+#~ "that is does not have any of selected terms<br/>AND - posts that have all "
+#~ "selected terms"
+#~ msgstr ""
+#~ "IN - wpisy, które zawierają się w choćby jednej z określonych "
+#~ "kategorii<br/>NOT IN - wpisy, które nie zawierają się w żadnej z "
+#~ "określonych kategorii<br/>AND - wpisy, które zawierają się we wszystkich "
+#~ "określonych kategoriach jednocześnie"
+
+#~ msgid "Show childrens of entered post (enter post ID)"
+#~ msgstr "Pokaż dzieci podanego wpisu (wprowadź ID wpisu rodzica)"
+
+#~ msgid "Select Yes to ignore posts that is sticked"
+#~ msgstr "Wybierz Tak, aby ignorować przypięte wpisy"
+
+#~ msgid "Choose style for this tabs"
+#~ msgstr "Wybierz styl dla zakładek"
+
+#~ msgid ""
+#~ "You can link this tab to any webpage. Enter here full URL to switch this "
+#~ "tab into link"
+#~ msgstr ""
+#~ "Ta zakładka, może być linkiem do dowolnej strony internetowej. Wpisz "
+#~ "pełen adres URL, aby zamienić tę zakładkę w link."
+
+#~ msgid "Open link in same window/tab"
+#~ msgstr "Otwórz ten link w tym samym oknie/zakładce przeglądarki"
+
+#~ msgid "Open link in new window/tab"
+#~ msgstr "Otwórz ten link w nowym oknie/zakładce przeglądarki"
+
+#~ msgid ""
+#~ "You can use unique anchor for this spoiler to access it with hash in page "
+#~ "url. For example: type here <b%value>Hello</b> and then use url like "
+#~ "http://example.com/page-url#Hello. This spoiler will be open and scrolled "
+#~ "in"
+#~ msgstr ""
+#~ "Możesz dodać unikatową kotwicę do tego spojlera, aby dotrzeć bezpośrednio "
+#~ "do niego - podając przed nazwą krzyżyk. Przykładowo: wpisz <b"
+#~ "%value>Witaj</b> a później użyj url-a w ten sposób http://example.com/url-"
+#~ "strony#Witaj. Wtedy spojler zostanie otwarty, a przeglądarka przewinie "
+#~ "stronę do miejsca w którym się on znajduje."
+
+#~ msgid "Welcome to Shortcodes Ultimate"
+#~ msgstr "Witaj w Shortcodes Ultimate"
+
+#~ msgid "A real swiss army knife for WordPress"
+#~ msgstr "Prawdziwym szwajcarskim scyzoryku WordPress'a"
+
+#~ msgid "Project homepage"
+#~ msgstr "Strona domowa"
+
+#~ msgid "Documentation"
+#~ msgstr "Dokumentacja"
+
+#~ msgid "Support forum"
+#~ msgstr "Forum pomocy technicznej "
+
+#~ msgid "Changelog"
+#~ msgstr "Lista zmian"
+
+#~ msgid "Fork on GitHub"
+#~ msgstr "Forkuj na GitHubie"
+
+#~ msgid "Plugin features"
+#~ msgstr "Zalety wtyczki"
+
+#~ msgid "40+ amazing shortcodes"
+#~ msgstr "ponad 40 niesamowitych shortcode"
+
+#~ msgid "Power of CSS3 transitions"
+#~ msgstr "Moc transformacji CSS"
+
+#~ msgid "Handy shortcodes generator"
+#~ msgstr "Poręczny generator shortcode"
+
+#~ msgid "International"
+#~ msgstr "Języki narodowe"
+
+#~ msgid "Documented API"
+#~ msgstr "Dokumentacja API"
+
+#~ msgid "What is a shortcode?"
+#~ msgstr "Czym jest shortcode?"
+
+#~ msgid ""
+#~ "<strong>Shortcode</strong> is a WordPress-specific code that lets you do "
+#~ "nifty things with very little effort."
+#~ msgstr ""
+#~ "<strong>Shortcode</strong>, to charakterystyczny dla WordPress'a kod, "
+#~ "który pozwala Ci tworzyć -  przy niewielkim wysiłku - wspaniałe rzeczy. "
+
+#~ msgid ""
+#~ "Shortcodes can embed files or create objects that would normally require "
+#~ "lots of complicated, ugly code in just one line. Shortcode = shortcut."
+#~ msgstr ""
+#~ "Shortcode, umożliwia z pomocą jednej linii zamieszczać pliki w kodzie "
+#~ "strony albo tworzyć obiekty, które normalnie wymagały by dużej ilości, "
+#~ "skomplikowanego, paskudnego kodu. Shortcode = skrót."
+
+#~ msgid "How does it works"
+#~ msgstr "Jak, to działa?"
+
+#~ msgid "More videos"
+#~ msgstr "Więcej filmów"
+
+#~ msgid "Shortcodes Ultimate Tutorial"
+#~ msgstr "Wprowadzenie do Shortcodes Ultimate"
+
+#~ msgid "How to use special widget"
+#~ msgstr "Jak wykorzystywać konkretne widgety?"
+
+#~ msgid "How to create Carousel"
+#~ msgstr "Jak utworzyć karuzelę zdjęć?"
+
+#~ msgid "How to create image gallery"
+#~ msgstr "Jak utworzyć galerię zdjęć?"
+
+#~ msgid "You can overview the original styles to override it"
+#~ msgstr "Tutaj, możesz przejrzeć i zmienić oryginalne style CSS"
+
+#~ msgid "You can use next variables in your custom CSS"
+#~ msgstr "We własnym kodzie CSS, możesz wykorzystać poniższe zmienne:"
+
+#~ msgid "home url"
+#~ msgstr "url strony domowej"
+
+#~ msgid "theme url"
+#~ msgstr "ulr motywu"
+
+#~ msgid "plugin url"
+#~ msgstr "url wtyczki"
+
+#~ msgid "Printable version"
+#~ msgstr "Wersja do druku"
+
+#~ msgid "Shortcodes Ultimate"
+#~ msgstr "Shortcodes Ultimate"
+
+#~ msgid "Cheatsheet"
+#~ msgstr "Ściągawka"
+
+#~ msgid "Back to Dashboard"
+#~ msgstr "Powrót do Kokpitu"
+
+#~ msgid "Shortcode"
+#~ msgstr "Shortcode"
+
+#~ msgid "Attributes"
+#~ msgstr "Atrybuty"
+
+#~ msgid "Example code"
+#~ msgstr "Przykładowy kod"
+
+#~ msgid "full list"
+#~ msgstr "pełna lista"
+
+#~ msgid "Default value"
+#~ msgstr "Wartość domyślna"
+
+#~ msgid "#RGB and rgba() colors"
+#~ msgstr "kolory #RGB lub rgba()"
+
+#~ msgid "Any text value"
+#~ msgstr "Dowolna wartość tekstowa"
+
+#~ msgid "Any custom CSS classes"
+#~ msgstr "Dowolna, własna klasa CSS"
+
+#~ msgid "Possible values"
+#~ msgstr "Dopuszczalne wartości"
+
+#~ msgid "New Shortcodes"
+#~ msgstr "Nowe Shortcode"
+
+#~ msgid ""
+#~ "Parallax sections, responsive content slider, pricing tables, vector "
+#~ "icons, testimonials, progress bars and even more"
+#~ msgstr ""
+#~ "Sekcje z efektem parallax, responsywny slider z własną treścią, tabele "
+#~ "cen, ikony w grafikach wektorowych, świadectwa, paski postępu oraz dużo "
+#~ "więcej"
+
+#~ msgid "Maker"
+#~ msgstr "Maker"
+
+#~ msgid ""
+#~ "This add-on allows you to create custom shortcodes. You can easily create "
+#~ "any shortcode with different parameters or even override default "
+#~ "shortcodes"
+#~ msgstr ""
+#~ "Ten dodatek pozwoli Ci na tworzenie własnych shortcode. W łatwy sposób "
+#~ "możesz stworzyć dowolny shortcode z różnymi parametrami, a nawet nadpisać "
+#~ "działanie domyślnych shortcode."
+
+#~ msgid "Skins"
+#~ msgstr "Skórki"
+
+#~ msgid ""
+#~ "Set of additional skins for Shortcodes Ultimate. It includes skins for "
+#~ "accordeons/spoilers, tabs and some other shortcodes"
+#~ msgstr ""
+#~ "Zestaw dodatkowych skórek dla Shortcodes Ultimate. Zawiera skórki dla "
+#~ "akordeonów/spojlerów, zakładek oraz innych shortcode."
+
+#~ msgid "Add-ons bundle"
+#~ msgstr "Paczka dodatków"
+
+#~ msgid "Get all three add-ons with huge discount!"
+#~ msgstr "Kup wszystkie trzy dodatki z wielką zniżką!"
+
+#~ msgid "Shortcodes Ultimate Add-ons"
+#~ msgstr "Dodatki do Shortcodes Ultimate "
+
+#~ msgid "Learn more"
+#~ msgstr "Szczegóły"
+
+#~ msgid "Other WordPress Plugins"
+#~ msgstr "Inne wtyczki WordPress'a"
+
+#~ msgid "Close (Esc)"
+#~ msgstr "Zamknij (Esc)"
+
+#~ msgid "Loading..."
+#~ msgstr "Trwa ładowanie..."
+
+#~ msgid "Previous (Left arrow key)"
+#~ msgstr "Poprzedni (Przycisk strzałki w lewo)"
+
+#~ msgid "Next (Right arrow key)"
+#~ msgstr "Kolejny (Przycisk strzałki w prawo)"
+
+#~ msgid "%s of %s"
+#~ msgstr "%s z %s"
+
+#~ msgid "Failed to load this link. %sOpen link%s."
+#~ msgstr "Nie udało się otworzyć tego linku. %sOtwórz link%s."
+
+#~ msgid "Choose files"
+#~ msgstr "Wybierz pola"
+
+#~ msgid "Add selected files"
+#~ msgstr "Dodaj zaznaczone pliki"
+
+#~ msgid "This button is not clickable"
+#~ msgstr "Ten przycisk jest nieaktywny"
+
+#~ msgid ""
+#~ "This shortcode doesn't work in live preview. Please insert it into editor "
+#~ "and preview on the site."
+#~ msgstr ""
+#~ "Ten shortcode nie działa w podglądzie na żywo. Proszę, wpisz go w edytor "
+#~ "i obejrzyj wynik na stronie."
+
+#~ msgid "1 new add-on for Shortcodes Ultimate"
+#~ msgstr "1 nowy dodatek do Shortcodes Ultimate"
+
+#~ msgid "Gallery"
+#~ msgstr "Galeria"
+
+#~ msgid "Data"
+#~ msgstr "Dane"
+
+#~ msgid "Basic examples"
+#~ msgstr "Podstawowe przykłady"
+
+#~ msgid "Accordions, spoilers, different styles, anchors"
+#~ msgstr "Akordeony, spojlery, różne style, kotwice"
+
+#~ msgid "Tabs, vertical tabs, tab anchors"
+#~ msgstr "Zakładki, zakładki w pionie, kotwice do zakładek  "
+
+#~ msgid "Column layouts"
+#~ msgstr "Układ kolumnowy"
+
+#~ msgid ""
+#~ "Media elements, YouTube, Vimeo, Screenr and self-hosted videos, audio "
+#~ "player"
+#~ msgstr ""
+#~ "Pliki mediów, YouTube, Vimeo, Screenr, filmy z własnego hostingu oraz "
+#~ "odtwarzacz audio"
+
+#~ msgid "Unlimited buttons"
+#~ msgstr "Przyciski bez limitów"
+
+#~ msgid "Animations"
+#~ msgstr "Animacje"
+
+#~ msgid "Advanced examples"
+#~ msgstr "Przykłady zaawansowane"
+
+#~ msgid "Interacting with posts shortcode"
+#~ msgstr "Działanie na skrótach shortcode dla wpisów"
+
+#~ msgid "Nested shortcodes, shortcodes inside of attributes"
+#~ msgstr "Zagnieżdżone shortcode, shortcode jako artybuty"
+
+#~ msgid "Heading"
+#~ msgstr "Nagłówek"
+
+#~ msgid "Choose style for this heading"
+#~ msgstr "Wybierz styl dla tego nagłówka"
+
+#~ msgid "Select heading size (pixels)"
+#~ msgstr "Wybierz rozmiar nagłówka (w pikselach)"
+
+#~ msgid "Heading text alignment"
+#~ msgstr "Wyrównanie tekstu nagłówka"
+
+#~ msgid "Margin"
+#~ msgstr "Margines"
+
+#~ msgid "Bottom margin (pixels)"
+#~ msgstr "Margines dolny (w pikselach)"
+
+#~ msgid "Heading text"
+#~ msgstr "Tekst w nagłówku"
+
+#~ msgid "Styled heading"
+#~ msgstr "Wygląd nagłówka"
+
+#~ msgid ""
+#~ "Did you know that you need to wrap single tabs with [tabs] shortcode?"
+#~ msgstr "Wiesz, że musisz obudować pojedynczą zakładkę shortcode [tabs]?"
+
+#~ msgid "Fancy"
+#~ msgstr "Fantazyjny"
+
+#~ msgid "Plus"
+#~ msgstr "Plus"
+
+#~ msgid "Plus circle"
+#~ msgstr "Plus w kole"
+
+#~ msgid "Plus square 1"
+#~ msgstr "Plus w kwadracie 1"
+
+#~ msgid "Plus square 2"
+#~ msgstr "Plus w kwadracie 2"
+
+#~ msgid "Arrow"
+#~ msgstr "Strzałka"
+
+#~ msgid "Arrow circle 1"
+#~ msgstr "Strzałka w kole 1"
+
+#~ msgid "Arrow circle 2"
+#~ msgstr "Strzałka w kole 2"
+
+#~ msgid "Chevron"
+#~ msgstr "Szewron"
+
+#~ msgid "Chevron circle"
+#~ msgstr "Szewron w kole"
+
+#~ msgid "Caret"
+#~ msgstr "Daszek (^)"
+
+#~ msgid "Caret square"
+#~ msgstr "Daszek (^) w kwadracie"
+
+#~ msgid "Folder 1"
+#~ msgstr "Folder 1"
+
+#~ msgid "Folder 2"
+#~ msgstr "Folder 2"
+
+#~ msgid "Icons for spoiler"
+#~ msgstr "Ikona przy spojlerze"
+
+#~ msgid ""
+#~ "Did you know that you can wrap multiple spoilers with [accordion] "
+#~ "shortcode to create accordion effect?"
+#~ msgstr ""
+#~ "Czy wiesz, że możesz obudować wiele spojlerów w shortcode [accordion] aby "
+#~ "stworzyć efekt akordeonu?"
+
+#~ msgid ""
+#~ "[%prefix_spoiler]Content[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler]Content[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler]Content[/%prefix_spoiler]"
+#~ msgstr ""
+#~ "[%prefix_spoiler]Treść[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler]Treść[/%prefix_spoiler]\n"
+#~ "[%prefix_spoiler]Treść[/%prefix_spoiler]"
+
+#~ msgid "Divider"
+#~ msgstr "Separator"
+
+#~ msgid "Show TOP link"
+#~ msgstr "Wyświetl link DO GÓRY"
+
+#~ msgid "Show link to top of the page or not"
+#~ msgstr "Czy wyświetlać link przejścia na górę strony?"
+
+#~ msgid "Go to top"
+#~ msgstr "Powrót na górę"
+
+#~ msgid "Link text"
+#~ msgstr "Treść tekstu linku"
+
+#~ msgid "Text for the GO TOP link"
+#~ msgstr "Tekst linku DO GÓRY"
+
+#~ msgid "Choose style for this divider"
+#~ msgstr "Wybierz styl dla tego separatora"
+
+#~ msgid "Divider color"
+#~ msgstr "Kolor separatora"
+
+#~ msgid "Pick the color for divider"
+#~ msgstr "Wybierz kolor separatora"
+
+#~ msgid "Link color"
+#~ msgstr "Kolor linka"
+
+#~ msgid "Pick the color for TOP link"
+#~ msgstr "Wybierz kolor linku DO GÓRY"
+
+#~ msgid "Height of the divider (in pixels)"
+#~ msgstr "Wysokość separatora (w pikselach)"
+
+#~ msgid "Adjust the top and bottom margins of this divider (in pixels)"
+#~ msgstr "Dostosuj górny oraz dolny margines separatora (w pikselach)"
+
+#~ msgid "Content divider with optional TOP link"
+#~ msgstr "Separator treści z opcjonalnym linkiem DO GÓRY"
+
+#~ msgid "Height of the spacer in pixels"
+#~ msgstr "Wysokość rozpórki w pikselach"
+
+#~ msgid "Empty space with adjustable height"
+#~ msgstr "Pusta przestrzeń, dowolnej wysokości "
+
+#~ msgid "Highlight"
+#~ msgstr "Podświetlenie"
+
+#~ msgid "Highlighted text background color"
+#~ msgstr "Kolor tła podświetlonego tekstu"
+
+#~ msgid "Highlighted text color"
+#~ msgstr "Kolor podświetlonego tekstu"
+
+#~ msgid "Highlighted text"
+#~ msgstr "Tekst do podświetlenia"
+
+#~ msgid "Important"
+#~ msgstr "Ważne"
+
+#~ msgid "Black"
+#~ msgstr "Czarne"
+
+#~ msgid "Style of the label"
+#~ msgstr "Styl etykiety"
+
+#~ msgid "Styled label"
+#~ msgstr "Wygląd etykiety"
+
+#~ msgid "Quote"
+#~ msgstr "Cytat"
+
+#~ msgid "Choose style for this quote"
+#~ msgstr "Wybierz styl dla tego cytatu"
+
+#~ msgid "Cite"
+#~ msgstr "Cytowany"
+
+#~ msgid "Quote author name"
+#~ msgstr "Autor cytatu"
+
+#~ msgid "Cite url"
+#~ msgstr "Adres URL cytowania"
+
+#~ msgid "Url of the quote author. Leave empty to disable link"
+#~ msgstr "Url autora cytatu. Pozostawienie pustego pola, wyłączy linkowanie"
+
+#~ msgid "Blockquote alternative"
+#~ msgstr "Alternatywa dla blockquote"
+
+#~ msgid "Pullquote"
+#~ msgstr "Ustęp"
+
+#~ msgid "Pullquote alignment (float)"
+#~ msgstr "Wyrównanie ustępu (float)"
+
+#~ msgid "Flat"
+#~ msgstr "Płaski"
+
+#~ msgid "Light"
+#~ msgstr "Jasny"
+
+#~ msgid "Dropcap style preset"
+#~ msgstr "Ustawienie stylu inicjału"
+
+#~ msgid "Choose dropcap size"
+#~ msgstr "Wybierz rozmiar inicjału"
+
+#~ msgid "D"
+#~ msgstr "Ł"
+
+#~ msgid "Frame"
+#~ msgstr "Ramka"
+
+#~ msgid "Frame alignment"
+#~ msgstr "Wyrównanie ramki"
+
+#~ msgid "Styled image frame"
+#~ msgstr "Wygląd ramki"
+
+#~ msgid ""
+#~ "[%prefix_column size=\"1/3\"]Content[/%prefix_column]\n"
+#~ "[%prefix_column size=\"1/3\"]Content[/%prefix_column]\n"
+#~ "[%prefix_column size=\"1/3\"]Content[/%prefix_column]"
+#~ msgstr ""
+#~ "[%prefix_column size=\"1/3\"]Treść[/%prefix_column]\n"
+#~ "[%prefix_column size=\"1/3\"]Treść[/%prefix_column]\n"
+#~ "[%prefix_column size=\"1/3\"]Treść[/%prefix_column]"
+
+#~ msgid "Full width"
+#~ msgstr "Cała szerokość"
+
+#~ msgid "One half"
+#~ msgstr "Połowa"
+
+#~ msgid "One third"
+#~ msgstr "Jedna trzecia"
+
+#~ msgid "Two third"
+#~ msgstr "Dwie trzecie"
+
+#~ msgid "One fourth"
+#~ msgstr "Jedna czwarta"
+
+#~ msgid "Three fourth"
+#~ msgstr "Trzy czwarte"
+
+#~ msgid "One fifth"
+#~ msgstr "Jedna piąta"
+
+#~ msgid "Two fifth"
+#~ msgstr "Dwie piąte"
+
+#~ msgid "Three fifth"
+#~ msgstr "Trzy piąte"
+
+#~ msgid "Four fifth"
+#~ msgstr "Cztery piąte"
+
+#~ msgid "One sixth"
+#~ msgstr "Jedna szósta"
+
+#~ msgid "Five sixth"
+#~ msgstr "Pięć szóstych"
+
+#~ msgid "Select column width. This width will be calculated depend page width"
+#~ msgstr ""
+#~ "Wybierz szerokość kolumny. Będzie ona obliczana na podstawie szerokości "
+#~ "całej strony"
+
+#~ msgid "Is this column centered on the page"
+#~ msgstr "Czy, ta kolumna ma zostać wyśrodkowana na stronie?"
+
+#~ msgid "Did you know that you need to wrap columns with [row] shortcode?"
+#~ msgstr "Czy wiesz, że musisz obudować kolumny shortcode [row]?"
+
+#~ msgid "You can upload custom icon for this list or pick a built-in icon"
+#~ msgstr ""
+#~ "Możesz załadować własną ikonę dla tej listy, albo wybrać ją spośród ikon "
+#~ "wbudowanych"
+
+#~ msgid "Icon color"
+#~ msgstr "Kolor ikony"
+
+#~ msgid ""
+#~ "This color will be applied to the selected icon. Does not works with "
+#~ "uploaded icons"
+#~ msgstr ""
+#~ "Ten kolor zostanie zastosowany do ikony z przybornika. Opcja nie działa "
+#~ "na ikony załadowane samodzielnie "
+
+#~ msgid ""
+#~ "<ul>\n"
+#~ "<li>List item</li>\n"
+#~ "<li>List item</li>\n"
+#~ "<li>List item</li>\n"
+#~ "</ul>"
+#~ msgstr ""
+#~ "<ul>\n"
+#~ "<li>Element listy</li>\n"
+#~ "<li>Element listy</li>\n"
+#~ "<li>Element listy</li>\n"
+#~ "</ul>"
+
+#~ msgid "Styled unordered list"
+#~ msgstr "Wygląd listy nieuporządkowanej"
+
+#~ msgid "Ghost"
+#~ msgstr "Zjawa"
+
+#~ msgid "Soft"
+#~ msgstr "Delikatny"
+
+#~ msgid "Glass"
+#~ msgstr "Szkło"
+
+#~ msgid "Bubbles"
+#~ msgstr "Bąble"
+
+#~ msgid "Noise"
+#~ msgstr "Szum"
+
+#~ msgid "Stroked"
+#~ msgstr "Kreskowany"
+
+#~ msgid "3D"
+#~ msgstr "3D"
+
+#~ msgid "Button background style preset"
+#~ msgstr "Ustawienie wyglądu tła przycisku"
+
+#~ msgid "Button size"
+#~ msgstr "Rozmiar przycisku"
+
+#~ msgid "Fluid buttons has 100% width"
+#~ msgstr "Rozlane przyciski zajmują 100% szerokości"
+
+#~ msgid "Round"
+#~ msgstr "Zaokrąglenie"
+
+#~ msgid "Radius"
+#~ msgstr "Promień"
+
+#~ msgid ""
+#~ "Radius of button corners. Auto-radius calculation based on button size"
+#~ msgstr ""
+#~ "Promień narożników przycisku. Automatyczne obliczanie promienia, na "
+#~ "podstawie rozmiaru przycisku"
+
+#~ msgid "Text shadow"
+#~ msgstr "Cień tekstu"
+
+#~ msgid "Button text shadow"
+#~ msgstr "Cień tekstu przycisku"
+
+#~ msgid ""
+#~ "Small description under button text. This option is incompatible with "
+#~ "icon."
+#~ msgstr ""
+#~ "Mały opis pod tekstem przycisku. Po wybraniu ikony, ta opcja nie działa "
+#~ "poprawnie  "
+
+#~ msgid "onClick"
+#~ msgstr "onClick"
+
+#~ msgid "Advanced JavaScript code for onClick action"
+#~ msgstr "Zaawansowane: kod JavaScript do wykonania, przy zdarzeniu onClick"
+
+#~ msgid ""
+#~ "Here you can add value for the rel attribute.<br>Example values: <b"
+#~ "%value>nofollow</b>, <b%value>lightbox</b>"
+#~ msgstr ""
+#~ "Możesz tu podać wartość/ci atrybutu rel.<br>Przykładowe wartości: <b"
+#~ "%value>nofollow</b>, <b%value>lightbox</b>"
+
+#~ msgid "Service"
+#~ msgstr "Usługa"
+
+#~ msgid "Service title"
+#~ msgstr "Tytuł usługi"
+
+#~ msgid "Service name"
+#~ msgstr "Nazwa usługi"
+
+#~ msgid "You can upload custom icon for this box"
+#~ msgstr "Możesz dodać własną ikonę do tego pola"
+
+#~ msgid "Size of the uploaded icon in pixels"
+#~ msgstr "Rozmiar przesłanej ikony w pikselach"
+
+#~ msgid "Service description"
+#~ msgstr "Opis usługi"
+
+#~ msgid "Service box with title"
+#~ msgstr "Pole usługi z tytułem"
+
+#~ msgid "Box title"
+#~ msgstr "Tytuł pola"
+
+#~ msgid "Text for the box title"
+#~ msgstr "Treść tytułu pola"
+
+#~ msgid "Box style preset"
+#~ msgstr "Ustawienia wyglądu pola"
+
+#~ msgid "Color for the box title and borders"
+#~ msgstr "Kolor tytułu i obramowania pola"
+
+#~ msgid "Color for the box title text"
+#~ msgstr "Kolor tekstu w tytule tego pola"
+
+#~ msgid "Box corners radius"
+#~ msgstr "Promień narożników pola"
+
+#~ msgid "Box content"
+#~ msgstr "Zawartość pola"
+
+#~ msgid "Colored box with caption"
+#~ msgstr "Kolorowe pole z nagłówkiem"
+
+#~ msgid "Note"
+#~ msgstr "Notatka"
+
+#~ msgid "Note background color"
+#~ msgstr "Kolor tła notatki"
+
+#~ msgid "Note text color"
+#~ msgstr "Kolor tekstu notatki"
+
+#~ msgid "Note corners radius"
+#~ msgstr "Promień narożników notatki"
+
+#~ msgid "Note text"
+#~ msgstr "Tekst notatki"
+
+#~ msgid "Colored box"
+#~ msgstr "Kolorowe pole"
+
+#~ msgid "Expand"
+#~ msgstr "Rozszerz"
+
+#~ msgid "Show more"
+#~ msgstr "Pokaż więcej"
+
+#~ msgid "More text"
+#~ msgstr "Tekst \"Więcej\""
+
+#~ msgid "Enter the text for more link"
+#~ msgstr "Wprowadź tekst linku, pokazującego resztę treści"
+
+#~ msgid "Show less"
+#~ msgstr "Pokaż mniej"
+
+#~ msgid "Less text"
+#~ msgstr "Tekst \"Mniej\""
+
+#~ msgid "Enter the text for less link"
+#~ msgstr "Wprowadź tekst linku, pokazującego tylko fragment treści"
+
+#~ msgid "Height for collapsed state (in pixels)"
+#~ msgstr "Wysokość zamkniętego tekstu (w pikselach)"
+
+#~ msgid "Hide less link"
+#~ msgstr "Ukryj link \"Mniej\""
+
+#~ msgid ""
+#~ "This option allows you to hide less link, when the text block has been "
+#~ "expanded"
+#~ msgstr ""
+#~ "Opcja ta, umożliwia Ci ukrycie linku \"Mniej\", po rozszerzeniu bloku "
+#~ "tekstu na całą treść"
+
+#~ msgid "Pick the text color"
+#~ msgstr "Wybierz kolor tekstu"
+
+#~ msgid "Pick the link color"
+#~ msgstr "Wybierz kolor linku"
+
+#~ msgid "Underlined"
+#~ msgstr "Podkreślenie"
+
+#~ msgid "Link style"
+#~ msgstr "Styl linku"
+
+#~ msgid "Select the style for more/less link"
+#~ msgstr "Wybierz styl dla linku więcej/mniej"
+
+#~ msgid "Link align"
+#~ msgstr "Wyrównanie linku"
+
+#~ msgid "Select link alignment"
+#~ msgstr "Wybierz wyrównanie linku"
+
+#~ msgid "More icon"
+#~ msgstr "Ikona \"Więcej\""
+
+#~ msgid "Add an icon to the more link"
+#~ msgstr "Dodaj ikonę do linku \"Więcej\""
+
+#~ msgid "Less icon"
+#~ msgstr "Ikona \"Mniej\""
+
+#~ msgid "Add an icon to the less link"
+#~ msgstr "Dodaj ikonę do linku \"Mniej\""
+
+#~ msgid "This text block can be expanded"
+#~ msgstr "Ten blok tekstowy, może być rozszerzony"
+
+#~ msgid "Expandable text block"
+#~ msgstr "Rozszerzalny blok tekstowy"
+
+#~ msgid "Lightbox"
+#~ msgstr "Wyskakujące okienko"
+
+#~ msgid "Iframe"
+#~ msgstr "Iframe"
+
+#~ msgid "Inline (html content)"
+#~ msgstr "Inline (treść html)"
+
+#~ msgid "Content type"
+#~ msgstr "Rodzaj zawartości"
+
+#~ msgid "Select type of the lightbox window content"
+#~ msgstr "Wybierz rodzaj zawartości wyskakującego okienka"
+
+#~ msgid "Content source"
+#~ msgstr "Źródło treści"
+
+#~ msgid ""
+#~ "Insert here URL or CSS selector. Use URL for Iframe and Image content "
+#~ "types. Use CSS selector for Inline content type.<br />Example values:<br /"
+#~ "><b%value>http://www.youtube.com/watch?v=XXXXXXXXX</b> - YouTube video "
+#~ "(iframe)<br /><b%value>http://example.com/wp-content/uploads/image.jpg</"
+#~ "b> - uploaded image (image)<br /><b%value>http://example.com/</b> - any "
+#~ "web page (iframe)<br /><b%value>#my-custom-popup</b> - any HTML content "
+#~ "(inline)"
+#~ msgstr ""
+#~ "Wstaw tu URL albo selektor CSS-owy. Jeśli zawartością jest Iframe albo "
+#~ "Obraz wprowadź jego URL. Jeśli zawartością jest Inline wprowadź selektor "
+#~ "CSS-owy.<br />Przykładowe wartości:<br /><b%value>http://www.youtube.com/"
+#~ "watch?v=XXXXXXXXX</b> - Wideo z YouTube'a (iframe)<br /><b%value>http://"
+#~ "example.com/wp-content/uploads/image.jpg</b> - przesłany obraz "
+#~ "(obraz)<br /><b%value>http://example.com/</b> - dowolna strona "
+#~ "(iframe)<br /><b%value>#my-custom-popup</b> - dowolna treść HTML (inline)"
+
+#~ msgid "[%prefix_button] Click Here to Watch the Video [/%prefix_button]"
+#~ msgstr "[%prefix_button] Kliknij aby obejrzeć wideo. [/%prefix_button]"
+
+#~ msgid "Lightbox window with custom content"
+#~ msgstr "Wyskakujące okienko - typu lightbox, z dowolną zawartością"
+
+#~ msgid "Lightbox content"
+#~ msgstr "Zawartość wyskakującego okienka"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Enter here the ID from Content source field. %s Example value: %s"
+#~ msgstr "Podaj tu ID z pola Źródło treści. %s Przykładowa wartość: %s"
+
+#~ msgid ""
+#~ "Adjust the width for inline content (in pixels or percents). %s Example "
+#~ "values: %s, %s, %s"
+#~ msgstr ""
+#~ "Dopasuj szerokość dla treści inline (w pikselach lub procentach). %s "
+#~ "Przykładowa wartość: %s, %s, %s"
+
+#~ msgid "Adjust the margin for inline content (in pixels)"
+#~ msgstr "Dostosuj margines dla zawartości inline (w pikselach)"
+
+#~ msgid "Padding"
+#~ msgstr "Wypełnienie"
+
+#~ msgid "Adjust the padding for inline content (in pixels)"
+#~ msgstr ""
+#~ "Dostosuj padding (ang. wypełnienie) dla zawartości inline (w pikselach)"
+
+#~ msgid "Text alignment"
+#~ msgstr "Wyrównanie tekstu"
+
+#~ msgid "Select the text alignment"
+#~ msgstr "Wybierz wyrównanie tekstu"
+
+#~ msgid "Pick a background color"
+#~ msgstr "Wybierz kolor tła"
+
+#~ msgid "Pick a text color"
+#~ msgstr "Wybierz kolor tekstu"
+
+#~ msgid "Shadow"
+#~ msgstr "Cień"
+
+#~ msgid "Adjust the shadow for content box"
+#~ msgstr "Dostosuj cień, dla zawartości pola"
+
+#~ msgid "Inline content"
+#~ msgstr "Zawartość inline"
+
+#~ msgid "Inline content for lightbox"
+#~ msgstr "Zawartość inline dla wyskakującego okienka"
+
+#~ msgid "Tooltip"
+#~ msgstr "Podpowiedź"
+
+#~ msgid "Basic: Light"
+#~ msgstr "Podstawowy: Jasny"
+
+#~ msgid "Basic: Dark"
+#~ msgstr "Podstawowy: Ciemny"
+
+#~ msgid "Basic: Yellow"
+#~ msgstr "Podstawowy: Żółty"
+
+#~ msgid "Basic: Green"
+#~ msgstr "Podstawowy: Zielony"
+
+#~ msgid "Basic: Red"
+#~ msgstr "Podstawowy: Czerwony"
+
+#~ msgid "Basic: Blue"
+#~ msgstr "Podstawowy: Niebieski"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "Tipsy"
+#~ msgstr "Porada"
+
+#~ msgid "Bootstrap"
+#~ msgstr "Bootstrap"
+
+#~ msgid "jTools"
+#~ msgstr "jTools"
+
+#~ msgid "Tipped"
+#~ msgstr "Wskazówka"
+
+#~ msgid "Cluetip"
+#~ msgstr "Trop"
+
+#~ msgid "Tooltip window style"
+#~ msgstr "Wygląd okienka podpowiedzi"
+
+#~ msgid "Position"
+#~ msgstr "Położenie"
+
+#~ msgid "Tooltip position"
+#~ msgstr "Położenie podpowiedzi"
+
+#~ msgid ""
+#~ "Add shadow to tooltip. This option is only works with basic styes, e.g. "
+#~ "blue, green etc."
+#~ msgstr ""
+#~ "Dodaje cień do podpowiedzi. Opcja ta działa, tylko z podstawowymi "
+#~ "stylami, np. niebieskim, zielonym, itp."
+
+#~ msgid ""
+#~ "Use rounded for tooltip. This option is only works with basic styes, e.g. "
+#~ "blue, green etc."
+#~ msgstr ""
+#~ "Zaokrąglij narożniki podpowiedzi. Opcja ta działa, tylko z podstawowymi "
+#~ "stylami, np. niebieskim, zielonym, itp."
+
+#~ msgid "Font size"
+#~ msgstr "Rozmiar czcionki"
+
+#~ msgid "Tooltip font size"
+#~ msgstr "Rozmiar czcionki porpowiedzi"
+
+#~ msgid "Tooltip title"
+#~ msgstr "Tytuł podpowiedzi"
+
+#~ msgid ""
+#~ "Enter title for tooltip window. Leave this field empty to hide the title"
+#~ msgstr ""
+#~ "Wprowadź tytuł okienka podpowiedzi. Pozostawienie pola pustym, spowoduje "
+#~ "ukrycie tytułu"
+
+#~ msgid "Tooltip text"
+#~ msgstr "Tekst podpowiedzi"
+
+#~ msgid "Tooltip content"
+#~ msgstr "Treści podpowiedzi"
+
+#~ msgid "Enter tooltip content here"
+#~ msgstr "Wprowadź tu treść podpowiedzi"
+
+#~ msgid "Show and hide on mouse hover"
+#~ msgstr "Pokaż i ukryj po najechaniu myszą (hover)"
+
+#~ msgid "Show and hide by mouse click"
+#~ msgstr "Pokaż i ukryj po kliknięciu myszą"
+
+#~ msgid "Always visible"
+#~ msgstr "Zawsze widoczne"
+
+#~ msgid "Behavior"
+#~ msgstr "Zachowanie"
+
+#~ msgid "Select tooltip behavior"
+#~ msgstr "Wybierz zachowanie podpowiedzi"
+
+#~ msgid "Close button"
+#~ msgstr "Przycisk zamknięcia"
+
+#~ msgid "Show close button"
+#~ msgstr "Pokaż przycisk zamknięcia"
+
+#~ msgid "[%prefix_button] Hover me to open tooltip [/%prefix_button]"
+#~ msgstr ""
+#~ "[%prefix_button] Najedź na mnie, aby otworzyć podpowiedź [/%prefix_button]"
+
+#~ msgid "Tooltip window with custom content"
+#~ msgstr "Okienko podpowiedzi z własną treścią"
+
+#~ msgid "Private"
+#~ msgstr "Prywatne"
+
+#~ msgid "Private note text"
+#~ msgstr "Treść prywatnej notatki"
+
+#~ msgid "Private note for post authors"
+#~ msgstr "Prywatne notatki dla autorów wpisów"
+
+#~ msgid "YouTube"
+#~ msgstr "YouTube"
+
+#~ msgid "Url"
+#~ msgstr "Url"
+
+#~ msgid ""
+#~ "Url of YouTube page with video. Ex: http://youtube.com/watch?v=XXXXXX"
+#~ msgstr ""
+#~ "Url strony na YouTube z filmem. Np: http://youtube.com/watch?v=XXXXXX"
+
+#~ msgid "Player width"
+#~ msgstr "Szerokość odtwarzacza"
+
+#~ msgid "Player height"
+#~ msgstr "Wysokość odtwarzacza"
+
+#~ msgid "Responsive"
+#~ msgstr "Responsywne"
+
+#~ msgid "Ignore width and height parameters and make player responsive"
+#~ msgstr ""
+#~ "Ignoruj parametry szerokości i wysokości, aby odtwarzacz był responsywny  "
+
+#~ msgid "Autoplay"
+#~ msgstr "Autoodtwarzanie"
+
+#~ msgid "Play video automatically when page is loaded"
+#~ msgstr "Odtwarzaj automatycznie wideo z chwilą załadowania strony"
+
+#~ msgid "YouTube video"
+#~ msgstr "Filmy z YouTube'a"
+
+#~ msgid "YouTube Advanced"
+#~ msgstr "YouTube - zaawansowany"
+
+#~ msgid "Playlist"
+#~ msgstr "Lista odtwarzania"
+
+#~ msgid ""
+#~ "Value is a comma-separated list of video IDs to play. If you specify a "
+#~ "value, the first video that plays will be the VIDEO_ID specified in the "
+#~ "URL path, and the videos specified in the playlist parameter will play "
+#~ "thereafter"
+#~ msgstr ""
+#~ "Wartością powinny być oddzielone przecinkami ID-ki filmów. Podanie "
+#~ "wartości spowoduje, że najpierw będzie odtwarzany film z VIDEO_ID "
+#~ "określonym w adresie URL, a później nagrania wymienione w polu \"Lista "
+#~ "odtwarzania\"."
+
+#~ msgid "0 - Hide controls"
+#~ msgstr "0 - Ukryj przyciski sterowania"
+
+#~ msgid "1 - Show controls"
+#~ msgstr "1 - Pokaż przyciski sterowania"
+
+#~ msgid "2 - Show controls when playback is started"
+#~ msgstr "2 - Pokaż przyciski sterowania, gdy rozpocznie się odtwarzanie"
+
+#~ msgid ""
+#~ "This parameter indicates whether the video player controls will display"
+#~ msgstr ""
+#~ "Ten parametr określa, czy odtwarzacz wideo będzie wyświetlał przyciski "
+#~ "sterowania "
+
+#~ msgid "0 - Do not hide controls"
+#~ msgstr "0 - Nie ukrywaj przycisków sterowania"
+
+#~ msgid "1 - Hide all controls on mouse out"
+#~ msgstr "1 - Ukryj wszystkie przyciski po wyjechaniu myszą poza odtwarzacz"
+
+#~ msgid "2 - Hide progress bar on mouse out"
+#~ msgstr "2 - Ukryj pasek postępu po wyjechaniu myszą poza odtwarzacz"
+
+#~ msgid "Autohide"
+#~ msgstr "Autoukrywanie"
+
+#~ msgid ""
+#~ "This parameter indicates whether the video controls will automatically "
+#~ "hide after a video begins playing"
+#~ msgstr ""
+#~ "Ten parametr określa, czy przyciski sterowania będą automatycznie "
+#~ "ukrywane, po rozpoczęciu odtwarzania "
+
+#~ msgid "Show title bar"
+#~ msgstr "Pokaż tytuł"
+
+#~ msgid ""
+#~ "If you set the parameter value to NO, then the player will not display "
+#~ "information like the video title and uploader before the video starts "
+#~ "playing."
+#~ msgstr ""
+#~ "Jeśli ustawisz ten parametr na Nie, odtwarzacz - do rozpoczęcia "
+#~ "odtwarzania, nie będzie informował np. o tytule filmu, ani kto go "
+#~ "zamieścił"
+
+#~ msgid "Loop"
+#~ msgstr "Pętla"
+
+#~ msgid ""
+#~ "Setting of YES will cause the player to play the initial video again and "
+#~ "again"
+#~ msgstr ""
+#~ "Ustawienie na Tak, spowoduje nieskończone zapętlenie odtwarzania "
+#~ "pierwszego wideo "
+
+#~ msgid "Related videos"
+#~ msgstr "Powiązane filmy"
+
+#~ msgid ""
+#~ "This parameter indicates whether the player should show related videos "
+#~ "when playback of the initial video ends"
+#~ msgstr ""
+#~ "Parametr ten określa, czy odtwarzacz ma pokazać powiązane filmy po "
+#~ "zakończeniu odtwarzania"
+
+#~ msgid "Show full-screen button"
+#~ msgstr "Pokaż przycisk odtwarzania pełnoekranowego"
+
+#~ msgid ""
+#~ "Setting this parameter to NO prevents the fullscreen button from "
+#~ "displaying"
+#~ msgstr ""
+#~ "Ustawienie tego parametru na Nie, zapobiega wyświetlaniu przycisku "
+#~ "odtwarzania pełnoekranowego"
+
+#~ msgid ""
+#~ "This parameter lets you use a YouTube player that does not show a YouTube "
+#~ "logo. Set the parameter value to YES to prevent the YouTube logo from "
+#~ "displaying in the control bar. Note that a small YouTube text label will "
+#~ "still display in the upper-right corner of a paused video when the user's "
+#~ "mouse pointer hovers over the player"
+#~ msgstr ""
+#~ "Parametr ten pozwala na wykorzystanie odtwarzacza YouTube'a, bez ich "
+#~ "loga. Ustaw parametr na Tak, aby powstrzymać wyświetlanie loga YouTube'a "
+#~ "w pasku sterowania. Zauważ jednak, że w prawym górnym rogu nadal będzie "
+#~ "wyświetlana mała etykieta z napisem YouTube - w momencie gdy film będzie "
+#~ "miał włączoną pauzę, a oglądający przesunie myszką nad odtwarzaczem."
+
+#~ msgid "Dark theme"
+#~ msgstr "Ciemny motyw"
+
+#~ msgid "Light theme"
+#~ msgstr "Jasny motyw"
+
+#~ msgid "Theme"
+#~ msgstr "Motyw"
+
+#~ msgid ""
+#~ "This parameter indicates whether the embedded player will display player "
+#~ "controls (like a play button or volume control) within a dark or light "
+#~ "control bar"
+#~ msgstr ""
+#~ "Parametr ten określa, czy wbudowany odtwarzacz będzie wyświetlał "
+#~ "przyciski sterowania (np: odtwarzanie, czy głośność) na ciemnym, bądź "
+#~ "jasnym motywie paska."
+
+#~ msgid "Force HTTPS"
+#~ msgstr "Wymuś HTTPS"
+
+#~ msgid "Use HTTPS in player iframe"
+#~ msgstr "Korzystaj z HTTPS w iframe odtwarzacza"
+
+#~ msgid "WMode"
+#~ msgstr "WMode"
+
+#~ msgid ""
+#~ "Here you can specify wmode value for the embed URL. %s Example values: "
+#~ "%s, %s"
+#~ msgstr ""
+#~ "Określ wartość wmode, dla URL'a wbudowanego odtwarzacza. %s Przykładowe "
+#~ "wartości: %s, %s"
+
+#~ msgid "YouTube video player with advanced settings"
+#~ msgstr "Odtwarzacz filmów YouTube z zaawansowanymi ustawieniami"
+
+#~ msgid "Vimeo"
+#~ msgstr "Vimeo"
+
+#~ msgid "Url of Vimeo page with video"
+#~ msgstr "Url do strony Vimeo z filmem"
+
+#~ msgid "Vimeo video"
+#~ msgstr "Film z Vimeo"
+
+#~ msgid "Screenr"
+#~ msgstr "Screenr"
+
+#~ msgid "Url of Screenr page with video"
+#~ msgstr "Url do strony Screenr z filmem"
+
+#~ msgid "Screenr video"
+#~ msgstr "Film z portalu Screenr"
+
+#~ msgid "Dailymotion"
+#~ msgstr "Dailymotion"
+
+#~ msgid "Url of Dailymotion page with video"
+#~ msgstr "Url do strony Dailymotion z filmem"
+
+#~ msgid ""
+#~ "Start the playback of the video automatically after the player load. May "
+#~ "not work on some mobile OS versions"
+#~ msgstr ""
+#~ "Odtwarzaj automatycznie wideo z chwilą załadowania strony. Może nie "
+#~ "działać na niektórych urządzeniach mobilnych."
+
+#~ msgid "HTML color of the background of controls elements"
+#~ msgstr "Kolor HTML tła, pod elementami sterującymi"
+
+#~ msgid "Foreground color"
+#~ msgstr "Kolor pierwszoplanowy"
+
+#~ msgid "HTML color of the foreground of controls elements"
+#~ msgstr "Kolor HTML pierwszego planu, elementów sterujących"
+
+#~ msgid "Highlight color"
+#~ msgstr "Kolor podświetlenia"
+
+#~ msgid "HTML color of the controls elements' highlights"
+#~ msgstr "Kolor HTML podświetlenia elementów sterujących"
+
+#~ msgid "Show logo"
+#~ msgstr "Pokaż logo"
+
+#~ msgid "Allows to hide or show the Dailymotion logo"
+#~ msgstr "Pozwala ukryć, albo wyświetlić logo Dailymotion"
+
+#~ msgid "Quality"
+#~ msgstr "Jakość"
+
+#~ msgid "Determines the quality that must be played by default if available"
+#~ msgstr ""
+#~ "Określa w jakiej jakości ma być odtwarzane nagranie, jeśli będzie ona "
+#~ "dostępna"
+
+#~ msgid "Show related videos"
+#~ msgstr "Pokaż powiązane filmy"
+
+#~ msgid "Show related videos at the end of the video"
+#~ msgstr "Pokaż powiązane filmy po zakończeniu filmu"
+
+#~ msgid "Show video info"
+#~ msgstr "Pokaż informacje o filmie"
+
+#~ msgid "Show videos info (title/author) on the start screen"
+#~ msgstr "Pokaż informacje o filmie (tytuł/autor) na ekranie początkowym"
+
+#~ msgid "Dailymotion video"
+#~ msgstr "Film z Dailymotion"
+
+#~ msgid "Audio"
+#~ msgstr "Audio"
+
+#~ msgid "File"
+#~ msgstr "Plik"
+
+#~ msgid "Audio file url. Supported formats: mp3, ogg"
+#~ msgstr "Url pliku audio. Obsługiwane formaty: mp3, ogg"
+
+#~ msgid ""
+#~ "Player width. You can specify width in percents and player will be "
+#~ "responsive. Example values: <b%value>200px</b>, <b%value>100&#37;</b>"
+#~ msgstr ""
+#~ "Szerokość odtwarzacza. Możesz określić szerokość w procentach, a wtedy "
+#~ "odtwarzacz będzie responsywny. Przykładowe wartości:  <b%value>200px</b>, "
+#~ "<b%value>100&#37;</b>"
+
+#~ msgid "Play file automatically when page is loaded"
+#~ msgstr "Odtwarzaj automatycznie nagranie, z chwilą załadowania strony"
+
+#~ msgid "Repeat when playback is ended"
+#~ msgstr "Powtarzaj po zakończeniu odtwarzania. "
+
+#~ msgid "Custom audio player"
+#~ msgstr "Własny odtwarzacz audio"
+
+#~ msgid "Video"
+#~ msgstr "Wideo"
+
+#~ msgid "Url to mp4/flv video-file"
+#~ msgstr "Url do filmu w formacie mp4, albo flv"
+
+#~ msgid "Url to poster image, that will be shown before playback"
+#~ msgstr ""
+#~ "Url do obrazu z posterem, który zostanie wyświetlony przed odtworzeniem "
+#~ "filmu"
+
+#~ msgid "Player title"
+#~ msgstr "Tytuł odtwarzacza"
+
+#~ msgid "Show player controls (play/pause etc.) or not"
+#~ msgstr "Pokaż, bądź ukryj przyciski sterowania (odtwarzanie/pauza itp.)"
+
+#~ msgid "Custom video player"
+#~ msgstr "Własny odtwarzacz wideo"
+
+#~ msgid "Table"
+#~ msgstr "Tabela"
+
+#~ msgid "CSV file"
+#~ msgstr "plik CSV"
+
+#~ msgid "Upload CSV file if you want to create HTML-table from file"
+#~ msgstr "Prześlij plik CSV, jeśli chcesz utworzyć z niego tabelę w HTML-u"
+
+#~ msgid ""
+#~ "<table>\n"
+#~ "<tr>\n"
+#~ "\t<td>Table</td>\n"
+#~ "\t<td>Table</td>\n"
+#~ "</tr>\n"
+#~ "<tr>\n"
+#~ "\t<td>Table</td>\n"
+#~ "\t<td>Table</td>\n"
+#~ "</tr>\n"
+#~ "</table>"
+#~ msgstr ""
+#~ "<table>\n"
+#~ "<tr>\n"
+#~ "\t<td>Tabela</td>\n"
+#~ "\t<td>Tabela</td>\n"
+#~ "</tr>\n"
+#~ "<tr>\n"
+#~ "\t<td>Tabela</td>\n"
+#~ "\t<td>Tabela</td>\n"
+#~ "</tr>\n"
+#~ "</table>"
+
+#~ msgid "Styled table from HTML or CSV file"
+#~ msgstr "Własna tabela HTML, z pliku CSV "
+
+#~ msgid "Permalink"
+#~ msgstr "Permalink"
+
+#~ msgid "Post or page ID"
+#~ msgstr "ID wpisu albo strony"
+
+#~ msgid "Link target. blank - link will be opened in new window/tab"
+#~ msgstr ""
+#~ "Adres linka (target). blank - link zostanie otwarty w nowym oknie/"
+#~ "zakładce przeglądarki"
+
+#~ msgid "Permalink to specified post/page"
+#~ msgstr "Permalink (skrócony odnośnik) do konkretnego wpisu/strony"
+
+#~ msgid "Members"
+#~ msgstr "Użytkownicy"
+
+#~ msgid "This content is for registered users only. Please %login%."
+#~ msgstr ""
+#~ "Treść dostępna jedynie dla zarejestrowanych użytkowników. Prosimy o "
+#~ "zalogowanie się."
+
+#~ msgid "Message"
+#~ msgstr "Wiadomość"
+
+#~ msgid "Message for not logged users"
+#~ msgstr "Wiadomość dla niezalogowanych użytkowników"
+
+#~ msgid "Box color"
+#~ msgstr "Kolor pola"
+
+#~ msgid "This color will applied only to box for not logged users"
+#~ msgstr ""
+#~ "Kolor ten zostanie użyty w polu, wyłącznie dla niezalogowanych "
+#~ "użytkowników"
+
+#~ msgid "login"
+#~ msgstr "zaloguj mnie"
+
+#~ msgid "Login link text"
+#~ msgstr "Tekst linku logowania"
+
+#~ msgid "Text for the login link"
+#~ msgstr "Treść tekstowego linku do strony logowania"
+
+#~ msgid "Login link url"
+#~ msgstr "Link do strony logowania"
+
+#~ msgid "Content for logged members"
+#~ msgstr "Wpisz treść dostępną - jedynie, dla zalogowanych użytkowników"
+
+#~ msgid "Content for logged in members only"
+#~ msgstr "Treść dla zalogowanych użytkowników"
+
+#~ msgid "Guests"
+#~ msgstr "Gość"
+
+#~ msgid "Content for guests"
+#~ msgstr "Treść widoczna jedynie dla gościa"
+
+#~ msgid "Content for guests only"
+#~ msgstr "Treść jedynie dla gościa"
+
+#~ msgid "RSS Feed"
+#~ msgstr "Kanał RSS"
+
+#~ msgid "Url to RSS-feed"
+#~ msgstr "Url kanału RSS"
+
+#~ msgid "Number of items to show"
+#~ msgstr "Liczba elementów do pokazania"
+
+#~ msgid "Feed grabber"
+#~ msgstr "Przechwytywanie RSS'a"
+
+#~ msgid "Menu name"
+#~ msgstr "Nazwa menu"
+
+#~ msgid "Custom menu name. Ex: Main menu"
+#~ msgstr "Własna nazwa menu, np. Menu główne"
+
+#~ msgid "Custom menu by name"
+#~ msgstr "Nazwa dla własnego menu"
+
+#~ msgid "Sub pages"
+#~ msgstr "Podstrony"
+
+#~ msgid "Depth"
+#~ msgstr "Głębokosć"
+
+#~ msgid "Max depth level of children pages"
+#~ msgstr "Maksymalna głębokość stron-dzieci"
+
+#~ msgid "Parent ID"
+#~ msgstr "ID rodzica "
+
+#~ msgid "ID of the parent page. Leave blank to use current page"
+#~ msgstr "ID strony rodzica. Pozostaw puste, aby użyć do aktualnej strony"
+
+#~ msgid "List of sub pages"
+#~ msgstr "Lista podstron"
+
+#~ msgid "Siblings"
+#~ msgstr "Rodzeństwo"
+
+#~ msgid "Max depth level"
+#~ msgstr "Maksymalna głębokość"
+
+#~ msgid "List of cureent page siblings"
+#~ msgstr "Lista rodzeństwa aktualnej strony"
+
+#~ msgid "Document"
+#~ msgstr "Dokument"
+
+#~ msgid "Url to uploaded document. Supported formats: doc, xls, pdf etc."
+#~ msgstr ""
+#~ "Url do przesłanego dokumentu. Obsługiwane formaty: doc, xls, pdf itp."
+
+#~ msgid "Viewer width"
+#~ msgstr "Szerokość przeglądarki"
+
+#~ msgid "Viewer height"
+#~ msgstr "Wysokość przeglądarki"
+
+#~ msgid "Ignore width and height parameters and make viewer responsive"
+#~ msgstr ""
+#~ "Ignoruj parametry szerokości i wysokości, aby przeglądarka była "
+#~ "responsywna"
+
+#~ msgid "Document viewer by Google"
+#~ msgstr "Przeglądarka dokumentów od Google"
+
+#~ msgid "Gmap"
+#~ msgstr "Mapa Google"
+
+#~ msgid "Map width"
+#~ msgstr "Szerokość mapy"
+
+#~ msgid "Ignore width and height parameters and make map responsive"
+#~ msgstr "Ignoruj parametry szerokości i wysokości, aby mapa była responsywna"
+
+#~ msgid "Marker"
+#~ msgstr "Znacznik"
+
+#~ msgid "Address for the marker. You can type it in any language"
+#~ msgstr "Adres umieszczenia znacznika. Możesz podać adres w dowolnym języku"
+
+#~ msgid "Maps by Google"
+#~ msgstr "Mapy od Google"
+
+#~ msgid "Slider"
+#~ msgstr "Slider"
+
+#~ msgid "Source"
+#~ msgstr "Źródło"
+
+#~ msgid ""
+#~ "Choose images source. You can use images from Media library or retrieve "
+#~ "it from posts (thumbnails) posted under specified blog category. You can "
+#~ "also pick any custom taxonomy"
+#~ msgstr ""
+#~ "Wybierz źródło obrazów. Możesz skorzystać z Biblioteki mediów, albo "
+#~ "pobrać je z wpisów (miniaturki) zamieszczonych pod określoną kategorią na "
+#~ "blogu. Możesz, także określić dowolną taksonomię.  "
+
+#~ msgid ""
+#~ "Maximum number of image source posts (for recent posts, category and "
+#~ "custom taxonomy)"
+#~ msgstr ""
+#~ "Maksymalna liczba wpisów źródłowych dla obrazów (dla ostatnich wpisów, "
+#~ "kategorii i własnych taksonomii)"
+
+#~ msgid "Full-size image"
+#~ msgstr "Obraz pełnowymiarowy"
+
+#~ msgid "Slide link (added in media editor)"
+#~ msgstr "Link slajdu (dodany w edytorze mediów)"
+
+#~ msgid "Attachment page"
+#~ msgstr "Strona załącznika"
+
+#~ msgid "Post permalink"
+#~ msgstr "Permalink wpisu"
+
+#~ msgid "Links"
+#~ msgstr "Linki"
+
+#~ msgid "Select which links will be used for images in this gallery"
+#~ msgstr ""
+#~ "Wybierz, jakiego rodzaju linki będą używane do obrazów w tej galerii"
+
+#~ msgid "Same window"
+#~ msgstr "W tym samym oknie"
+
+#~ msgid "New window"
+#~ msgstr "W nowym oknie"
+
+#~ msgid "Links target"
+#~ msgstr "Cel linków (target)"
+
+#~ msgid "Open links in"
+#~ msgstr "Otwórz linki w"
+
+#~ msgid "Slider width (in pixels)"
+#~ msgstr "Szerokość lidera (w pikselach)"
+
+#~ msgid "Slider height (in pixels)"
+#~ msgstr "Wysokość slidera (w pikselach)"
+
+#~ msgid "Ignore width and height parameters and make slider responsive"
+#~ msgstr ""
+#~ "Ignoruj parametry szerokości i wysokości, aby slider był responsywny"
+
+#~ msgid "Show titles"
+#~ msgstr "Pokaż tytuły"
+
+#~ msgid "Display slide titles"
+#~ msgstr "Wyświetla tytuły slajdów"
+
+#~ msgid "Is slider centered on the page"
+#~ msgstr "Czy slider, ma być wyśrodkowany na stronie?"
+
+#~ msgid "Arrows"
+#~ msgstr "Strzałki"
+
+#~ msgid "Show left and right arrows"
+#~ msgstr "Pokaż strzałki: lewą i prawą"
+
+#~ msgid "Pagination"
+#~ msgstr "Paginacja"
+
+#~ msgid "Show pagination"
+#~ msgstr "Wyświetl paginację"
+
+#~ msgid "Mouse wheel control"
+#~ msgstr "Kontrola kółkiem myszki"
+
+#~ msgid "Allow to change slides with mouse wheel"
+#~ msgstr "Pozwól na zmianę slajdów, za pomocą kółka myszki"
+
+#~ msgid ""
+#~ "Choose interval between slide animations. Set to 0 to disable autoplay"
+#~ msgstr ""
+#~ "Ustal czas pomiędzy animacjami zmiany slajdów. Wybranie 0 powoduje "
+#~ "wyłączenie auto-odtwarzania"
+
+#~ msgid "Speed"
+#~ msgstr "Szybkość"
+
+#~ msgid "Specify animation speed"
+#~ msgstr "Ustal szybkość animacji"
+
+#~ msgid "Customizable image slider"
+#~ msgstr "Konfigurowalny slider obrazów"
+
+#~ msgid "Carousel"
+#~ msgstr "Karuzela"
+
+#~ msgid "Carousel width (in pixels)"
+#~ msgstr "Szerokość karuzeli (w pikselach)"
+
+#~ msgid "Carousel height (in pixels)"
+#~ msgstr "Wysokość karuzeli (w pikselach)"
+
+#~ msgid "Ignore width and height parameters and make carousel responsive"
+#~ msgstr ""
+#~ "Ignoruj parametry szerokości i wysokości, aby karuzela była responsywna"
+
+#~ msgid "Items to show"
+#~ msgstr "Elementów do wyświetlenia"
+
+#~ msgid "How much carousel items is visible"
+#~ msgstr "Określ ile elementów karuzeli będzie widoczne"
+
+#~ msgid "Scroll number"
+#~ msgstr "Wartość przewinięcia"
+
+#~ msgid "How much items are scrolled in one transition"
+#~ msgstr "Ile elementów jednocześnie, jest przewijanych w jednej animacji"
+
+#~ msgid "Display titles for each item"
+#~ msgstr "Wyświetlaj tytuł każdego elementu"
+
+#~ msgid "Is carousel centered on the page"
+#~ msgstr "Czy karuzela, ma być wyśrodkowana na stronie?"
+
+#~ msgid "Allow to rotate carousel with mouse wheel"
+#~ msgstr "Pozwól na obracanie karuzelą, za pomocą kółka myszki"
+
+#~ msgid ""
+#~ "Choose interval between auto animations. Set to 0 to disable autoplay"
+#~ msgstr ""
+#~ "Ustal czas pomiędzy animacjami zmiany slajdów. Wybranie 0 powoduje "
+#~ "wyłączenie auto-odtwarzania"
+
+#~ msgid "Customizable image carousel"
+#~ msgstr "Konfigurowalna karuzela obrazów"
+
+#~ msgid "Single item width (in pixels)"
+#~ msgstr "Szerokość pojedynczego elementu (w pikselach)"
+
+#~ msgid "Single item height (in pixels)"
+#~ msgstr "Wysokość pojedynczego elementu (w pikselach)"
+
+#~ msgid "Never"
+#~ msgstr "Nigdy"
+
+#~ msgid "On mouse over"
+#~ msgstr "Przy najechaniu myszą"
+
+#~ msgid "Always"
+#~ msgstr "Zawsze"
+
+#~ msgid "Title display mode"
+#~ msgstr "Sposób wyświetlania tytułu"
+
+#~ msgid "Customizable image gallery"
+#~ msgstr "Konfigurowalna galeria obrazów"
+
+#~ msgid ""
+#~ "<b>Do not change this field value if you do not understand description "
+#~ "below.</b><br/>Relative path to the template file. Default templates is "
+#~ "placed under the plugin directory (templates folder). You can copy it "
+#~ "under your theme directory and modify as you want. You can use following "
+#~ "default templates that already available in the plugin directory:<br/><b"
+#~ "%value>templates/default-loop.php</b> - posts loop<br/><b%value>templates/"
+#~ "teaser-loop.php</b> - posts loop with thumbnail and title<br/><b"
+#~ "%value>templates/single-post.php</b> - single post template<br/><b"
+#~ "%value>templates/list-loop.php</b> - unordered list with posts titles"
+#~ msgstr ""
+#~ "<b>Nie zmieniaj wartości tego pola, jeśli nie rozumiesz opisu poniżej.</"
+#~ "b><br/>Ścieżka relatywna do pliku szablonu. Domyślne szablony są "
+#~ "umieszczone w katalogu wtyczek (folder szablonów). Możesz je skopiować do "
+#~ "foldera swojego motywu i modyfikować, jak tylko Ci się podoba. Możesz "
+#~ "użyć następujących domyślnych szablonów, które są dostępne w folderze "
+#~ "wtyczek (plugins):<br/><b%value>templates/default-loop.php</b> - pętla "
+#~ "dla wpisów<br/><b%value>templates/teaser-loop.php</b> - pętla dla wpisów, "
+#~ "z miniaturkami i tytułami<br/><b%value>templates/single-post.php</b> - "
+#~ "szablon dla pojedynczych wpisów<br/><b%value>templates/list-loop.php</b> "
+#~ "- nieuporządkowana lista z tytułami wpisów. "
+
+#~ msgid "Meta key"
+#~ msgstr "Meta key (klucz metadanych)"
+
+#~ msgid "Enter meta key name to show posts that have this key"
+#~ msgstr ""
+#~ "Wprowadź nazwę klucza metadanych (meta_key) aby wyświetlić wszystkie "
+#~ "wpisy, które zawierają dany klucz"
+
+#~ msgid "Meta key values"
+#~ msgstr "Wartości meta key"
+
+#~ msgid "Dummy text"
+#~ msgstr "Generator tekstu"
+
+#~ msgid "Paragraphs"
+#~ msgstr "Akapity"
+
+#~ msgid "Words"
+#~ msgstr "Słowa"
+
+#~ msgid "Bytes"
+#~ msgstr "Bajty"
+
+#~ msgid "What"
+#~ msgstr "Co"
+
+#~ msgid "What to generate"
+#~ msgstr "Co ma być generowane"
+
+#~ msgid "Amount"
+#~ msgstr "Ilość"
+
+#~ msgid ""
+#~ "How many items (paragraphs or words) to generate. Minimum words amount is "
+#~ "5"
+#~ msgstr ""
+#~ "Ile elementów (akapitów, czy słów) na zostać wygenerowane? Minimalna "
+#~ "ilość słów wynosi 5"
+
+#~ msgid "Cache"
+#~ msgstr "Cache"
+
+#~ msgid ""
+#~ "Generated text will be cached. Be careful with this option. If you "
+#~ "disable it and insert many dummy_text shortcodes the page load time will "
+#~ "be highly increased"
+#~ msgstr ""
+#~ "Wygenerowany tekst zostanie umieszczony w cache. Używaj rozważnie tej "
+#~ "opcji. Jeśli ją wyłączysz, i jednocześnie użyjesz na stronie wielokrotnie "
+#~ "generatora tekstu, czas jej ładowania może bardzo wzrosnąć. "
+
+#~ msgid "Text placeholder"
+#~ msgstr "Zastępstwo dla tekstu"
+
+#~ msgid "Dummy image"
+#~ msgstr "Generator obrazów"
+
+#~ msgid "Image width"
+#~ msgstr "Szerokość obrazu"
+
+#~ msgid "Image height"
+#~ msgstr "Wysokość obrazu"
+
+#~ msgid "Abstract"
+#~ msgstr "Abstrakcja"
+
+#~ msgid "Animals"
+#~ msgstr "Zwierzęta"
+
+#~ msgid "Business"
+#~ msgstr "Firma"
+
+#~ msgid "Cats"
+#~ msgstr "Koty"
+
+#~ msgid "City"
+#~ msgstr "Miasto"
+
+#~ msgid "Food"
+#~ msgstr "Jedzenie"
+
+#~ msgid "Night life"
+#~ msgstr "Życie nocne"
+
+#~ msgid "Fashion"
+#~ msgstr "Moda"
+
+#~ msgid "People"
+#~ msgstr "Ludzie"
+
+#~ msgid "Nature"
+#~ msgstr "Natura"
+
+#~ msgid "Sports"
+#~ msgstr "Sport"
+
+#~ msgid "Technics"
+#~ msgstr "Technologie"
+
+#~ msgid "Transport"
+#~ msgstr "Transport"
+
+#~ msgid "Select the theme for this image"
+#~ msgstr "Wybierz motyw dla tego obrazu"
+
+#~ msgid "Image placeholder with random image"
+#~ msgstr "Losowo generowane obrazy w miejscu przyszłej grafiki"
+
+#~ msgid "Animation"
+#~ msgstr "Animacja"
+
+#~ msgid "Select animation type"
+#~ msgstr "Wybierz rodzaj animacji"
+
+#~ msgid "Duration"
+#~ msgstr "Czas trwania"
+
+#~ msgid "Animation duration (seconds)"
+#~ msgstr "Czas trwania (sekundy)"
+
+#~ msgid "Delay"
+#~ msgstr "Opóźnienie"
+
+#~ msgid "Animation delay (seconds)"
+#~ msgstr "Opóźnienie rozpoczęcia animacji (sekundy)"
+
+#~ msgid ""
+#~ "This parameter determines what HTML tag will be used for animation "
+#~ "wrapper. Turn this option to YES and animated element will be wrapped in "
+#~ "SPAN instead of DIV. Useful for inline animations, like buttons"
+#~ msgstr ""
+#~ "Parametr ten określa, jaki znacznik HTML będzie użyty do obudowania "
+#~ "animacji. Włączenie Tak powoduje obudowanie animacji w znacznik SPAN, "
+#~ "zamiast DIV. Jest to przydatne do animacji inline, jak np. przyciski."
+
+#~ msgid "Animated content"
+#~ msgstr "Animowana treść "
+
+#~ msgid "Wrapper for animation. Any nested element will be animated"
+#~ msgstr ""
+#~ "Obudowa do animacji. Animowany, może być dowolny zagnieżdżony element "
+
+#~ msgid "Meta"
+#~ msgstr "Meta"
+
+#~ msgid "Key"
+#~ msgstr "Key (klucz)"
+
+#~ msgid "Meta key name"
+#~ msgstr "Nazwa klucza metadanych"
+
+#~ msgid "This text will be shown if data is not found"
+#~ msgstr "Tekst ten zostanie wyświetlony, przy braku danych"
+
+#~ msgid "Before"
+#~ msgstr "Przed"
+
+#~ msgid "This content will be shown before the value"
+#~ msgstr "Treść do wyświetlenia przed danymi"
+
+#~ msgid "After"
+#~ msgstr "Za"
+
+#~ msgid "This content will be shown after the value"
+#~ msgstr "Treść do wyświetlenia za danymi"
+
+#~ msgid ""
+#~ "You can specify custom post ID. Leave this field empty to use an ID of "
+#~ "the current post. Current post ID may not work in Live Preview mode"
+#~ msgstr ""
+#~ "Możesz podać dowolny nr ID wpisu. Jeśli chcesz użyć ID aktualnego wpisu, "
+#~ "pozostaw to pole puste. ID aktualnego wpisu, może nie działać w polu "
+#~ "podglądu na żywo."
+
+#~ msgid "Filter"
+#~ msgstr "Filtr"
+
+#~ msgid ""
+#~ "You can apply custom filter to the retrieved value. Enter here function "
+#~ "name. Your function must accept one argument and return modified value. "
+#~ "Example function: "
+#~ msgstr ""
+#~ "Możesz określić własny filtr pobierania treści. Wprowadź tu nazwę "
+#~ "funkcji. Twoja funkcja musi przyjmować jeden argument, oraz zwracać "
+#~ "zmodyfikowaną wartość. Przykładowa funkcja:"
+
+#~ msgid "Post meta"
+#~ msgstr "Wpis w oparciu o metadane"
+
+#~ msgid "User"
+#~ msgstr "Użytkownik"
+
+#~ msgid "Display name"
+#~ msgstr "Przedstawiaj mnie jako"
+
+#~ msgid "Login"
+#~ msgstr "Nazwa użytkownika"
+
+#~ msgid "Nice name"
+#~ msgstr "Pseudonim"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Registered"
+#~ msgstr "Zarejestrowany"
+
+#~ msgid "Activation key"
+#~ msgstr "Klucz aktywacji"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Field"
+#~ msgstr "Pole"
+
+#~ msgid "User data field name"
+#~ msgstr "Nazwa pola danych użytkownika"
+
+#~ msgid "User ID"
+#~ msgstr "ID użytkownika"
+
+#~ msgid ""
+#~ "You can specify custom user ID. Leave this field empty to use an ID of "
+#~ "the current user"
+#~ msgstr ""
+#~ "Wpisz dowolne ID użytkownika. Jeśli pozostawisz to puste, zostanie użyte "
+#~ "ID aktualnego użytkownika"
+
+#~ msgid "User data"
+#~ msgstr "Dane o użytkowniku"
+
+#~ msgid "Post"
+#~ msgstr "Wpis"
+
+#~ msgid "Post date"
+#~ msgstr "Data wpisu"
+
+#~ msgid "Post excerpt"
+#~ msgstr "Urywek tekstu z wpisu"
+
+#~ msgid "Comment status"
+#~ msgstr "Status komentarzy"
+
+#~ msgid "Ping status"
+#~ msgstr "Status pingowania"
+
+#~ msgid "Post name"
+#~ msgstr "Nazwa wpisu"
+
+#~ msgid "Post modified"
+#~ msgstr "Wpis zmodyfikowano"
+
+#~ msgid "Filtered post content"
+#~ msgstr "Przefiltrowana treść z wpisu"
+
+#~ msgid "GUID"
+#~ msgstr "GUID"
+
+#~ msgid "Post mime type"
+#~ msgstr "Rodzaj mime wpisu"
+
+#~ msgid "Comment count"
+#~ msgstr "Licznik komentarzy"
+
+#~ msgid "Post data field name"
+#~ msgstr "Nazwa pola danych wpisu"
+
+#~ msgid "Post data"
+#~ msgstr "Dane z wpisu"
+
+#~ msgid "Template name"
+#~ msgstr "Nazwa szablonu"
+
+#~ msgid ""
+#~ "Use template file name (with optional .php extension). If you need to use "
+#~ "templates from theme sub-folder, use relative path. Example values: %s, "
+#~ "%s, %s"
+#~ msgstr ""
+#~ "Wpisz nazwę szablonu (opcjonalnie dodając rozszerzenie .php). Jeśli "
+#~ "musisz użyć szablonu z podkatalogu motywu, wpisz ścieżkę względną. "
+#~ "Przykładowe wartości: %s, %s, %s"
+
+#~ msgid "Theme template"
+#~ msgstr "Szablon motywu"
+
+#~ msgid "QR code"
+#~ msgstr "Kod QR"
+
+#~ msgid ""
+#~ "The text to store within the QR code. You can use here any text or even "
+#~ "URL"
+#~ msgstr ""
+#~ "Tekst do zakodowania w kodzie QR. Możesz podać dowolny tekst, a nawet URL"
+
+#~ msgid ""
+#~ "Enter here short description. This text will be used in alt attribute of "
+#~ "QR code"
+#~ msgstr ""
+#~ "Wprowadź krótki opis. Będzie on wykorzystany w atrybucie alt "
+#~ "(alternatywny tekst) kodu QR"
+
+#~ msgid "Image width and height (in pixels)"
+#~ msgstr "Wysokość i szerokość obrazu (w pikselach)"
+
+#~ msgid "Thickness of a margin (in pixels)"
+#~ msgstr "Szerokość marginesów (w pikselach) "
+
+#~ msgid "Choose image alignment"
+#~ msgstr "Wybierz rodzaj wyrównania obrazu"
+
+#~ msgid "You can make this QR code clickable. Enter here the URL"
+#~ msgstr "Możesz zamienić, ten kod QR w przycisk. Wprowadź tu URL"
+
+#~ msgid "Select link target"
+#~ msgstr "Wybierz cel (target) linku"
+
+#~ msgid "Primary color"
+#~ msgstr "Kolor pierwszoplanowy"
+
+#~ msgid "Pick a primary color"
+#~ msgstr "Wybierz kolor pierwszoplanowy"
+
+#~ msgid "Advanced QR code generator"
+#~ msgstr "Zaawansowany generator kodów QR"
+
+#~ msgid "Scheduler"
+#~ msgstr "Terminarz"
+
+#~ msgid "Time"
+#~ msgstr "Czas"
+
+#~ msgid ""
+#~ "In this field you can specify one or more time ranges. Every day at this "
+#~ "time the content of shortcode will be visible. %s %s %s - show content "
+#~ "from 9:00 to 18:00 %s - show content from 9:00 to 13:00 and from 14:00 to "
+#~ "18:00 %s - example with minutes (content will be visible each day, 45 "
+#~ "minutes) %s - example with seconds"
+#~ msgstr ""
+#~ "W tym polu możesz określić jeden, lub więcej przedziałów czasu. "
+#~ "Codziennie, o określonej porze widoczna będzie treść, tego shortcode. %s "
+#~ "%s %s - wyświetl treść pomiędzy 9:00, a 18:00 %s - wyświetl treść "
+#~ "pomiędzy 9:00, a 13:00 oraz między 14:00, a 18:00 %s - przykład z użyciem "
+#~ "minut (treść będzie widoczna codziennie, przez 45 minut) %s - przykład z "
+#~ "użyciem sekund"
+
+#~ msgid "Examples (click to set)"
+#~ msgstr "Przykłady (kliknij, aby je zastosować)"
+
+#~ msgid "Days of the week"
+#~ msgstr "Dni tygodnia"
+
+#~ msgid ""
+#~ "In this field you can specify one or more days of the week. Every week at "
+#~ "these days the content of shortcode will be visible. %s 0 - Sunday %s 1 - "
+#~ "Monday %s 2 - Tuesday %s 3 - Wednesday %s 4 - Thursday %s 5 - Friday %s 6 "
+#~ "- Saturday %s %s %s - show content from Monday to Friday %s - show "
+#~ "content only at Sunday %s - show content at Sunday and from Wednesday to "
+#~ "Friday"
+#~ msgstr ""
+#~ "W tym polu możesz określić jeden, lub więcej dni tygodnia. Co tydzień w "
+#~ "te same dni widoczna będzie treść, tego shortcode.  %s 0 - niedziela %s 1 "
+#~ "- poniedziałek %s 2 - wtorek %s 3 - środa %s 4 - czwartek %s 5 - piątek "
+#~ "%s 6 - sobota %s %s %s - wyświetl treść pomiędzy od poniedziałku, do "
+#~ "piątku %s - wyświetl treść jedynie w niedziele %s - wyświetl treść w "
+#~ "niedziele, oraz od śród do piątków"
+
+#~ msgid "Days of the month"
+#~ msgstr "Dni miesiąca"
+
+#~ msgid ""
+#~ "In this field you can specify one or more days of the month. Every month "
+#~ "at these days the content of shortcode will be visible. %s %s %s - show "
+#~ "content only at first day of month %s - show content from 1th to 5th %s - "
+#~ "show content from 10th to 15th and from 20th to 25th"
+#~ msgstr ""
+#~ "W tym polu możesz określić jeden, lub więcej dni miesiąca. Co miesiąc w "
+#~ "te same dni widoczna będzie treść, tego shortcode.  %s %s %s - wyświetl "
+#~ "treść, jedynie pierwszego dnia miesiąca %s - wyświetlaj treść między 1. a "
+#~ "5. dniem miesiąca  %s - wyświetl treść między 10. a 15. oraz pomiędzy 20. "
+#~ "a 25. dniem miesiąca"
+
+#~ msgid "Months"
+#~ msgstr "Miesiące"
+
+#~ msgid ""
+#~ "In this field you can specify the month or months in which the content "
+#~ "will be visible. %s %s %s - show content only in January %s - show "
+#~ "content from February to June %s - show content in January, March and "
+#~ "from May to July"
+#~ msgstr ""
+#~ "W tym polu możesz określić jeden, lub więcej miesięcy w których widoczna "
+#~ "będzie treść shortcode. %s %s %s - wyświetl treść jedynie w styczniu %s - "
+#~ "wyświetlaj treść od lutego do czerwca %s - wyświetl treść w styczniu, "
+#~ "marcu oraz od maja do lipca"
+
+#~ msgid "Years"
+#~ msgstr "Lata"
+
+#~ msgid ""
+#~ "In this field you can specify the year or years in which the content will "
+#~ "be visible. %s %s %s - show content only in 2014 %s - show content from "
+#~ "2014 to 2016 %s - show content in 2014, 2018 and from 2020 to 2022"
+#~ msgstr ""
+#~ "W tym polu możesz określić rok, lub kilka lat w których widoczna będzie "
+#~ "treść shortcode. %s %s %s - pokaż treść wyłącznie w 2014. %s - pokaż "
+#~ "treść w okresie od 2014. do 2016. %s - wyświetl treść w 2014., 2018. oraz "
+#~ "pomiędzy 2020. a 2022."
+
+#~ msgid "Alternative text"
+#~ msgstr "Tekst alternatywny"
+
+#~ msgid ""
+#~ "In this field you can type the text which will be shown if content is not "
+#~ "visible at the current moment"
+#~ msgstr ""
+#~ "W to pole wpisz tekst, który będzie widoczny, gdy treść będzie "
+#~ "niedostępna "
+
+#~ msgid "Scheduled content"
+#~ msgstr "Terminarz treści "
+
+#~ msgid "Allows to show the content only at the specified time period"
+#~ msgstr "Pozwala wyświetlać treść, wyłącznie w określonym przedziale czasu"
+
+#~ msgid ""
+#~ "This shortcode allows you to show content only at the specified time."
+#~ msgstr ""
+#~ "Ten shortcode pozwala wyświetlać treść, wyłącznie w określonym przedziale "
+#~ "czasu"
+
+#~ msgid ""
+#~ "Please pay special attention to the descriptions, which are located below "
+#~ "each text field. It will save you a lot of time"
+#~ msgstr ""
+#~ "Zwróć szczególną uwagę na opisy, znajdujące się pod każdym z pól "
+#~ "tekstowych. Pozwoli Ci to oszczędzić dużo czasu"
+
+#~ msgid ""
+#~ "By default, the content of this shortcode will be visible all the time. "
+#~ "By using fields below, you can add some limitations. For example, if you "
+#~ "type 1-5 in the Days of the week field, content will be only shown from "
+#~ "Monday to Friday. Using the same principles, you can limit content "
+#~ "visibility from years to seconds."
+#~ msgstr ""
+#~ "Domyślnie treść tego shortcode będzie widoczna cały czas. Używając "
+#~ "poniższych pól, wprowadzisz pewne ograniczenia. Przykładowo, jeśli "
+#~ "wpiszesz 1-5 w pole dni tygodnia - treść będzie widoczna jedynie od "
+#~ "poniedziałku, do piątku. Stosując te same zasady, możesz ograniczyć "
+#~ "wyświetlanie treści do konkretnych lat, bądź sekund."
+
+#~ msgid "Plugin settings"
+#~ msgstr "Ustawienia wtyczki"
+
+#~ msgid "Plugin homepage"
+#~ msgstr "Strona domowa wtyczki"
+
+#~ msgid "Support forums"
+#~ msgstr "Forum wsparcia"
+
+#~ msgid "Add-ons"
+#~ msgstr "Dodatki"
+
+#~ msgid "Shortcodes"
+#~ msgstr "Shortcode"
+
+#~ msgid "About"
+#~ msgstr "Podstawowe informacje"
+
+#~ msgid "Custom formatting"
+#~ msgstr "Własne formatowanie"
+
+#~ msgid ""
+#~ "Disable this option if you have some problems with other plugins or "
+#~ "content formatting"
+#~ msgstr ""
+#~ "Wyłącz tę opcję, jeśli masz problemy z innymi wtyczkami lub formatowaniem "
+#~ "treści."
+
+#~ msgid "Documentation article"
+#~ msgstr "Dokumentacja"
+
+#~ msgid "Enabled"
+#~ msgstr "Włączone"
+
+#~ msgid "Skip default values"
+#~ msgstr "Pomijaj wartości domyślne"
+
+#~ msgid ""
+#~ "Enable this option and the generator will insert a shortcode without "
+#~ "default attribute values that you have not changed. As a result, the "
+#~ "generated code will be shorter."
+#~ msgstr ""
+#~ "Włączenie tej opcji spowoduje, że generator pominie w shortcode wartości "
+#~ "domyśle, jeśli nie zostały one zmienione. W wyniku tego, wygenerowany kod "
+#~ "będzie krótszy. "
+
+#~ msgid "Shortcodes prefix"
+#~ msgstr "Przedrostek shortcode"
+
+#~ msgid ""
+#~ "This prefix will be added to all shortcodes by this plugin. For example, "
+#~ "type here %s and you'll get shortcodes like %s and %s. Please keep in "
+#~ "mind: this option is not affects your already inserted shortcodes and if "
+#~ "you'll change this value your old shortcodes will be broken"
+#~ msgstr ""
+#~ "Przedrostek zostanie dodany do wszystkich shortcode tej wtyczki. "
+#~ "Przykładowo, wpisując %s otrzymasz shortcode wyglądający jak %s bądź %s. "
+#~ "Pamiętaj, że ta opcja nie działa na wcześniej stworzone shortcode. Jeśli "
+#~ "zmienisz wartość w tym polu, stare shortcode przestaną działać."
+
+#~ msgid "Skin"
+#~ msgstr "Skórka"
+
+#~ msgid "Choose global skin for shortcodes"
+#~ msgstr "Wybierz skórkę domyślną dla shortcode"
+
+#~ msgid "Custom CSS"
+#~ msgstr "Własny CSS"
+
+#~ msgid "Examples"
+#~ msgstr "Przykłady"
+
+#~ msgid "Vladimir Anokhin"
+#~ msgstr "Vladimir Anokhin"
+
+#~ msgid "Supercharge your WordPress theme with mega pack of shortcodes"
+#~ msgstr "Wzbogać motyw swojego WordPress'a wielką paczką shortcode"
+
+#~ msgid "Where to start?"
+#~ msgstr "Od czego zacząć?"
+
+#~ msgid ""
+#~ "<h1>Oops! Plugin not activated&hellip;</h1> <p>Shortcodes Ultimate is not "
+#~ "fully compatible with your PHP version (%s).<br />Reccomended PHP version "
+#~ "&ndash; %s (or higher).</p><a href=\"%s\">&larr; Return to the plugins "
+#~ "screen</a> <a href=\"%s\"%s>Continue and activate anyway &rarr;</a>"
+#~ msgstr ""
+#~ "<h1>Kurcze! Wtyczka nie jest włączona&hellip;</h1> <p>Shortcodes Ultimate "
+#~ "nie jest w pełni zgodne z twoją wersją PHP (%s).<br />Zalecana wersja "
+#~ "PHP, to &ndash; %s (albo wyższa).</p><a href=\"%s\">&larr; Powrót do "
+#~ "strony wtyczek</a> <a href=\"%s\"%s>Kontynuuj i włącz mimo wszystko &rarr;"
+#~ "</a>"
+
+#~ msgid ""
+#~ "<h1>Oops! Plugin not activated&hellip;</h1> <p>Shortcodes Ultimate is not "
+#~ "fully compatible with your version of WordPress (%s).<br />Reccomended "
+#~ "WordPress version &ndash; %s (or higher).</p><a href=\"%s\">&larr; Return "
+#~ "to the plugins screen</a> <a href=\"%s\"%s>Continue and activate anyway "
+#~ "&rarr;</a>"
+#~ msgstr ""
+#~ "<h1>Kurcze! Wtyczka nie jest włączona&hellip;</h1> <p>Shortcodes Ultimate "
+#~ "nie jest w pełni zgodne z twoją wersją WordPress'a (%s).<br />Zalecana "
+#~ "wersja WordPress'a, to &ndash; %s (albo wyższa).</p><a href=\"%s\">&larr; "
+#~ "Powrót do strony wtyczek</a> <a href=\"%s\"%s>Kontynuuj i włącz mimo "
+#~ "wszystko &rarr;</a>"
+
+#~ msgid "This is box title"
+#~ msgstr "To jest tytuł pola"
+
+#~ msgid "please specify correct source"
+#~ msgstr "proszę, wprowadź właściwe źródło"
+
+#~ msgid ""
+#~ "please specify correct ID for this block. You should use same ID as in "
+#~ "the Content source field (when inserting lightbox shortcode)"
+#~ msgstr ""
+#~ "proszę wprowadź właściwe ID dla tego bloku. Powinieneś użyć tego samego "
+#~ "ID, co w polu Źródło treści (przy wstawianiu shortcode dla Wyskakującego "
+#~ "okienka)"
+
+#~ msgid "please specify correct url"
+#~ msgstr "proszę, podaj poprawny url"
+
+#~ msgid "This menu doesn't exists, or has no elements"
+#~ msgstr "To menu, nie istnieje albo nie zawiera żadnych elementów"
+
+#~ msgid "images not found"
+#~ msgstr "obrazów nie znaleziono"
+
+#~ msgid "template not found"
+#~ msgstr "szablonu nie znaleziono"
+
+#~ msgid "post ID is incorrect"
+#~ msgstr "ID wpisu jest niepoprawy"
+
+#~ msgid "please specify meta key name"
+#~ msgstr "proszę, wprowadź nazwę meta key"
+
+#~ msgid "password field is not allowed"
+#~ msgstr "pole hasła, jest niedozwolone"
+
+#~ msgid "user ID is incorrect"
+#~ msgstr "ID użytkownika jest niepoprawne"
+
+#~ msgid "please specify template name"
+#~ msgstr "proszę, określ nazwę szablonu "
+
+#~ msgid "please specify the data"
+#~ msgstr "proszę, zdefiniuj dane "
+
+#~ msgid ""
+#~ "Incorrect time range (%s). Please use - (minus) symbol to specify time "
+#~ "range. Example: 14:00 - 18:00"
+#~ msgstr ""
+#~ "Błędny zakres czasu (%s). Proszę, użyj znaku - (minusa), aby wprowadzić "
+#~ "zakres czasu. Przykład: 14:00 - 18:00"
+
+#~ msgid "Additional skins successfully installed"
+#~ msgstr "Dodatkowe skórki zostały pomyślnie zainstalowane"
+
+#~ msgid "Open dropdown to choose one of new styles"
+#~ msgstr "Otwórz menu rozwijane, aby wybrać jeden z nowych styli"
+
+#~ msgid "Get more styles"
+#~ msgstr "Pobierz więcej styli"
+
+#~ msgid "Example code does not found, please check it later"
+#~ msgstr "Kod przykładowy nie został znaleziony - proszę, sprawdź później"
+
+#~ msgid "Get the code"
+#~ msgstr "Pobierz kod"
+
+#~ msgid "Slide link"
+#~ msgstr "Link slajdu"
+
+#~ msgid ""
+#~ "Use this field to add custom links to slides used with Slider, Carousel "
+#~ "and Custom Gallery shortcodes"
+#~ msgstr ""
+#~ "Skorzystaj z tego pola, aby dodać własne linki do slajdów w shortcode "
+#~ "Slider'a, Karuzeli oraz Konfigurowalnej Galerii"
+
+#~ msgid ""
+#~ "Hello, my name is Vladimir Anokhin, and I am developer of plugin "
+#~ "<b>Shortcodes Ultimate</b>.<br>If you like this plugin, please write a "
+#~ "few words about it at the wordpress.org or twitter. It will help other "
+#~ "people find this useful plugin more quickly.<br><b>Thank you!</b>"
+#~ msgstr ""
+#~ "Witaj, nazywam się Vladimir Anokhin, o jestem twórcą wtyczki "
+#~ "<b>Shortcodes Ultimate</b>.<br>Jeśli podoba Ci się ta wtyczka, napisz o "
+#~ "niej - proszę, kilka słów na stronie wordpress.org lub twitterze. Dzięki "
+#~ "temu inni odnajdą, tę użyteczną wtyczkę dużo szybciej.<br><b>Dziękuję!</b>"
+
+#~ msgid "Rate plugin"
+#~ msgstr "Oceń wtyczkę"
+
+#~ msgid "Shortcodes Ultimate - must have WordPress plugin #shortcodesultimate"
+#~ msgstr ""
+#~ "Shortcodes Ultimate - niezbędna wtyczka do WordPress'a #shortcodesultimate"
+
+#~ msgid "Tweet"
+#~ msgstr "Tweetuj"
+
+#~ msgid "No, thanks"
+#~ msgstr "Nie, dziękuję"
+
+#~ msgid "Remind me later"
+#~ msgstr "Przypomnij mi później"
+
+#~ msgid "Special Shortcodes Ultimate widget"
+#~ msgstr "Specjalny widget Shortcodes Ultimate"
+
+#~ msgid "Posted"
+#~ msgstr "Zamieszczone"
+
+#~ msgid "0 comments"
+#~ msgstr "0 komentarzy"
+
+#~ msgid "1 comment"
+#~ msgstr "1 komentarz"
+
+#~ msgid "%n comments"
+#~ msgstr "%n komentarzy"

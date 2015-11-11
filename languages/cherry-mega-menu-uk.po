@@ -1,0 +1,421 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cherry-mega-menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-09 17:55+0200\n"
+"PO-Revision-Date: 2015-11-09 17:55+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:93
+msgid "Launched for Menu ID"
+msgstr "Використовувати для ID меню"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:94
+#: admin/includes/class-cherry-mega-menu-item-manager.php:179
+msgid "Mega Menu"
+msgstr "Меґа Меню"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:95
+msgid "Saving"
+msgstr "Збереження..."
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:97
+msgid "Oops. Something went wrong. Please reload the page."
+msgstr "Ой, щось трапилося. Будь ласка, оновіть сторінку."
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:184
+msgid "Settings"
+msgstr "Налаштування"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:189
+msgid "Media"
+msgstr "Медіа"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:258
+#: core/includes/class-cherry-mega-menu-widget-manager.php:451
+msgid "Save"
+msgstr "Зберегти"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:259
+msgid "Saving..."
+msgstr "Збереження..."
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:260
+msgid "Saved"
+msgstr "Збережено"
+
+#: admin/includes/class-cherry-mega-menu-item-manager.php:298
+msgid "Something went wrong. Please, try again"
+msgstr "Щось пішло не так. Будь ласка, спробуйте ще раз."
+
+#: admin/includes/class-cherry-mega-menu-options.php:47
+msgid "Select main theme menu"
+msgstr "Оберіть основне меню теми"
+
+#: admin/includes/class-cherry-mega-menu-options.php:55
+msgid "Main theme menu location"
+msgstr "Розташування основного меню теми"
+
+#: admin/includes/class-cherry-mega-menu-options.php:56
+msgid "Select the menu location for your main menu"
+msgstr "Оберіть розташування основного меню теми"
+
+#: admin/includes/class-cherry-mega-menu-options.php:60
+msgid ""
+"Select menu location for main theme menu. Mega menu will be applied to this "
+"location."
+msgstr ""
+"Оберіть розташування основного меню теми. Меґа меню буде застосоване до цієї "
+"області"
+
+#: admin/includes/class-cherry-mega-menu-options.php:69
+msgid "Mega menu enabled"
+msgstr "Меґа Меню увімкнено"
+
+#: admin/includes/class-cherry-mega-menu-options.php:70
+#: admin/includes/class-cherry-mega-menu-options.php:190
+msgid "Enable / Disable"
+msgstr "Увімкнути/Вимкнути"
+
+#: admin/includes/class-cherry-mega-menu-options.php:74
+msgid "This applies only to main site menu"
+msgstr "Застосовне тільки до основного меню теми"
+
+#: admin/includes/class-cherry-mega-menu-options.php:81
+msgid "Mobile starts from"
+msgstr "Початок завантаження версії для мобільного"
+
+#: admin/includes/class-cherry-mega-menu-options.php:82
+#: admin/includes/class-cherry-mega-menu-options.php:86
+msgid "Select the window dimensions for mobile menu layout switching."
+msgstr ""
+"Визначте розміри вікна, починаючи від яких завантажуватиметься версія меню "
+"для мобільного."
+
+#: admin/includes/class-cherry-mega-menu-options.php:94
+msgid "Mobile nav label"
+msgstr "Підпис меню для мобільного"
+
+#: admin/includes/class-cherry-mega-menu-options.php:95
+#: admin/includes/class-cherry-mega-menu-options.php:99
+msgid "Enter the mobile navigation label "
+msgstr "Вкажіть підпис меню для мобільного"
+
+#: admin/includes/class-cherry-mega-menu-options.php:101
+#: admin/includes/class-cherry-mega-menu-options.php:102
+#: public/includes/class-cherry-mega-menu-public-manager.php:151
+msgid "Menu"
+msgstr "Меню"
+
+#: admin/includes/class-cherry-mega-menu-options.php:106
+msgid "Menu direction"
+msgstr "Напрямок меню"
+
+#: admin/includes/class-cherry-mega-menu-options.php:107
+#: admin/includes/class-cherry-mega-menu-options.php:111
+msgid "Select your direction: vertical or horizontal"
+msgstr "Оберіть бажаний напрям меню: горизонтальний чи вертикальний"
+
+#: admin/includes/class-cherry-mega-menu-options.php:116
+msgid "Horizontal"
+msgstr "Горизонтальний"
+
+#: admin/includes/class-cherry-mega-menu-options.php:117
+msgid "Vertical"
+msgstr "Вертикальний"
+
+#: admin/includes/class-cherry-mega-menu-options.php:122
+msgid "Animation effect"
+msgstr "Ефект анімації"
+
+#: admin/includes/class-cherry-mega-menu-options.php:123
+#: admin/includes/class-cherry-mega-menu-options.php:127
+msgid "Animation effects for the dropdown menu"
+msgstr "Ефект анімації для меню, що випадає"
+
+#: admin/includes/class-cherry-mega-menu-options.php:132
+msgid "Fade In"
+msgstr "Поступово виділяти"
+
+#: admin/includes/class-cherry-mega-menu-options.php:133
+msgid "Slide from top"
+msgstr "Плавно випадати згори"
+
+#: admin/includes/class-cherry-mega-menu-options.php:134
+msgid "Slide from bottom"
+msgstr "Плавно підніматися знизу"
+
+#: admin/includes/class-cherry-mega-menu-options.php:135
+msgid "Slide from left"
+msgstr "Плавно з'являтися зліва"
+
+#: admin/includes/class-cherry-mega-menu-options.php:136
+msgid "Slide from right"
+msgstr "Плавно з'являтися справа"
+
+#: admin/includes/class-cherry-mega-menu-options.php:141
+msgid "Event"
+msgstr "Подія"
+
+#: admin/includes/class-cherry-mega-menu-options.php:142
+#: admin/includes/class-cherry-mega-menu-options.php:146
+msgid "Select an activation event"
+msgstr "Оберіть подію активації ефекту"
+
+#: admin/includes/class-cherry-mega-menu-options.php:151
+msgid "Hover"
+msgstr "Наведення вказівника миші"
+
+#: admin/includes/class-cherry-mega-menu-options.php:152
+msgid "Click"
+msgstr "Натиск вказівником миші"
+
+#: admin/includes/class-cherry-mega-menu-options.php:157
+msgid "Menu parent container CSS selector"
+msgstr "Селектор CSS контейнера, батьківського  для меню"
+
+#: admin/includes/class-cherry-mega-menu-options.php:158
+msgid "Enter CSS selector name for mega menu parent container (if needed)"
+msgstr ""
+"Вкажіть селектор CSS для батьківського контейнера меґа меню (у разі "
+"необхідності)"
+
+#: admin/includes/class-cherry-mega-menu-options.php:162
+msgid "Enter CSS class name for mega menu parent container (if needed)"
+msgstr ""
+"Вкажіть назву класу CSS для батьківського контейнера меґа меню (у разі "
+"необхідності)"
+
+#: admin/includes/class-cherry-mega-menu-options.php:189
+msgid "Mega menu caching enabled"
+msgstr "Кеш Меґа Меню увімкнено"
+
+#: admin/includes/class-cherry-mega-menu-options.php:194
+msgid "Enable caching for mega menu items"
+msgstr "Увімкнути кеш елементів меґа меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:35
+msgid "Mega Menus can only be created on top level menu items."
+msgstr ""
+"Меґа Меню можна застосовувати тільки до елементів меню верхнього рівня "
+"вкладення"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:46
+msgid "Enable Mega Menu for current item"
+msgstr "Увімкнути  меґа меню для даного елемента"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:50
+msgid "Select a Widget to add to the panel"
+msgstr "Оберіть віджет, який буде додано в панель"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:64
+msgid "No widgets found"
+msgstr "Віджетів немає"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:64
+msgid "Use the Widget Selector (top right) to add a Widget to this panel."
+msgstr ""
+"Скористайтесь інструментом \"Вибрати віджет\" (угорі справа) для того, щоб "
+"додати віджет в цю панель."
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:94
+msgid "Subitems behavior"
+msgstr "Поведінка підпунктів"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:95
+msgid "Standard subitems behavior"
+msgstr "Поведінка підпунктів меню за замовчуванням"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:100
+msgid "Group sub items to columns"
+msgstr "Згрупувати підпункти в стовпці"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:101
+msgid "Group standard submenu items to columns"
+msgstr "Згрупувати звичайні підпункти в стовпці"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:106
+msgid "Columns number"
+msgstr "Кількість стовпців"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:107
+msgid "Submenu items columns number"
+msgstr "Кількість стовпців для підпунктів меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:119
+msgid "Layout and position"
+msgstr "Макет та розташування"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:120
+msgid "Define layout and position options for current mega menu item"
+msgstr ""
+"Визначте властивості макету та розташування для даного елемента меґа меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:125
+msgid "Submenu position"
+msgstr "Розташування підменю"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:126
+msgid "Select submenu position for current menu item"
+msgstr "Оберіть розташування підменю даного елемента меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:130
+msgid "Full Width"
+msgstr "На всю ширину"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:131
+msgid "Center"
+msgstr "Посередині"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:132
+msgid "Left Edge of Menu Bar"
+msgstr "З лівого краю меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:133
+msgid "Right Edge of Menu Bar"
+msgstr "З правого краю меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:134
+msgid "Left Edge of Parent Item"
+msgstr "З лівого краю батьківського елемента меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:135
+msgid "Right Edge of Parent Item"
+msgstr "З правого краю батьківського елемента меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:136
+msgid "Vertical - Aligned to menu top"
+msgstr "Вертикально - вирівнювати відносно верхнього краю меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:137
+msgid "Vertical - Aligned to parent"
+msgstr "Вертикально - вирівнювати відносно батьківського елемента меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:141
+msgid "Set item width for 1200"
+msgstr "Вкажіть ширину елемента для 1200"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:142
+#: admin/includes/class-cherry-mega-menu-tabs.php:148
+#: admin/includes/class-cherry-mega-menu-tabs.php:154
+msgid "Set item width for and more (100%, 400px)"
+msgstr "Вкажіть ширину елемента для більшого розширення (100%, 400px)"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:147
+msgid "Set item width for 980-1199"
+msgstr "Вкажіть ширину елемента для 980-1199"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:153
+msgid "Set item width for 768-979"
+msgstr "Вкажіть ширину елемента для 768-979"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:159
+msgid "Hide submenu on mobile"
+msgstr "Приховати підменю на мобільних пристроях"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:160
+msgid "Hide this submenu item on mobile version"
+msgstr "Приховати цей підпункт меню на мобільних пристроях"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:188
+msgid "Item icon"
+msgstr "Іконка елемента"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:189
+msgid "Select FontAwesome item icon"
+msgstr "Оберіть FontAwesome іконку елемента "
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:195
+msgid "Item arrow"
+msgstr "Стрілка елемента"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:196
+msgid "Select FontAwesome icon for arrow"
+msgstr "Оберіть FontAwesome іконку стрілки елемента "
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:202
+msgid "Hide menu link text"
+msgstr "Приховати підпис посилання меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:203
+msgid "Hide this menu item link text"
+msgstr "Приховати підпис посилання цього елемента меню"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:208
+msgid "Hide sub-menu arrow"
+msgstr "Приховати стрілки підменю"
+
+#: admin/includes/class-cherry-mega-menu-tabs.php:209
+msgid "Hide sub-menu indicator arrow"
+msgstr "Приховати стрілки-позначення підменю"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:82
+msgid "Cherry Mega Menu Widgets"
+msgstr "Віджети Cherry Меґа Меню"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:83
+msgid "Do not manually edit this area."
+msgstr "Не редагуйте цю область вручну"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:120
+#, php-format
+msgid "Saved %s"
+msgstr "Збережено %s"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:121
+#, php-format
+msgid "Failed to save %s"
+msgstr "Не вдалося зберегти %s"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:146
+#, php-format
+msgid "Updated %s (new columns: %d)"
+msgstr "Оновлено %s (%d нових стовпців)"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:147
+#, php-format
+msgid "Failed to update %s"
+msgstr "Не вдалося оновити %s"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:181
+#, php-format
+msgid "Failed to add %s to %d"
+msgstr "Не вдалося додати %s до %d"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:206
+#, php-format
+msgid "Deleted %s"
+msgstr "%s видалено"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:207
+#, php-format
+msgid "Failed to delete %s"
+msgstr "Не вдалося видалити %s"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:233
+#, php-format
+msgid "Moved %s to %d (%s)"
+msgstr "%s переміщено в %d (%s)"
+
+#: core/includes/class-cherry-mega-menu-widget-manager.php:234
+#, php-format
+msgid "Failed to move %s to %d"
+msgstr "Не вдалося перемістити %s до %d"
+
+#: public/includes/class-cherry-mega-menu-public-manager.php:153
+msgid "Close"
+msgstr "Закрити"

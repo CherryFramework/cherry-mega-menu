@@ -1,0 +1,165 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: blank\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-26 19:24+0200\n"
+"PO-Revision-Date: 2015-04-06 06:14+0300\n"
+"Last-Translator: Vladimir Anokhin <ano.vladimir@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: su\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;__;_x;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin/class-cherry-grid-metabox.php:60
+msgid "Grid Options"
+msgstr ""
+
+#: includes/admin/class-cherry-grid-metabox.php:68
+msgid "Width"
+msgstr ""
+
+#: includes/admin/class-cherry-grid-metabox.php:82
+msgid "Show with image"
+msgstr ""
+
+#: includes/admin/class-cherry-grid-metabox.php:87
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/class-cherry-grid-metabox.php:88
+msgid "No"
+msgstr ""
+
+#: includes/admin/class-cherry-grid-metabox.php:94
+msgid "Excerpt length"
+msgstr ""
+
+#: includes/admin/class-cherry-grid-metabox.php:102
+msgid "Item background color"
+msgstr ""
+
+#: includes/admin/class-cherry-grid-metabox.php:109
+msgid "Item text color"
+msgstr ""
+
+#: includes/admin/class-cherry-grid-metabox.php:116
+msgid "CSS class for post item"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:63
+#: includes/class-cherry-grid-shortcode.php:401
+msgid "Read More"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:97
+msgid "There are no posts found"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:116
+msgid "Template file does not exist"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:336
+msgid "Grid"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:343
+msgid "Number of posts"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:344
+msgid "Set number of posts to show"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:349
+msgid "Post type"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:350
+msgid "Select post type to get posts from"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:356
+msgid "Grid layout"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:357
+msgid "Select grid layout type"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:359
+msgid "Rows"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:360
+msgid "Columns"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:361
+msgid "Masonry"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:370
+msgid "Gutter Width"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:371
+msgid "Set gutter width (in px)"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:379
+msgid "Columns number"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:380
+msgid "Set columns number (has effect only for columns layout type)"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:388
+msgid "Initial item width"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:389
+msgid "Set initial item width"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:397
+msgid "Thumbnail size"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:398
+msgid "Set post thumbnail size to show"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:402
+msgid "Read more button text"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:403
+msgid "Enter text for read more button"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:407
+msgid "Class"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:408
+msgid "Extra CSS class"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:416
+msgid "Template"
+msgstr ""
+
+#: includes/class-cherry-grid-shortcode.php:417
+msgid "Shortcode template"
+msgstr ""
