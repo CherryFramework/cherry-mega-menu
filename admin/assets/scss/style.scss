@@ -209,6 +209,10 @@ $secondary-color: #2a445d;
 			pointer-events:none;
 		}
 
+		.cherry-generator-button {
+			display: none;
+		}
+
 		.ui-resizable-handle,
 		.gs-resize-handle {
 			position: absolute;
