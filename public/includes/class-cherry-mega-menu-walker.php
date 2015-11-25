@@ -275,14 +275,14 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 			return;
 		}
 
-		/** This filter is documented in wp-includes/post-template.php */
-		$link_title = apply_filters( 'the_title', $item->title, $item->ID );
+		$link_title = ( ! empty( $item->title ) ) ? $item->title : $item->post_title;
+		$link_title = apply_filters( 'the_title', $link_title, $item->ID );
 
 		$atts = array();
-		$atts['title']      = ! empty( $item->attr_title ) ? $item->attr_title : '';
+		$atts['title']      = ! empty( $item->attr_title ) ? $item->attr_title : $item->post_title;
 		$atts['target']     = ! empty( $item->target )     ? $item->target     : '';
 		$atts['rel']        = ! empty( $item->xfn )        ? $item->xfn        : '';
-		$atts['href']       = ! empty( $item->url )        ? $item->url        : '';
+		$atts['href']       = ! empty( $item->url )        ? $item->url        : get_permalink( $item->ID );
 		$atts['data-title'] = $link_title;
 
 		/**
@@ -315,11 +315,11 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 			}
 		}
 
-		$item_output = $args->before;
+		$item_output = $args['before'];
 
 		$item_output .= '<a'. $attributes .'>';
 
-		$link_before = $args->link_before;
+		$link_before = $args['link_before'];
 
 		if ( $mega_settings['item-icon'] ) {
 			/**
@@ -374,7 +374,7 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 			);
 		}
 
-		$link_after = $args->link_after;
+		$link_after = $args['link_after'];
 
 		if ( $mega_settings['item-arrow'] && $this->has_children && ! $mega_settings['item-hide-arrow'] ) {
 
@@ -389,7 +389,7 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 			$arrow_level = ( $depth > 0 ) ? 'sub-arrow' : 'top-level-arrow';
 			$link_after  = sprintf( $icon_format, esc_attr( $mega_settings['item-arrow'] ), $arrow_level ) . $link_after;
 
-		} elseif ( $this->has_children && $depth == 0 && ! $mega_settings['item-hide-arrow'] ) {
+		} elseif ( $this->has_children && 0 == $depth && ! $mega_settings['item-hide-arrow'] ) {
 
 			/**
 			 * Filter default submenu arrow indicator for top level item
@@ -435,7 +435,7 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 
 		$item_output .= '</a>';
 
-		$item_output .= $args->after;
+		$item_output .= $args['after'];
 
 		/**
 		 * Default WP filter
