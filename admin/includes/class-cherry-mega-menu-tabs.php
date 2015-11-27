@@ -11,12 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // disable direct access
 }
 
-if ( ! class_exists( 'cherry_mega_menu_item_tabs' ) ) {
+if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 
 	/**
 	 * Add default tabs callbcks via method of this class
 	 */
-	class cherry_mega_menu_item_tabs {
+	class Cherry_Mega_Menu_Item_Tabs {
 
 		/**
 		 * Get mega menu tab content

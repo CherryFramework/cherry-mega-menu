@@ -179,7 +179,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 
 			require_once( 'admin/includes/class-cherry-mega-menu-options.php' );
 			require_once( 'admin/includes/class-cherry-mega-menu-item-manager.php' );
-			new cherry_mega_menu_item_manager();
+			new Cherry_Mega_Menu_Item_Manager();
 			new cherry_mega_menu_widget_manager();
 
 			require_once( CHERRY_MEGA_MENU_DIR . 'admin/includes/class-cherry-update/class-cherry-plugin-update.php' );
