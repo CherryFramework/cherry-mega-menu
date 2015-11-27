@@ -315,11 +315,19 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 			}
 		}
 
-		$item_output = $args['before'];
+		if ( is_array( $args ) ) {
+			$item_output = $args['before'];
+		} else {
+			$item_output = $args->before;
+		}
 
 		$item_output .= '<a'. $attributes .'>';
 
-		$link_before = $args['link_before'];
+		if ( is_array( $args ) ) {
+			$link_before = $args['link_before'];
+		} else {
+			$link_before = $args->link_before;
+		}
 
 		if ( $mega_settings['item-icon'] ) {
 			/**
@@ -374,7 +382,11 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 			);
 		}
 
-		$link_after = $args['link_after'];
+		if ( is_array( $args ) ) {
+			$link_after = $args['link_after'];
+		} else {
+			$link_after = $args->link_after;
+		}
 
 		if ( $mega_settings['item-arrow'] && $this->has_children && ! $mega_settings['item-hide-arrow'] ) {
 
@@ -435,7 +447,11 @@ class cherry_mega_menu_walker extends Walker_Nav_Menu {
 
 		$item_output .= '</a>';
 
-		$item_output .= $args['after'];
+		if ( is_array( $args ) ) {
+			$item_output .= $args['after'];
+		} else {
+			$item_output .= $args->after;
+		}
 
 		/**
 		 * Default WP filter
