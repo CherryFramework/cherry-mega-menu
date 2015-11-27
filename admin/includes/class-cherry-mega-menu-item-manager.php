@@ -11,12 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // disable direct access
 }
 
-if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
+if ( ! class_exists( 'Cherry_Mega_Menu_Item_Manager' ) ) {
 
 	/**
 	 * Menu items manager
 	 */
-	class cherry_mega_menu_item_manager {
+	class Cherry_Mega_Menu_Item_Manager {
 
 		/**
 		 * Selected menu item ID
@@ -172,7 +172,7 @@ if ( ! class_exists( 'cherry_mega_menu_item_manager' ) ) {
 		 */
 		public function get_item_tabs() {
 
-			$tabs_handler = new cherry_mega_menu_item_tabs();
+			$tabs_handler = new Cherry_Mega_Menu_Item_Tabs();
 
 			$default_tabs = array(
 				'mega_menu' => array(
