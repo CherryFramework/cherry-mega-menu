@@ -10,17 +10,24 @@
  * License:     GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Domain Path: /languages
+ *
+ * @package   Cherry Mega Menu
+ * @author    Cherry Team
+ * @license   GPL-2.0+
+ * @link      http://www.cherryframework.com/
+ * @copyright 2014 Cherry Team
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // disable direct access
+	exit;
 }
 
-if ( ! class_exists( 'cherry_mega_menu' ) ) {
+if ( ! class_exists( 'Cherry_Mega_Menu' ) ) {
+
 	/**
 	 * Main plugin class
 	 */
-	final class cherry_mega_menu {
+	final class Cherry_Mega_Menu {
 
 		/**
 		 * @var   string
@@ -62,7 +69,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 			$this->includes();
 
 			// init menu caching class
-			add_action( 'init', array( 'cherry_mega_menu_cache', 'get_instance' ) );
+			add_action( 'init', array( 'Cherry_Mega_Menu_Cache', 'get_instance' ) );
 
 			if ( is_admin() ) {
 				$this->_admin();
@@ -180,7 +187,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 			require_once( 'admin/includes/class-cherry-mega-menu-options.php' );
 			require_once( 'admin/includes/class-cherry-mega-menu-item-manager.php' );
 			new Cherry_Mega_Menu_Item_Manager();
-			new cherry_mega_menu_widget_manager();
+			new Cherry_Mega_Menu_Widget_Manager();
 
 			require_once( CHERRY_MEGA_MENU_DIR . 'admin/includes/class-cherry-update/class-cherry-plugin-update.php' );
 
@@ -188,7 +195,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 			$Cherry_Plugin_Update -> init( array(
 					'version'			=> CHERRY_MEGA_MENU_VERSION,
 					'slug'				=> CHERRY_MEGA_MENU_SLUG,
-					'repository_name'	=> CHERRY_MEGA_MENU_SLUG
+					'repository_name'	=> CHERRY_MEGA_MENU_SLUG,
 			));
 		}
 
@@ -232,6 +239,7 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 		 * @since 1.0.0
 		 */
 		public function clear_caches() {
+
 			// https://wordpress.org/plugins/widget-output-cache/
 			if ( function_exists( 'menu_output_cache_bump' ) ) {
 				menu_output_cache_bump();
@@ -251,5 +259,5 @@ if ( ! class_exists( 'cherry_mega_menu' ) ) {
 
 	}
 
-	new cherry_mega_menu();
+	new Cherry_Mega_Menu();
 }

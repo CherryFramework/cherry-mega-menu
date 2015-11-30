@@ -1,43 +1,45 @@
 <?php
 /**
- * Define default mega menu item tabs callbacks
+ * Define default mega menu item tabs callbacks.
  *
- * @package   cherry_mega_menu
+ * @package   Cherry Mega Menu
  * @author    Cherry Team
  * @license   GPL-2.0+
+ * @link      http://www.cherryframework.com/
+ * @copyright 2014 Cherry Team
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // disable direct access
+	exit;
 }
 
 if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 
 	/**
-	 * Add default tabs callbcks via method of this class
+	 * Add default tabs callbcks via method of this class.
 	 */
 	class Cherry_Mega_Menu_Item_Tabs {
 
 		/**
-		 * Get mega menu tab content
+		 * Get mega menu tab content.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  int    $id    menu item ID
-		 * @param  string $title menu item title
-		 * @param  int    $depth menu item depth
-		 * @param  array  $meta  menu item meta
-		 * @return string        tab HTML
+		 * @param  int    $id    menu item ID.
+		 * @param  string $title menu item title.
+		 * @param  int    $depth menu item depth.
+		 * @param  array  $meta  menu item meta.
+		 * @return string        tab HTML.
 		 */
 		public function mega_menu( $id, $title, $depth, $meta ) {
 
 			if ( $depth > 0 ) {
-				return '<em>' . __( "Mega Menus can only be created on top level menu items.", "megamenu" ) . '</em>';
+				return '<em>' . __( 'Mega Menus can only be created on top level menu items.', 'megamenu' ) . '</em>';
 			}
 
 			global $cherry_mega_menu_total_columns;
 
-			$widget_manager = new cherry_mega_menu_widget_manager();
+			$widget_manager = new Cherry_Mega_Menu_Widget_Manager();
 
 			$all_widgets = $widget_manager->get_available_widgets();
 
@@ -61,14 +63,12 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 
 			if ( ! count( $panel_widgets ) ) {
 
-				$return .= '<div class="message no_widgets">' . __( "No widgets found", "cherry-mega-menu" ) . '<br /><br /><i>' . __( "Use the Widget Selector (top right) to add a Widget to this panel.", "cherry-mega-menu" ) . '</i></div>';
-
+				$return .= '<div class="message no_widgets">' . __( 'No widgets found', 'cherry-mega-menu' ) . '<br /><br /><i>' . __( 'Use the Widget Selector (top right) to add a Widget to this panel.', 'cherry-mega-menu' ) . '</i></div>';
 			} else {
 
 				foreach ( $panel_widgets as $widget ) {
 					$return .= $widget_manager->get_widget_html( $widget['title'], $widget['widget_id'], $widget['mega_columns'], $cherry_mega_menu_total_columns );
 				}
-
 			}
 
 			$return .= '</div>';
@@ -77,15 +77,15 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 		}
 
 		/**
-		 * Get settings tab content
+		 * Get settings tab content.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  int    $id    menu item ID
-		 * @param  string $title menu item title
-		 * @param  int    $depth menu item depth
-		 * @param  array  $meta  menu item meta
-		 * @return string        tab HTML
+		 * @param  int    $id    menu item ID.
+		 * @param  string $title menu item title.
+		 * @param  int    $depth menu item depth.
+		 * @param  array  $meta  menu item meta.
+		 * @return string        tab HTML.
 		 */
 		public function settings( $id, $title, $depth, $meta ) {
 
@@ -94,13 +94,13 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 					'name' => __( 'Subitems behavior', 'cherry-mega-menu' ),
 					'desc' => __( 'Standard subitems behavior', 'cherry-mega-menu' ),
 					'type' => 'heading',
-					'std'  => ''
+					'std'  => '',
 				),
 				'sub-items-to-cols' => array(
 					'name' => __( 'Group sub items to columns', 'cherry-mega-menu' ),
 					'desc' => __( 'Group standard submenu items to columns', 'cherry-mega-menu' ),
 					'type' => 'checkbox',
-					'std'  => ''
+					'std'  => '',
 				),
 				'sub-cols-num' => array(
 					'name'    => __( 'Columns number', 'cherry-mega-menu' ),
@@ -112,14 +112,14 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 						'2' => '2',
 						'3' => '3',
 						'4' => '4',
-						'6' => '6'
-					)
+						'6' => '6',
+					),
 				),
 				'item-layout' => array(
 					'name' => __( 'Layout and position', 'cherry-mega-menu' ),
 					'desc' => __( 'Define layout and position options for current mega menu item', 'cherry-mega-menu' ),
 					'type' => 'heading',
-					'std'  => ''
+					'std'  => '',
 				),
 				'item-submenu-position' => array(
 					'name'    => __( 'Submenu position', 'cherry-mega-menu' ),
@@ -134,32 +134,32 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 						'left-parent'     => __( 'Left Edge of Parent Item', 'cherry-mega-menu' ),
 						'right-parent'    => __( 'Right Edge of Parent Item', 'cherry-mega-menu' ),
 						'vertical-top'    => __( 'Vertical - Aligned to menu top', 'cherry-mega-menu' ),
-						'vertical-parent' => __( 'Vertical - Aligned to parent', 'cherry-mega-menu' )
-					)
+						'vertical-parent' => __( 'Vertical - Aligned to parent', 'cherry-mega-menu' ),
+					),
 				),
 				'item-width-fullscreen' => array(
 					'name' => __( 'Set item width for 1200', 'cherry-mega-menu' ),
 					'desc' => __( 'Set item width for and more (100%, 400px)', 'cherry-mega-menu' ),
 					'type' => 'text',
-					'std'  => '100%'
+					'std'  => '100%',
 				),
 				'item-width-desktop' => array(
 					'name' => __( 'Set item width for 980-1199', 'cherry-mega-menu' ),
 					'desc' => __( 'Set item width for and more (100%, 400px)', 'cherry-mega-menu' ),
 					'type' => 'text',
-					'std'  => '100%'
+					'std'  => '100%',
 				),
 				'item-width-tablet' => array(
 					'name' => __( 'Set item width for 768-979', 'cherry-mega-menu' ),
 					'desc' => __( 'Set item width for and more (100%, 400px)', 'cherry-mega-menu' ),
 					'type' => 'text',
-					'std'  => '100%'
+					'std'  => '100%',
 				),
 				'item-hide-mobile' => array(
 					'name' => __( 'Hide submenu on mobile', 'cherry-mega-menu' ),
 					'desc' => __( 'Hide this submenu item on mobile version', 'cherry-mega-menu' ),
 					'type' => 'checkbox',
-					'std'  => ''
+					'std'  => '',
 				)
 			);
 
@@ -171,19 +171,18 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 		}
 
 		/**
-		 * Get media tab content
+		 * Get media tab content.
 		 *
 		 * @since  1.0.0
-		 * @since  1.1.0  Added badge-related options
+		 * @since  1.1.0  Added badge-related options.
 		 *
-		 * @param  int    $id    menu item ID
-		 * @param  string $title menu item title
-		 * @param  int    $depth menu item depth
-		 * @param  array  $meta  menu item meta
-		 * @return string        tab HTML
+		 * @param  int    $id    menu item ID.
+		 * @param  string $title menu item title.
+		 * @param  int    $depth menu item depth.
+		 * @param  array  $meta  menu item meta.
+		 * @return string        tab HTML.
 		 */
 		public function media( $id, $title, $depth, $meta ) {
-
 			$default_fields = array(
 				'item-icon' => array(
 					'name'  => __( 'Item icon', 'cherry-mega-menu' ),
@@ -228,7 +227,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 						'new'       => __( 'New', 'cherry-mega-menu' ),
 						'sale'      => __( 'Sale', 'cherry-mega-menu' ),
 						'hot'       => __( 'Hot', 'cherry-mega-menu' ),
-					)
+					),
 				),
 				'item-badge-text' => array(
 					'name' => __( 'Badge text', 'cherry-mega-menu' ),
@@ -239,23 +238,21 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 			);
 
 			$fields = apply_filters( 'cherry_mega_menu_media_tab_fields', $default_fields );
-
 			$return = $this->_build_tab_fields( $fields, $meta, $id, $depth );
 
 			return $return;
-
 		}
 
 		/**
-		 * Build tab fields set
+		 * Build tab fields set.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  array  $fields  fields definition array
-		 * @param  array  $meta    existing menu meta array
-		 * @param  int    $id      current menu item ID
-		 * @param  int    $depth   current menu item depth
-		 * @return html            settings markup
+		 * @param  array  $fields  fields definition array.
+		 * @param  array  $meta    existing menu meta array.
+		 * @param  int    $id      current menu item ID.
+		 * @param  int    $depth   current menu item depth.
+		 * @return html            settings markup.
 		 */
 		private function _build_tab_fields( $fields, $meta, $id, $depth ) {
 
@@ -269,35 +266,35 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 					'type'    => '',
 					'std'     => '',
 					'depth'   => 10,
-					'options' => array()
+					'options' => array(),
 				) );
 
 				if ( $depth > $field['depth'] ) {
 					continue;
 				}
 
-				if ( !$field['type'] ) {
+				if ( ! $field['type'] ) {
 					continue;
 				}
 
-				$this_meta = isset( $meta[$field_id] ) ? $meta[$field_id] : $field['std'];
+				$this_meta = isset( $meta[ $field_id ] ) ? $meta[ $field_id ] : $field['std'];
 
 				if ( 'heading' == $field['type'] ) {
 					$return .= '<div class="field-settings-row_">';
-					$return .=     '<h3>' . $field['name'] . '</h3>';
-					$return .=     '<span class="row-desc_">' . $field['desc'] . '</span>';
+					$return .= '<h3>' . $field['name'] . '</h3>';
+					$return .= '<span class="row-desc_">' . $field['desc'] . '</span>';
 					$return .= '</div>';
 				} elseif ( 'submit' == $field['type'] ) {
 					$return .= '<div class="save-settings-wrap_"><a class="button-primary_ ' . esc_attr( $field_id ) . '" href="#">' . $field['name'] . '</a></div>';
 				} else {
 					$return .= '<div class="field-settings-row_">';
-					$return .=     '<div class="row-heading_">';
-					$return .=         '<label for="' . $field_id  . '">' . $field['name'] . '</label>';
-					$return .=         '<span class="row-desc_">' . $field['desc'] . '</span>';
-					$return .=     '</div>';
-					$return .=     '<div class="row-control_">';
-					$return .=          $this->_field_control( $field_id, $field, $this_meta, $id );
-					$return .=     '</div>';
+					$return .= '<div class="row-heading_">';
+					$return .= '<label for="' . $field_id  . '">' . $field['name'] . '</label>';
+					$return .= '<span class="row-desc_">' . $field['desc'] . '</span>';
+					$return .= '</div>';
+					$return .= '<div class="row-control_">';
+					$return .= $this->_field_control( $field_id, $field, $this_meta, $id );
+					$return .= '</div>';
 					$return .= '</div>';
 				}
 
@@ -305,25 +302,25 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 			}
 
 			return $return;
-
 		}
 
 		/**
-		 * Get single field cotrol
+		 * Get single field cotrol.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  int    $field_id current field ID
-		 * @param  array  $field    field params array
-		 * @param  mixed  $meta     current menu meta val
-		 * @param  int    $id       current menu item ID
-		 * @return html             settings markup
+		 * @param  int    $field_id current field ID.
+		 * @param  array  $field    field params array.
+		 * @param  mixed  $meta     current menu meta val.
+		 * @param  int    $id       current menu item ID.
+		 * @return html             settings markup.
 		 */
 		private function _field_control( $field_id, $field, $meta, $id ) {
 
 			$return = '';
 
 			switch ( $field['type'] ) {
+
 				case 'text':
 					$return = '<input type="text" name="' . $field_id . '" id="' . $field_id . '" value="' . $meta . '">';
 					break;
@@ -334,26 +331,29 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 
 				case 'icon-picker':
 					$return  = '<div class="input-group iconpicker-container">';
-					$return .=     '<span class="input-group-addon"></span>';
-					$return .=     '<input type="text" data-init-script="icon-picker" data-placement="bottomLeft" name="' . $field_id . '" id="' . $field_id . '" value="' . $meta . '">';
+					$return .= '<span class="input-group-addon"></span>';
+					$return .= '<input type="text" data-init-script="icon-picker" data-placement="bottomLeft" name="' . $field_id . '" id="' . $field_id . '" value="' . $meta . '">';
 					$return .= '</div>';
 					break;
 
 				case 'radio':
-					if ( !is_array($field['options']) ) {
+					if ( ! is_array( $field['options'] ) ) {
 						$return = '';
 						break;
 					}
 
 					$return = '<div class="radio-group_">';
+
 					foreach ( $field['options'] as $value => $label ) {
-						$return .= '<label for="' . $field_id . '-' . str_replace(' ', '-', $value) . '"><input type="radio" name="' . $field_id . '" id="' . $field_id . '-' . str_replace(' ', '-', $value) . '" value="' . $value . '" ' . checked( $meta, $value, false ) . '> ' . $label . '</label>';
+						$return .= '<label for="' . $field_id . '-' . str_replace( ' ', '-', $value ) . '"><input type="radio" name="' . $field_id . '" id="' . $field_id . '-' . str_replace( ' ', '-', $value ) . '" value="' . $value . '" ' . checked( $meta, $value, false ) . '> ' . $label . '</label>';
 					}
+
 					$return .= '</div>';
 					break;
 
 				case 'select':
 					$return = '<select name="' . $field_id . '" id="' . $field_id . '">';
+
 						foreach ( $field['options'] as $val => $label ) {
 							$return .= '<option value="' . $val . '" ' . selected( $meta, $val, false ) . '>';
 							$return .= $label;
@@ -370,9 +370,6 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 			}
 
 			return $return;
-
 		}
-
 	}
-
 }

@@ -1,31 +1,34 @@
 <?php
 /**
- * Include public script and CSS, additional functions and definitions
+ * Include public script and CSS, additional functions and definitions.
  *
- * @package   cherry_mega_menu
+ * @package   Cherry Mega Menu
  * @author    Cherry Team
  * @license   GPL-2.0+
+ * @link      http://www.cherryframework.com/
+ * @copyright 2014 Cherry Team
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // disable direct access
+	exit;
 }
 
-if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
+if ( ! class_exists( 'Cherry_Mega_Menu_Public_Manager' ) ) {
 
 	/**
-	 * Menu items manager
+	 * Menu items manager.
 	 */
-	class cherry_mega_menu_public_manager {
+	class Cherry_Mega_Menu_Public_Manager {
 
 		/**
-		 * Class instance holder
+		 * Class instance holder.
+		 *
 		 * @var object
 		 */
 		private static $instance;
 
 		/**
-		 * include necessary files. Run actions
+		 * include necessary files. Run actions.
 		 */
 		public function __construct() {
 
@@ -43,11 +46,10 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 
 			require_once ( 'class-cherry-mega-menu-walker.php' );
 			require_once ( CHERRY_MEGA_MENU_DIR . '/core/includes/class-cherry-mega-menu-widget-manager.php' );
-
 		}
 
 		/**
-		 * Include assets
+		 * Include assets.
 		 *
 		 * @since  1.0.0
 		 */
@@ -77,7 +79,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 		}
 
 		/**
-		 * Load Mega Menu specific dynamic CSS
+		 * Load Mega Menu specific dynamic CSS.
 		 *
 		 * @since  1.1.0
 		 * @return void
@@ -87,26 +89,26 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 		}
 
 		/**
-		 * Apply mega menu walker for main theme menu
+		 * Apply mega menu walker for main theme menu.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  array  $args  default nav menu args
-		 * @return array         modified args with mega menu walker
+		 * @param  array  $args  default nav menu args.
+		 * @return array         modified args with mega menu walker.
 		 */
 		public function add_walker_to_nav_menu( $args ) {
 			$mega_menu_location = cherry_mega_menu_get_option( 'mega-menu-location', array( 'primary' ) );
-			$mega_menu_location = (array) $mega_menu_location;
+			$mega_menu_location = ( array ) $mega_menu_location;
 
-			if ( !isset( $args['theme_location'] ) || !in_array( $args['theme_location'], $mega_menu_location ) ) {
+			if ( ! isset( $args['theme_location'] ) || ! in_array( $args['theme_location'], $mega_menu_location ) ) {
 				return $args;
 			}
 
-			$event           = cherry_mega_menu_get_option( 'mega-menu-event', 'hover' );
-			$effect          = cherry_mega_menu_get_option( 'mega-menu-effect', 'slide-top' );
-			$direction       = cherry_mega_menu_get_option( 'mega-menu-direction', apply_filters( 'cherry_mega_menu_default_direction', 'horizontal', $args ) );
+			$event = cherry_mega_menu_get_option( 'mega-menu-event', 'hover' );
+			$effect = cherry_mega_menu_get_option( 'mega-menu-effect', 'slide-top' );
+			$direction = cherry_mega_menu_get_option( 'mega-menu-direction', apply_filters( 'cherry_mega_menu_default_direction', 'horizontal', $args ) );
 			$parent_selector = cherry_mega_menu_get_option( 'mega-menu-parent-container', '.cherry-mega-menu' );
-			$mobile_trigger  = cherry_mega_menu_get_option( 'mega-menu-mobile-trigger', 768 );
+			$mobile_trigger = cherry_mega_menu_get_option( 'mega-menu-mobile-trigger', 768 );
 
 			global $cherry_mega_menu_total_columns;
 
@@ -117,17 +119,17 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 				'data-effect'          => $effect,
 				'data-direction'       => $direction,
 				'data-mobile-trigger'  => $mobile_trigger,
-				'data-parent-selector' => $parent_selector
+				'data-parent-selector' => $parent_selector,
 			);
 
 			/**
-			 * Filter megamenu wrapper attributes
+			 * Filter megamenu wrapper attributes.
 			 *
 			 * @since  1.0.0
 			 *
-			 * @var    array  filtered attributes
-			 * @param  array  $wrapper_atts default attributes
-			 * @param  array  $args         default nav menu arguments
+			 * @var    array  filtered attributes.
+			 * @param  array  $wrapper_atts default attributes.
+			 * @param  array  $args         default nav menu arguments.
 			 */
 			$wrapper_atts = apply_filters( 'cherry_mega_menu_wrapper_atts', $wrapper_atts, $args );
 
@@ -137,7 +139,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 				'container'  => 'ul',
 				'menu_class' => 'menu-items',
 				'items_wrap' => '<ul' . $atts . '>%3$s</ul>',
-				'walker'     => new cherry_mega_menu_walker()
+				'walker' => new Cherry_Mega_Menu_Walker(),
 			);
 
 			$args = wp_parse_args( $new_args, $args );
@@ -146,7 +148,7 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 		}
 
 		/**
-		 * Add mobile menu label before menu content
+		 * Add mobile menu label before menu content.
 		 *
 		 * @since  1.0.0
 		 *
@@ -155,13 +157,15 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 		 * @return string         menu content with mobile label
 		 */
 		function add_menu_mobile_label( $menu, $args ) {
-			// make sure we're working with a Mega Menu
-			if ( ! is_a( $args->walker, 'cherry_mega_menu_walker' ) ) {
+
+			// make sure we're working with a Mega Menu.
+			if ( ! is_a( $args->walker, 'Cherry_Mega_Menu_Walker' ) ) {
 				return $menu;
 			}
 			$label = cherry_mega_menu_get_option( 'mega-menu-mobile-label', __( 'Menu', 'cherry-mega-menu' ) );
 			$before_menu_label = '<label class="cherry-mega-menu-mobile-trigger" for="trigger-' . $args->menu_id . '">' . esc_textarea( $label ) . '</label><input class="cherry-mega-menu-mobile-trigger-box" id="trigger-' . $args->menu_id . '" type="checkbox">';
 			$after_menu_label  = '<label class="cherry-mega-menu-mobile-close" for="trigger-' . $args->menu_id . '">' . __( 'Close', 'cherry-mega-menu' ) . '</label>';
+
 			return $before_menu_label . $menu . $after_menu_label;
 		}
 
@@ -177,23 +181,21 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 		 */
 		public function add_menu_objects( $items, $args ) {
 
-			// make sure we're working with a Mega Menu
-			if ( ! is_a( $args->walker, 'cherry_mega_menu_walker' ) ) {
+			// make sure we're working with a Mega Menu.
+			if ( ! is_a( $args->walker, 'Cherry_Mega_Menu_Walker' ) ) {
 				return $items;
 			}
 
-			$widget_manager = new cherry_mega_menu_widget_manager();
+			$widget_manager = new Cherry_Mega_Menu_Widget_Manager();
 
 			foreach ( $items as $item ) {
 
-				$saved_settings = array_filter( (array) get_post_meta( $item->ID, '_cherry_mega_menu', true ) );
+				$saved_settings = array_filter( ( array ) get_post_meta( $item->ID, '_cherry_mega_menu', true ) );
 
-				$item->megamenu_settings = wp_parse_args( $saved_settings, array(
-					'type' => ''
-				) );
+				$item->megamenu_settings = wp_parse_args( $saved_settings, array( 'type' => '' ) );
 
-				// only look for widgets on top level items
-				if ( $item->menu_item_parent != 0 || $item->megamenu_settings['type'] != 'megamenu' ) {
+				// only look for widgets on top level items.
+				if ( 0 != $item->menu_item_parent || 'megamenu' != $item->megamenu_settings['type'] ) {
 					continue;
 				}
 
@@ -218,16 +220,16 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 		}
 
 		/**
-		 * Append saved widgets HTML to menu object
+		 * Append saved widgets HTML to menu object.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  array  $widgets item widgets
-		 * @return array           item data
+		 * @param  array  $widgets item widgets.
+		 * @return array           item data.
 		 */
 		function append_widgets( $widgets = array(), $item, $widget_manager ) {
 
-			if ( !is_array( $widgets ) ) {
+			if ( ! is_array( $widgets ) ) {
 				return false;
 			}
 
@@ -242,20 +244,19 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 					'title'             => '',
 					'content'           => $widget_manager->show_widget( $widget['widget_id'] ),
 					'menu_item_parent'  => $item->ID,
-					'db_id'             => 0, // This menu item does not have any childen
+					'db_id'             => 0,
 					'ID'                => $widget['widget_id'],
 					'classes'           => array(
 						"menu-item",
 						"menu-item-type-widget",
 						"menu-columns-" . $cols
-					)
+					),
 				);
 
-				$result[] = (object) $menu_item;
+				$result[] = ( object ) $menu_item;
 			}
 
 			return $result;
-
 		}
 
 		/**
@@ -267,14 +268,13 @@ if ( ! class_exists( 'cherry_mega_menu_public_manager' ) ) {
 		public static function get_instance() {
 
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
+			}
 
 			return self::$instance;
 		}
-
 	}
-
 }
 
-add_action( 'init', array( 'cherry_mega_menu_public_manager', 'get_instance' ) );
+add_action( 'init', array( 'Cherry_Mega_Menu_Public_Manager', 'get_instance' ) );

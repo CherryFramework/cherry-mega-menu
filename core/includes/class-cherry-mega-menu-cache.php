@@ -1,32 +1,49 @@
 <?php
 /**
- * Menu caching manager
+ * Menu caching manager.
  *
- * @package   cherry_mega_menu
+ * @package   Cherry Mega Menu
  * @author    Cherry Team
  * @license   GPL-2.0+
+ * @link      http://www.cherryframework.com/
+ * @copyright 2014 Cherry Team
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // disable direct access
+	exit;
 }
 
-if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
+if ( ! class_exists( 'Cherry_Mega_Menu_Cache' ) ) {
 
-	class cherry_mega_menu_cache {
+	class Cherry_Mega_Menu_Cache {
 
 		/**
-		 * Class instance holder
+		 * Class instance holder.
+		 *
 		 * @var object
 		 */
 		private static $instance;
 
 		/**
-		 * Service vars
+		 * Service nav_prefix var.
+		 *
+		 * @since 1.0.0
 		 */
-		public $nav_prefix  = 'wp_nav_menu-';
+		public $nav_prefix = 'wp_nav_menu-';
+
+		/**
+		 * Service item_prefix var.
+		 *
+		 * @since 1.0.0
+		 */
 		public $item_prefix = 'wp_nav_items-';
-		public $transient   = 'wp_nav_menus';
+
+		/**
+		 * Service transient var.
+		 *
+		 * @since 1.0.0
+		 */
+		public $transient = 'wp_nav_menus';
 
 		function __construct() {
 
@@ -55,7 +72,8 @@ if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
 		 * @since 1.0.0
 		 */
 		function _admin() {
-			// reset caches on specific actions
+
+			// Reset caches on specific actions.
 			add_action( 'wp_create_nav_menu', array( &$this, 'clear_cache' ) );
 			add_action( 'wp_update_nav_menu', array( &$this, 'clear_cache' ) );
 			add_action( 'wp_delete_nav_menu', array( &$this, 'clear_cache' ) );
@@ -67,7 +85,7 @@ if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
 		}
 
 		/**
-		 * init public part
+		 * Init public part.
 		 *
 		 * @since 1.0.0
 		 */
@@ -77,18 +95,18 @@ if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
 		}
 
 		/**
-		 * Get menu cache for current page
+		 * Get menu cache for current page.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  string  $menu  menu content
-		 * @param  array   $args  menu args
-		 * @return string         menu content with mobile label
+		 * @param  string  $menu  menu content.
+		 * @param  array   $args  menu args.
+		 * @return string         menu content with mobile label.
 		 */
 		function return_cached_menu( $menu, $args ) {
 
-			// make sure we're working with a Mega Menu
-			if ( ! is_a( $args->walker, 'cherry_mega_menu_walker' ) ) {
+			// Make sure we're working with a Mega Menu.
+			if ( ! is_a( $args->walker, 'Cherry_Mega_Menu_Walker' ) ) {
 				return null;
 			}
 
@@ -112,26 +130,26 @@ if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
 
 			$current_cache = get_transient( $this->transient );
 
-			if ( ! $key || empty( $current_cache[$key] ) ) {
+			if ( ! $key || empty( $current_cache[ $key ] ) ) {
 				return null;
 			}
 
-			return $current_cache[$key];
+			return $current_cache[ $key ];
 		}
 
 		/**
-		 * Save menu output for current page to transient
+		 * Save menu output for current page to transient.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  string  $menu  menu content
-		 * @param  array   $args  menu args
-		 * @return string         menu content with mobile label
+		 * @param  string  $menu  menu content.
+		 * @param  array   $args  menu args.
+		 * @return string         menu content with mobile label.
 		 */
 		function set_cached_menu( $menu, $args ) {
 
-			// make sure we're working with a Mega Menu
-			if ( ! is_a( $args->walker, 'cherry_mega_menu_walker' ) ) {
+			// Make sure we're working with a Mega Menu
+			if ( ! is_a( $args->walker, 'Cherry_Mega_Menu_Walker' ) ) {
 				return $menu;
 			}
 
@@ -143,13 +161,13 @@ if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
 				$current_cache[$key] = $menu;
 			}
 
-			set_transient( $this->transient, $current_cache, 3*DAY_IN_SECONDS );
+			set_transient( $this->transient, $current_cache, 3 * DAY_IN_SECONDS );
 
 			return $menu;
 		}
 
 		/**
-		 * Get page key to search it in transient
+		 * Get page key to search it in transient.
 		 *
 		 * @since 1.0.0
 		 */
@@ -162,7 +180,8 @@ if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
 			$key = false;
 
 			if ( 'has' == $has_active ) {
-				// check, what key pass to cache
+
+				// Check, what key pass to cache.
 				if ( is_front_page() ) {
 					$key = 'front_page';
 				} elseif ( is_home() ) {
@@ -182,7 +201,7 @@ if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
 		}
 
 		/**
-		 * Delete cache
+		 * Delete cache.
 		 *
 		 * @since 1.0.0
 		 */
@@ -199,13 +218,11 @@ if ( ! class_exists( 'cherry_mega_menu_cache' ) ) {
 		public static function get_instance() {
 
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance )
+			if ( null == self::$instance ) {
 				self::$instance = new self;
+			}
 
 			return self::$instance;
 		}
-
-
 	}
-
 }
