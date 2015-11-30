@@ -53,18 +53,18 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Manager' ) ) {
 		public $menu_item_meta = array();
 
 		/**
-		 * include necessary files. Run actions.
+		 * Include necessary files. Run actions.
 		 */
 		public function __construct() {
 
-			require_once ( 'class-cherry-mega-menu-tabs.php' );
-			require_once ( CHERRY_MEGA_MENU_DIR . '/core/includes/class-cherry-mega-menu-widget-manager.php' );
+			require_once( 'class-cherry-mega-menu-tabs.php' );
+			require_once( CHERRY_MEGA_MENU_DIR . '/core/includes/class-cherry-mega-menu-widget-manager.php' );
 
 			add_action( 'admin_enqueue_scripts', array( $this, 'assets' ), 40 );
 			add_action( 'admin_footer', array( $this, 'popups_ui_wrap' ) );
 
 			add_action( 'wp_ajax_cherry_mega_menu_get_popup', array( $this, 'ajax_get_popup_html' ) );
-			add_action( 'wp_ajax_cherry_mega_menu_save_settings', array( $this, 'save_settings') );
+			add_action( 'wp_ajax_cherry_mega_menu_save_settings', array( $this, 'save_settings' ) );
 		}
 
 		/**
@@ -217,7 +217,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Manager' ) ) {
 
 			$tabs = $this->get_item_tabs();
 
-			if ( ! is_array($tabs) ) {
+			if ( ! is_array( $tabs ) ) {
 				return;
 			}
 

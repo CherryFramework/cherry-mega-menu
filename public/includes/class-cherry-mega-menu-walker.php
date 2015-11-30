@@ -16,6 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 
 	/**
+	 * Cherry Mega Menu Walker Class.
+	 *
 	 * @package WordPress
 	 * @since 1.0.0
 	 * @uses Walker
@@ -45,7 +47,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 		 *
 		 * @param string $output Passed by reference. Used to append additional content.
 		 * @param int    $depth  Depth of menu item. Used for padding.
-		 * @param array  $args   An array of arguments. @see wp_nav_menu()
+		 * @param array  $args   An array of arguments. @see wp_nav_menu().
 		 */
 		function start_lvl( &$output, $depth = 0, $args = array() ) {
 
@@ -72,7 +74,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 		 *
 		 * @param string $output Passed by reference. Used to append additional content.
 		 * @param int    $depth  Depth of menu item. Used for padding.
-		 * @param array  $args   An array of arguments. @see wp_nav_menu()
+		 * @param array  $args   An array of arguments. @see wp_nav_menu().
 		 */
 		function end_lvl( &$output, $depth = 0, $args = array() ) {
 			$indent = str_repeat( "\t", $depth );
@@ -89,7 +91,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 		 * @param string $output Passed by reference. Used to append additional content.
 		 * @param object $item   Menu item data object.
 		 * @param int    $depth  Depth of menu item. Used for padding.
-		 * @param array  $args   An array of arguments. @see wp_nav_menu()
+		 * @param array  $args   An array of arguments. @see wp_nav_menu().
 		 * @param int    $id     Current item ID.
 		 */
 		public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
@@ -130,7 +132,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 			$classes = empty( $item->classes ) ? array() : ( array ) $item->classes;
 			$classes[] = 'menu-item-' . $item->ID;
 
-			if ( $depth == 0 ) {
+			if ( 0 == $depth ) {
 				$classes[] = 'cherry-mega-menu-top-item';
 				$classes[] = 'item-submenu-position-' . $mega_settings['item-submenu-position'];
 			} else {
@@ -141,7 +143,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 				$classes[] = 'cherry-mega-menu-has-children';
 			}
 
-			if ( $depth == 0 && 'megamenu' == $mega_settings['type'] && $this->has_children ) {
+			if ( 0 == $depth && 'megamenu' == $mega_settings['type'] && $this->has_children ) {
 				$classes[] = 'item-type-megamenu';
 				$this->is_mega_sub = true;
 			}
@@ -151,7 +153,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 				$this->is_mega_sub = false;
 			}
 
-			if ( isset( $mega_settings['align']) && 'left' !== $mega_settings['align'] && $depth == 0 ) {
+			if ( isset( $mega_settings['align']) && 'left' !== $mega_settings['align'] && 0 == $depth ) {
 				$classes[] = 'item-align-' . $mega_settings['align'];
 			}
 
@@ -216,7 +218,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 			$hr_position = ! in_array( $mega_settings['item-submenu-position'], array( 'vertical-full', 'vertical-parent' ) ) ? $mega_settings['item-submenu-position'] : 'fullwidth';
 			$vr_position = in_array( $mega_settings['item-submenu-position'], array( 'vertical-full', 'vertical-parent' ) ) ? $mega_settings['item-submenu-position'] : 'vertical-parent';
 
-			if ( $depth == 0 && $this->has_children && 'megamenu' == $mega_settings['type'] ) {
+			if ( 0 == $depth && $this->has_children && 'megamenu' == $mega_settings['type'] ) {
 				$meta_atts = array(
 					'data-width-fullscreen' => cherry_mega_menu_sanitize_width( $mega_settings['item-width-fullscreen'] ),
 					'data-width-desktop'    => cherry_mega_menu_sanitize_width( $mega_settings['item-width-desktop'] ),
@@ -226,7 +228,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 					'data-sub-vr-position'  => $vr_position,
 					'data-sub-type'         => $mega_settings['type'],
 				);
-			} elseif ( $depth == 0 && $this->has_children && 'megamenu' !== $mega_settings['type'] ) {
+			} elseif ( 0 == $depth && $this->has_children && 'megamenu' !== $mega_settings['type'] ) {
 				$meta_atts = array(
 					'data-hide-mobile'      => $mega_settings['item-hide-mobile'],
 					'data-sub-hr-position'  => $hr_position,

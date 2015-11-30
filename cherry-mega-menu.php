@@ -30,12 +30,16 @@ if ( ! class_exists( 'Cherry_Mega_Menu' ) ) {
 	final class Cherry_Mega_Menu {
 
 		/**
+		 * Plugin version
+		 *
 		 * @var   string
 		 * @since 1.0.0
 		 */
 		public $version = '1.1.0';
 
 		/**
+		 * Slug
+		 *
 		 * @var   string
 		 * @since 1.0.0
 		 */
@@ -79,11 +83,11 @@ if ( ! class_exists( 'Cherry_Mega_Menu' ) ) {
 		}
 
 		/**
-		 * Pass chart style handle to CSS compiler
+		 * Pass chart style handle to CSS compiler.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  array $handles CSS handles to compile
+		 * @param  array $handles CSS handles to compile.
 		 */
 		function add_style_to_compiler( $handles ) {
 			$handles = array_merge(
@@ -209,11 +213,11 @@ if ( ! class_exists( 'Cherry_Mega_Menu' ) ) {
 		}
 
 		/**
-		 * Pass mega menu item meta key to content importer
+		 * Pass mega menu item meta key to content importer.
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  array  $keys initial keys array
+		 * @param  array $keys initial keys array.
 		 * @return array
 		 */
 		function menu_meta_keys( $keys ) {
@@ -256,7 +260,6 @@ if ( ! class_exists( 'Cherry_Mega_Menu' ) ) {
 				wp_cache_clear_cache( $wpdb->blogid );
 			}
 		}
-
 	}
 
 	new Cherry_Mega_Menu();

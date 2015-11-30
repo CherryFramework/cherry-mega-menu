@@ -49,7 +49,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 
 			$return .= '<select id="widget_selector">';
 
-			$return .= '<option value="disabled">' . __( "Select a Widget to add to the panel", "cherry-mega-menu" ) . '</option>';
+			$return .= '<option value="disabled">' . __( 'Select a Widget to add to the panel', 'cherry-mega-menu' ) . '</option>';
 
 			foreach ( $all_widgets as $widget ) {
 				$return .= '<option value="' . $widget['value'] . '">' . $widget['text'] . '</option>';
@@ -160,7 +160,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 					'desc' => __( 'Hide this submenu item on mobile version', 'cherry-mega-menu' ),
 					'type' => 'checkbox',
 					'std'  => '',
-				)
+				),
 			);
 
 			$fields = apply_filters( 'cherry_mega_menu_settings_tab_fields', $default_fields );
@@ -248,11 +248,11 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  array  $fields  fields definition array.
-		 * @param  array  $meta    existing menu meta array.
-		 * @param  int    $id      current menu item ID.
-		 * @param  int    $depth   current menu item depth.
-		 * @return html            settings markup.
+		 * @param  array $fields fields definition array.
+		 * @param  array $meta   existing menu meta array.
+		 * @param  int   $id     current menu item ID.
+		 * @param  int   $depth  current menu item depth.
+		 * @return html          settings markup.
 		 */
 		private function _build_tab_fields( $fields, $meta, $id, $depth ) {
 
@@ -298,7 +298,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 					$return .= '</div>';
 				}
 
-				unset($field);
+				unset( $field );
 			}
 
 			return $return;
@@ -309,10 +309,10 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  int    $field_id current field ID.
-		 * @param  array  $field    field params array.
-		 * @param  mixed  $meta     current menu meta val.
-		 * @param  int    $id       current menu item ID.
+		 * @param  int   $field_id current field ID.
+		 * @param  array $field    field params array.
+		 * @param  mixed $meta     current menu meta val.
+		 * @param  int   $id       current menu item ID.
 		 * @return html             settings markup.
 		 */
 		private function _field_control( $field_id, $field, $meta, $id ) {

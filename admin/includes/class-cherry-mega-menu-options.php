@@ -26,8 +26,8 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 		 * Build plugin instance.
 		 */
 		public function __construct() {
-			add_filter( 'cherry_defaults_settings', array( $this, 'add_options') );
-			add_filter( 'cherry_optimization_options_list', array( $this, 'add_optimization_options') );
+			add_filter( 'cherry_defaults_settings', array( $this, 'add_options' ) );
+			add_filter( 'cherry_optimization_options_list', array( $this, 'add_optimization_options' ) );
 		}
 
 		/**
@@ -43,9 +43,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 			// Get menus.
 			$menus = get_registered_nav_menus();
 
-			$options_menus = array(
-				'0' => __( 'Select main theme menu', 'cherry-mega-menu' )
-			);
+			$options_menus = array( '0' => __( 'Select main theme menu', 'cherry-mega-menu' ) );
 
 			$options_menus = array_merge( $options_menus, $menus );
 
@@ -55,7 +53,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 					'title'			=> __( 'Main theme menu location', 'cherry-mega-menu' ),
 					'label'			=> __( 'Select the menu location for your main menu', 'cherry-mega-menu' ),
 					'decsription'	=> '',
-					'hint'      	=>  array(
+					'hint'			=> array(
 						'type'		=> 'text',
 						'content'	=> __( 'Select menu location for main theme menu. Mega menu will be applied to this location.', 'cherry-mega-menu' ),
 					),
@@ -69,7 +67,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 					'title'			=> __( 'Mega menu enabled', 'cherry-mega-menu' ),
 					'label'			=> __( 'Enable / Disable', 'cherry-mega-menu' ),
 					'decsription'	=> '',
-					'hint'      	=>  array(
+					'hint'			=> array(
 						'type'		=> 'text',
 						'content'	=> __( 'This applies only to main site menu', 'cherry-mega-menu' ),
 					),
@@ -81,7 +79,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 					'title'			=> __( 'Mobile starts from', 'cherry-mega-menu' ),
 					'label'			=> __( 'Select the window dimensions for mobile menu layout switching.', 'cherry-mega-menu' ),
 					'decsription'	=> '',
-					'hint'			=>  array(
+					'hint'			=> array(
 						'type'		=> 'text',
 						'content'	=> __( 'Select the window dimensions for mobile menu layout switching.', 'cherry-mega-menu' ),
 					),
@@ -94,7 +92,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 					'title'			=> __( 'Mobile nav label', 'cherry-mega-menu' ),
 					'label'			=> __( 'Enter the mobile navigation label ', 'cherry-mega-menu' ),
 					'decsription'	=> '',
-					'hint'      	=>  array(
+					'hint'			=> array(
 						'type'		=> 'text',
 						'content'	=> __( 'Enter the mobile navigation label ', 'cherry-mega-menu' ),
 					),
@@ -106,15 +104,15 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 					'title'			=> __( 'Menu direction', 'cherry-mega-menu' ),
 					'label'			=> __( 'Select your direction: vertical or horizontal', 'cherry-mega-menu' ),
 					'decsription'	=> '',
-					'hint'      	=>  array(
+					'hint'			=> array(
 						'type'		=> 'text',
 						'content'	=> __( 'Select your direction: vertical or horizontal', 'cherry-mega-menu' ),
 					),
-					'value'	        => 'horizontal',
+					'value'			=> 'horizontal',
 					'class'			=> 'width-full',
 					'options'		=> array(
-						'horizontal' => __( 'Horizontal', 'cherry-mega-menu' ),
-						'vertical'   => __( 'Vertical', 'cherry-mega-menu' ),
+						'horizontal'	=> __( 'Horizontal', 'cherry-mega-menu' ),
+						'vertical'		=> __( 'Vertical', 'cherry-mega-menu' ),
 					),
 				),
 				'mega-menu-effect' => array(
@@ -122,9 +120,9 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 					'title'			=> __( 'Animation effect', 'cherry-mega-menu' ),
 					'label'			=> __( 'Animation effects for the dropdown menu', 'cherry-mega-menu' ),
 					'decsription'	=> '',
-					'hint'      	=>  array(
+					'hint'			=> array(
 						'type'		=> 'text',
-						'content'	=> __( 'Animation effects for the dropdown menu', 'cherry-mega-menu' )
+						'content'	=> __( 'Animation effects for the dropdown menu', 'cherry-mega-menu' ),
 					),
 					'value'	        => 'slide-top',
 					'class'			=> 'width-full',
@@ -141,7 +139,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 					'title'			=> __( 'Event', 'cherry-mega-menu' ),
 					'label'			=> __( 'Select an activation event', 'cherry-mega-menu' ),
 					'decsription'	=> '',
-					'hint'      	=>  array(
+					'hint'			=> array(
 						'type'		=> 'text',
 						'content'	=> __( 'Select an activation event', 'cherry-mega-menu' ),
 					),
@@ -157,12 +155,12 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 					'title'			=> __( 'Menu parent container CSS selector', 'cherry-mega-menu' ),
 					'label'			=> __( 'Enter CSS selector name for mega menu parent container (if needed)', 'cherry-mega-menu' ),
 					'decsription'	=> '',
-					'hint'      	=>  array(
+					'hint'			=> array(
 						'type'		=> 'text',
 						'content'	=> __( 'Enter CSS class name for mega menu parent container (if needed)', 'cherry-mega-menu' ),
 					),
 					'value'			=> apply_filters( 'cherry_mega_menu_default_parent', '.cherry-mega-menu' ),
-				)
+				),
 			);
 
 			$menu_options = apply_filters( 'cherry_mega_menu_options', $menu_options );
@@ -181,7 +179,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 		/**
 		 * Add mega menu caching to optimization options.
 		 *
-		 * @param array $options optimization options array
+		 * @param array $options Optimization options array.
 		 */
 		function add_optimization_options( $options ) {
 
@@ -190,7 +188,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Options' ) ) {
 				'title'			=> __( 'Mega menu caching enabled', 'cherry-mega-menu' ),
 				'label'			=> __( 'Enable / Disable', 'cherry-mega-menu' ),
 				'decsription'	=> '',
-				'hint'      	=>  array(
+				'hint'      	=> array(
 					'type'		=> 'text',
 					'content'	=> __( 'Enable caching for mega menu items', 'cherry-mega-menu' ),
 				),

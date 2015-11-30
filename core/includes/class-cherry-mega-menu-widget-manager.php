@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
+if ( ! class_exists( 'Cherry_Mega_Menu_Widget_Manager' ) ) {
 
 	/**
 	 * Processes AJAX requests from the Mega Menu panel editor.
@@ -41,7 +41,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 			add_action( 'wp_ajax_cherry_mega_menu_add_widget', array( $this, 'add_widget' ) );
 			add_action( 'wp_ajax_cherry_mega_menu_move_widget', array( $this, 'move_widget' ) );
 
-			add_filter( 'widget_update_callback', array( $this, 'persist_cherry_mega_menu_widget_settings'), 10, 4 );
+			add_filter( 'widget_update_callback', array( $this, 'persist_cherry_mega_menu_widget_settings' ), 10, 4 );
 		}
 
 		/**
@@ -53,12 +53,12 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 */
 		public function persist_cherry_mega_menu_widget_settings( $instance, $new_instance, $old_instance, $that ) {
 
-			if ( isset( $old_instance["mega_menu_columns"] ) && ! isset( $new_instance["mega_menu_columns"] ) ) {
-				$instance["mega_menu_columns"] = $old_instance["mega_menu_columns"];
+			if ( isset( $old_instance['mega_menu_columns'] ) && ! isset( $new_instance['mega_menu_columns'] ) ) {
+				$instance['mega_menu_columns'] = $old_instance['mega_menu_columns'];
 			}
 
-			if ( isset( $old_instance['mega_menu_parent_menu_id'] ) && ! isset( $new_instance["mega_menu_parent_menu_id"] ) ) {
-				$instance['mega_menu_parent_menu_id'] = $old_instance["mega_menu_parent_menu_id"];
+			if ( isset( $old_instance['mega_menu_parent_menu_id'] ) && ! isset( $new_instance['mega_menu_parent_menu_id'] ) ) {
+				$instance['mega_menu_parent_menu_id'] = $old_instance['mega_menu_parent_menu_id'];
 			}
 
 			return $instance;
@@ -159,9 +159,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 
 			$added = $this->_add_widget( $id_base, $menu_item_id, $title, $total_cols );
 
-			$result = array(
-				'type'  => 'success'
-			);
+			$result = array( 'type' => 'success' );
 
 			if ( $added && is_array( $added ) ) {
 				$result = array_merge( $result, $added );
@@ -213,7 +211,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 
 			$moved = $this->_move_widget( $widget_to_move, $position, $menu_item_id );
 
-			$message = ( $moved ) ? sprintf( __( 'Moved %s to %d (%s)', 'cherry-mega-menu' ), $widget_to_move, $position, json_encode($moved) ) : sprintf( __( 'Failed to move %s to %d', 'cherry-mega-menu' ), $widget_to_move, $position );
+			$message = ( $moved ) ? sprintf( __( 'Moved %s to %d (%s)', 'cherry-mega-menu' ), $widget_to_move, $position, json_encode( $moved ) ) : sprintf( __( 'Failed to move %s to %d', 'cherry-mega-menu' ), $widget_to_move, $position );
 
 			do_action( 'cherry_mega_menu_after_widget_save' );
 			do_action( 'cherry_mega_menu_save' );
@@ -232,7 +230,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 
 			$widgets = array();
 
-			foreach( $wp_widget_factory->widgets as $widget ) {
+			foreach ( $wp_widget_factory->widgets as $widget ) {
 
 				$disabled_widgets = array( 'megamenu' );
 
@@ -258,8 +256,9 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Sorts a 2d array by the 'text' key.
 		 *
 		 * @since 1.2
-		 * @param array $a
-		 * @param array $b
+		 * @param array $a First sorting value.
+		 * @param array $b Second sorting value.
+		 * @return int
 		 */
 		function sort_by_text( $a, $b ) {
 			return strcmp( $a['text'], $b['text'] );
@@ -269,7 +268,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Returns an array of all widgets belonging to a specified menu item ID.
 		 *
 		 * @since 1.0.0
-		 * @param int $menu_item_id
+		 * @param int $menu_item_id Menu item id value.
 		 */
 		public function get_widgets_for_menu_id( $menu_item_id ) {
 
@@ -302,7 +301,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Returns the saved settings for a specific widget.
 		 *
 		 * @since 1.0.0
-		 * @param $widget_id - id_base-ID (eg meta-3)
+		 * @param $widget_id id_base-ID (eg meta-3).
 		 */
 		public function get_settings_for_widget_id( $widget_id ) {
 			global $wp_registered_widgets;
@@ -330,7 +329,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Returns the id(number), name/title and base id of a Widget.
 		 *
 		 * @since 1.0.0
-		 * @param $widget_id - id_base-ID (eg meta-3)
+		 * @param $widget_id - id_base-ID (eg meta-3).
 		 */
 		public function parse_widget_id( $widget_id ) {
 			global $wp_registered_widgets, $wp_registered_widget_controls;
@@ -356,14 +355,14 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Returns the HTML for a single widget instance.
 		 *
 		 * @since 1.0.0
-		 * @param string widget_id Something like meta-3
+		 * @param string widget_id Something like meta-3.
 		 */
 		public function show_widget( $id ) {
 			global $wp_registered_widgets;
 
 			$params = array_merge(
-				array( array_merge( array( 'widget_id' => $id, 'widget_name' => $wp_registered_widgets[$id]['name'] ) ) ),
-				( array ) $wp_registered_widgets[$id]['params']
+				array( array_merge( array( 'widget_id' => $id, 'widget_name' => $wp_registered_widgets[ $id ]['name'] ) ) ),
+				( array ) $wp_registered_widgets[ $id ]['params']
 			);
 
 			$params[0]['before_title'] = '<h4 class="mega-block-title">';
@@ -385,7 +384,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Shows the widget edit form for the specified widget.
 		 *
 		 * @since 1.0.0
-		 * @param $widget_id - id_base-ID (eg meta-3)
+		 * @param $widget_id - id_base-ID (eg meta-3).
 		 */
 		public function _show_widget_form( $widget_id ) {
 			global $wp_registered_widget_controls;
@@ -431,7 +430,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * The callback inspects the post values and updates all widget instances which match the base ID.
 		 *
 		 * @since 1.0.0
-		 * @param string $id_base - e.g. 'meta'
+		 * @param string $id_base - e.g. `meta`.
 		 * @return bool
 		 */
 		public function _save_widget( $id_base ) {
@@ -453,9 +452,11 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * adds the widget instance to the mega menu widget sidebar area.
 		 *
 		 * @since 1.0.0
-		 * @param string $id_base
-		 * @param int $menu_item_id
-		 * @param string $title
+		 * @param string $id_base Base id value.
+		 * @param int    $menu_item_id Menu item id value.
+		 * @param string $title Widget title.
+		 * @param integer $total_cols Total avaliable columns count.
+		 * @return array
 		 */
 		public function _add_widget( $id_base, $menu_item_id, $title, $total_cols ) {
 
@@ -476,11 +477,11 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Get single widget HTML markup to pass into item manager.
 		 *
 		 * @since  1.0.0
-		 * @param  string  $title      widget title.
-		 * @param  string  $id         widget ID.
-		 * @param  integer $cols       current columns count.
-		 * @param  integer $total_cols total avaliable columns count.
-		 * @return [type]              widget HTML.
+		 * @param  string  $title      Widget title.
+		 * @param  string  $widget_id  Widget ID.
+		 * @param  integer $cols       Current columns count.
+		 * @param  integer $total_cols Total avaliable columns count.
+		 * @return string              Widget HTML.
 		 */
 		public function get_widget_html( $title, $widget_id, $cols, $total_cols ) {
 
@@ -507,17 +508,18 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Adds a new widget instance of the specified base ID to the database.
 		 *
 		 * @since 1.0.0
-		 * @param string $id_base
-		 * @param int $next_id
-		 * @param int $menu_item_id
+		 * @param string $id_base Base id value.
+		 * @param int    $next_id Next id value.
+		 * @param int    $menu_item_id Menu item id value.
+		 * @return void
 		 */
 		private function add_widget_instance( $id_base, $next_id, $menu_item_id ) {
 
 			$current_widgets = get_option( 'widget_' . $id_base );
 
 			$current_widgets[ $next_id ] = array(
-				"mega_menu_columns"        => 4,
-				"mega_menu_parent_menu_id" => $menu_item_id,
+				'mega_menu_columns'        => 4,
+				'mega_menu_parent_menu_id' => $menu_item_id,
 			);
 
 			update_option( 'widget_' . $id_base, $current_widgets );
@@ -527,7 +529,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Removes a widget instance from the database.
 		 *
 		 * @since 1.0.0
-		 * @param string $widget_id e.g. meta-3
+		 * @param string $widget_id e.g. meta-3.
 		 * @return bool. True if widget has been deleted.
 		 */
 		private function remove_widget_instance( $widget_id ) {
@@ -553,8 +555,9 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Updates the number of mega columns for a specified widget.
 		 *
 		 * @since 1.0.0
-		 * @param string $widget_id
-		 * @param int $columns
+		 * @param string $widget_id Widget id value.
+		 * @param int    $columns Mega columns for a specified widget
+		 * @return boolean
 		 */
 		public function _update_columns( $widget_id, $columns ) {
 
@@ -575,7 +578,8 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * Deletes a widget from WordPress.
 		 *
 		 * @since 1.0.0
-		 * @param string $widget_id e.g. meta-3
+		 * @param string $widget_id e.g. meta-3.
+		 * @return boolean
 		 */
 		public function _delete_widget( $widget_id ) {
 
@@ -590,16 +594,19 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 		 * array in the database.
 		 *
 		 * @since 1.0.0
-		 * @param string $widget_to_move
-		 * @param int $new_widget_position. Zero based index.
-		 * @return string $widget_id. The widget that has been moved.
+		 * @param string $widget_to_move Target widget.
+		 * @param int    $new_widget_position Zero based index.
+		 * @param int    $menu_item_id Menu item id.
+		 * @return string $widget_id The widget that has been moved.
 		 */
 		public function _move_widget( $widget_to_move, $new_widget_position, $menu_item_id ) {
 
-			// $new_widget_position assumes that all widgets belong to this Menu ID,
-			// but widgets are stored in this area for _all_ Menu IDs.
-			// Work out the new widget position taking into account that other menu IDs
-			// also store their widgets here
+			/**
+			 * $new_widget_position assumes that all widgets belong to this Menu ID,
+			 * but widgets are stored in this area for _all_ Menu IDs.
+			 * Work out the new widget position taking into account that other menu IDs
+			 * also store their widgets here
+			 */
 			$menu_widgets = array();
 			$non_menu_widgets = array();
 
@@ -684,11 +691,11 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 
 			$sidebar_widgets = wp_get_sidebars_widgets();
 
-			if ( ! isset( $sidebar_widgets[ 'cherry-mega-menu'] ) ) {
+			if ( ! isset( $sidebar_widgets['cherry-mega-menu'] ) ) {
 				return false;
 			}
 
-			return $sidebar_widgets[ 'cherry-mega-menu' ];
+			return $sidebar_widgets['cherry-mega-menu'];
 		}
 
 		/**
@@ -700,7 +707,7 @@ if ( ! class_exists('Cherry_Mega_Menu_Widget_Manager') ) {
 
 			$sidebar_widgets = wp_get_sidebars_widgets();
 
-			$sidebar_widgets[ 'cherry-mega-menu' ] = $widgets;
+			$sidebar_widgets['cherry-mega-menu'] = $widgets;
 
 			wp_set_sidebars_widgets( $sidebar_widgets );
 		}

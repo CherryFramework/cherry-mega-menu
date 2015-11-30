@@ -15,6 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! class_exists( 'Cherry_Mega_Menu_Cache' ) ) {
 
+	/**
+	 * Menu cache menagement class.
+	 */
 	class Cherry_Mega_Menu_Cache {
 
 		/**
@@ -28,6 +31,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Cache' ) ) {
 		 * Service nav_prefix var.
 		 *
 		 * @since 1.0.0
+		 * @var string
 		 */
 		public $nav_prefix = 'wp_nav_menu-';
 
@@ -35,6 +39,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Cache' ) ) {
 		 * Service item_prefix var.
 		 *
 		 * @since 1.0.0
+		 * @var string
 		 */
 		public $item_prefix = 'wp_nav_items-';
 
@@ -42,9 +47,13 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Cache' ) ) {
 		 * Service transient var.
 		 *
 		 * @since 1.0.0
+		 * @var string
 		 */
 		public $transient = 'wp_nav_menus';
 
+		/**
+		 * Construct.
+		 */
 		function __construct() {
 
 			$menu_enabled = cherry_mega_menu_get_option( 'mega-menu-enabled', 'true' );
@@ -67,7 +76,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Cache' ) ) {
 		}
 
 		/**
-		 * init admin part
+		 * Init admin part
 		 *
 		 * @since 1.0.0
 		 */
@@ -99,9 +108,9 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Cache' ) ) {
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  string  $menu  menu content.
-		 * @param  array   $args  menu args.
-		 * @return string         menu content with mobile label.
+		 * @param  string $menu Menu content.
+		 * @param  array  $args Menu args.
+		 * @return string       Menu content with mobile label.
 		 */
 		function return_cached_menu( $menu, $args ) {
 
@@ -142,9 +151,9 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Cache' ) ) {
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  string  $menu  menu content.
-		 * @param  array   $args  menu args.
-		 * @return string         menu content with mobile label.
+		 * @param  string $menu Menu content.
+		 * @param  array  $args Menu args.
+		 * @return string       Menu content with mobile label.
 		 */
 		function set_cached_menu( $menu, $args ) {
 
@@ -158,7 +167,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Cache' ) ) {
 			$key = $this->get_page_key();
 
 			if ( false !== $key ) {
-				$current_cache[$key] = $menu;
+				$current_cache[ $key ] = $menu;
 			}
 
 			set_transient( $this->transient, $current_cache, 3 * DAY_IN_SECONDS );

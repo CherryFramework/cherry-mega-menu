@@ -20,8 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @uses   cherry_get_option  use cherry_get_option from Cherry framework if exist
  *
- * @param  string  $name    option name to get.
- * @param  mixed   $default default option value.
+ * @param  string $name    option name to get.
+ * @param  mixed  $default default option value.
  * @return mixed            option value.
  */
 function cherry_mega_menu_get_option( $name, $default = false ) {
@@ -39,8 +39,8 @@ function cherry_mega_menu_get_option( $name, $default = false ) {
  *
  * @since  1.0.0
  *
- * @param  array  $atts arry of attributes
- * @return string       parsed string
+ * @param  array $atts arry of attributes.
+ * @return string parsed string
  */
 function cherry_mega_menu_parse_atts( $atts = array() ) {
 
