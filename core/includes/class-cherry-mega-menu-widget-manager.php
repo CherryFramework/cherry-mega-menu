@@ -354,7 +354,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Widget_Manager' ) ) {
 		 * Returns the HTML for a single widget instance.
 		 *
 		 * @since 1.0.0
-		 * @param string id Something like meta-3.
+		 * @param string $id Something like meta-3.
 		 */
 		public function show_widget( $id ) {
 			global $wp_registered_widgets;

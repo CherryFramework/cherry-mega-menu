@@ -49,18 +49,18 @@
 } )( jQuery );
 
 // Mega Menu jQuery Plugin
-( function ( $ ) {
+( function( $ ) {
 
 	'use strict';
 
-	$.fn.megaMenu = function ( options ) {
+	$.fn.megaMenu = function( options ) {
 
 		var menu = $( this ),
 			durationTimeout,
 			triggerFullscreen = 1200,
 			triggerDesktop = 970,
 			triggerTablet = 768,
-			is_mobile = false,
+			isMobile = false,
 			isTouchDevice,
 			switchMobile,
 			mobileOn,
@@ -86,7 +86,7 @@
 
 		isTouchDevice = function() {
 			return ( 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0 );
-		}
+		};
 
 		isInMegamenu = function( el ) {
 
@@ -95,7 +95,7 @@
 			}
 
 			return false;
-		}
+		};
 
 		switchMobile = function() {
 			var width = window.innerWidth;
@@ -105,7 +105,7 @@
 			} else {
 				mobileOff();
 			}
-		}
+		};
 
 		mobileOn = function() {
 			menu.addClass( 'mega-menu-mobile-on' ).css( 'display', 'none' ).siblings( '.cherry-mega-menu-mobile-trigger' ).addClass( 'mega-menu-mobile-on' );
@@ -117,8 +117,8 @@
 
 				$( this ).addClass( hideThis );
 			});
-			is_mobile = true;
-		}
+			isMobile = true;
+		};
 
 		mobileOff = function() {
 			menu.removeClass( 'mega-menu-mobile-on' ).css( 'display', 'block' ).siblings( '.cherry-mega-menu-mobile-trigger' ).removeClass( 'mega-menu-mobile-on' );
@@ -129,8 +129,8 @@
 				var hideThis = $( this ).data( 'hide-mobile' );
 				$( this ).removeClass( hideThis );
 			});
-			is_mobile = false;
-		}
+			isMobile = false;
+		};
 
 		getMenuWidth = function ( stringWidth ) {
 
@@ -149,13 +149,13 @@
 			}
 
 			return 0;
-		}
+		};
 
 		closePanels = function() {
 			$( '.mega-toggle-on > a', menu ).each( function() {
 				hidePanel( $( this ), true );
 			});
-		}
+		};
 
 		hidePanel = function( anchor, immediate ) {
 			anchor.parent().removeClass( 'mega-toggle-on cherry-mega-menu-hover' ).triggerHandler( 'close_panel' );
@@ -169,14 +169,14 @@
 				window.cherry_mega_menu_data.duration
 			);
 
-			if ( is_mobile == true ) {
+			if ( isMobile == true ) {
 				anchor.siblings( '.cherry-mega-menu-sub' ).slideUp( 'fast' );
 			}
-		}
+		};
 
 		showPanel = function( anchor ) {
-			console.log(anchor);
-			if ( is_mobile ) {
+
+			if ( isMobile ) {
 				return;
 			}
 
@@ -226,10 +226,10 @@
 
 			anchor.siblings( '.cherry-mega-menu-sub' ).css( styles ).addClass( 'active-sub' );
 
-			if ( true === is_mobile ) {
+			if ( true === isMobile ) {
 				anchor.siblings( '.cherry-mega-menu-sub' ).slideDown( 'fast' );
 			}
-		}
+		};
 
 		panelStylesGenerator = function( item, position, type, menuWidth ) {
 			var styles = {},
@@ -248,46 +248,46 @@
 					menuWidth = getMenuWidth( menuWidth );
 					indent = menuWidth / 2;
 					left = $( menu.settings.parent ).offset().left - menu.offset().left + parseInt( $( menu.settings.parent ).css( 'padding-left' ) ) + parseInt( $( menu.settings.parent ).css( 'border-left-width' ) );
-					styles['left'] = left + 'px';
+					styles.left = left + 'px';
 					break
 
 				case 'center':
 					width = getMenuWidth( menuWidth );
 					indent = width / 2;
 
-					styles['left'] = '50%';
+					styles.left = '50%';
 					styles['margin-left'] = '-' + indent + 'px';
 					break
 
 				case 'left-container':
-					styles['left'] = '0';
-					styles['right'] = 'auto';
+					styles.left = '0';
+					styles.right = 'auto';
 					break
 
 				case 'right-container':
-					styles['left'] = 'auto';
-					styles['right'] = '0';
+					styles.left = 'auto';
+					styles.right = '0';
 					break
 
 				case 'left-parent':
 					left = item.position().left;
-					styles['left'] = left + 'px';
-					styles['right'] = 'auto';
+					styles.left = left + 'px';
+					styles.right = 'auto';
 
 					if ( '100%' == menuWidth && left > 0 ) {
 						menuWidth = 'auto';
-						styles['right'] = '0';
+						styles.right = '0';
 					}
 					break
 
 				case 'right-parent':
 					right = menu.offset().left + parseInt( menu.css( 'border-left-width' ) ) + menu.width() - item.offset().left - item.width();
-					styles['left'] = 'auto';
-					styles['right'] = right + 'px';
+					styles.left = 'auto';
+					styles.right = right + 'px';
 
 					if ( '100%' == menuWidth && right > 0 ) {
 						menuWidth = 'auto';
-						styles['left'] = '0';
+						styles.left = '0';
 					}
 					break
 
@@ -298,9 +298,9 @@
 						top = $( menu.settings.parent ).offset().top - item.offset().top;
 					}
 
-					styles['top'] = top + 'px';
-					styles['left'] = '100%';
-					styles['right'] = 'auto';
+					styles.top = top + 'px';
+					styles.left = '100%';
+					styles.right = 'auto';
 					break
 
 				case 'vertical-parent':
@@ -309,9 +309,9 @@
 					if ( 'standard' == type ) {
 						top = 0;
 					}
-					styles['top'] = top + 'px';
-					styles['left'] = '100%';
-					styles['right'] = 'auto';
+					styles.top = top + 'px';
+					styles.left = '100%';
+					styles.right = 'auto';
 					break
 			}
 
@@ -320,15 +320,15 @@
 			}
 
 			if ( null !== menuWidth ) {
-				styles['width'] = menuWidth;
+				styles.width = menuWidth;
 			}
 
 			styles['-webkit-transition-duration'] = window.cherry_mega_menu_data.duration + 'ms';
 			styles['-moz-transition-duration'] = window.cherry_mega_menu_data.duration + 'ms';
 			styles['transition-duration'] = window.cherry_mega_menu_data.duration + 'ms';
-
+			console.log(styles);
 			return styles;
-		}
+		};
 
 		openOnClick = function() {
 
@@ -372,7 +372,7 @@
 					}
 				}
 			});
-		}
+		};
 
 		openOnHover = function() {
 			$( 'li.cherry-mega-menu-has-children', menu ).hoverIntent( {
@@ -402,7 +402,7 @@
 				},
 				timeout: 800
 			});
-		}
+		};
 
 		init = function() {
 
@@ -417,7 +417,7 @@
 			$( window ).on( 'debouncedresize', function( event ) {
 				switchMobile();
 			} ).trigger( 'debouncedresize' );
-		}
+		};
 
 		init();
 	};
