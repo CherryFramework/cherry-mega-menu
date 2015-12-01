@@ -54,12 +54,11 @@
 	'use strict';
 
 	$.fn.megaMenu = function( options ) {
-
 		var menu = $( this ),
 			durationTimeout,
 			triggerFullscreen = 1200,
 			triggerDesktop = 970,
-			triggerTablet = 768,
+			//triggerTablet = 768,
 			isMobile = false,
 			isTouchDevice,
 			switchMobile,
@@ -72,7 +71,7 @@
 			openOnHover,
 			isInMegamenu,
 			getMenuWidth,
-			doubleTapToGo,
+			//doubleTapToGo,
 			panelStylesGenerator,
 			init;
 
@@ -111,10 +110,10 @@
 			var hideThis;
 
 			menu.addClass( 'mega-menu-mobile-on' ).css( 'display', 'none' ).siblings( '.cherry-mega-menu-mobile-trigger' ).addClass( 'mega-menu-mobile-on' );
-			menu.find( '.cherry-mega-menu-sub' ).each( function( index, el ) {
+			menu.find( '.cherry-mega-menu-sub' ).each( function() {
 				$( this ).css( 'display', 'none' );
 			});
-			menu.find( '.cherry-mega-menu-has-children' ).each( function( index, el ) {
+			menu.find( '.cherry-mega-menu-has-children' ).each( function() {
 				hideThis = $( this ).data( 'hide-mobile' );
 
 				$( this ).addClass( hideThis );
@@ -126,10 +125,10 @@
 			var hideThis;
 
 			menu.removeClass( 'mega-menu-mobile-on' ).css( 'display', 'block' ).siblings( '.cherry-mega-menu-mobile-trigger' ).removeClass( 'mega-menu-mobile-on' );
-			menu.find( '.cherry-mega-menu-sub' ).each( function( index, el ) {
+			menu.find( '.cherry-mega-menu-sub' ).each( function() {
 				$( this ).css( 'display', 'block' );
 			});
-			menu.find( '.cherry-mega-menu-has-children' ).each( function( index, el ) {
+			menu.find( '.cherry-mega-menu-has-children' ).each( function() {
 				hideThis = $( this ).data( 'hide-mobile' );
 				$( this ).removeClass( hideThis );
 			});
@@ -162,7 +161,7 @@
 			});
 		};
 
-		hidePanel = function( anchor, immediate ) {
+		hidePanel = function( anchor ) {
 			anchor.parent().removeClass( 'mega-toggle-on cherry-mega-menu-hover' ).triggerHandler( 'close_panel' );
 			anchor.siblings( '.cherry-mega-menu-sub' ).removeClass( 'active-sub' ).addClass( 'in-transition' );
 
@@ -327,7 +326,7 @@
 			styles['-webkit-transition-duration'] = window.cherry_mega_menu_data.duration + 'ms';
 			styles['-moz-transition-duration'] = window.cherry_mega_menu_data.duration + 'ms';
 			styles['transition-duration'] = window.cherry_mega_menu_data.duration + 'ms';
-			console.log(styles);
+
 			return styles;
 		};
 
