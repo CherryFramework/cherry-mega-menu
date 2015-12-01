@@ -67,7 +67,8 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Public_Manager' ) ) {
 
 			wp_enqueue_script(
 				'cherry-mega-menu',
-				CHERRY_MEGA_MENU_URI . 'public/assets/js/min/script.min.js',
+				//CHERRY_MEGA_MENU_URI . 'public/assets/js/min/script.min.js',
+				CHERRY_MEGA_MENU_URI . 'public/assets/js/script.js',
 				array( 'jquery', 'hoverIntent' ), CHERRY_MEGA_MENU_VERSION, true
 			);
 

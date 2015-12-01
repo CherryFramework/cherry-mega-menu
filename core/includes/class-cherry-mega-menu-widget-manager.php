@@ -244,7 +244,6 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Widget_Manager' ) ) {
 						'description' => isset( $widget->widget_options['description'] ) ? $widget->widget_options['description'] : '',
 					);
 				}
-
 			}
 
 			uasort( $widgets, array( $this, 'sort_by_text' ) );
@@ -301,7 +300,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Widget_Manager' ) ) {
 		 * Returns the saved settings for a specific widget.
 		 *
 		 * @since 1.0.0
-		 * @param $widget_id id_base-ID (eg meta-3).
+		 * @param integer $widget_id id_base-ID (eg meta-3).
 		 */
 		public function get_settings_for_widget_id( $widget_id ) {
 			global $wp_registered_widgets;
@@ -329,7 +328,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Widget_Manager' ) ) {
 		 * Returns the id(number), name/title and base id of a Widget.
 		 *
 		 * @since 1.0.0
-		 * @param $widget_id - id_base-ID (eg meta-3).
+		 * @param integer $widget_id id_base-ID (eg meta-3).
 		 */
 		public function parse_widget_id( $widget_id ) {
 			global $wp_registered_widgets, $wp_registered_widget_controls;
@@ -355,7 +354,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Widget_Manager' ) ) {
 		 * Returns the HTML for a single widget instance.
 		 *
 		 * @since 1.0.0
-		 * @param string widget_id Something like meta-3.
+		 * @param string id Something like meta-3.
 		 */
 		public function show_widget( $id ) {
 			global $wp_registered_widgets;
@@ -384,7 +383,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Widget_Manager' ) ) {
 		 * Shows the widget edit form for the specified widget.
 		 *
 		 * @since 1.0.0
-		 * @param $widget_id - id_base-ID (eg meta-3).
+		 * @param integer $widget_id - id_base-ID (eg meta-3).
 		 */
 		public function _show_widget_form( $widget_id ) {
 			global $wp_registered_widget_controls;
@@ -452,9 +451,9 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Widget_Manager' ) ) {
 		 * adds the widget instance to the mega menu widget sidebar area.
 		 *
 		 * @since 1.0.0
-		 * @param string $id_base Base id value.
-		 * @param int    $menu_item_id Menu item id value.
-		 * @param string $title Widget title.
+		 * @param string  $id_base Base id value.
+		 * @param int     $menu_item_id Menu item id value.
+		 * @param string  $title Widget title.
 		 * @param integer $total_cols Total avaliable columns count.
 		 * @return array
 		 */
@@ -556,7 +555,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Widget_Manager' ) ) {
 		 *
 		 * @since 1.0.0
 		 * @param string $widget_id Widget id value.
-		 * @param int    $columns Mega columns for a specified widget
+		 * @param int    $columns Mega columns for a specified widget.
 		 * @return boolean
 		 */
 		public function _update_columns( $widget_id, $columns ) {

@@ -7,58 +7,77 @@
  * Copyright 2012 @louis_remi
  * Licensed under the MIT license.
  */
-(function($) {
+( function( $ ) {
+
+	'use strict';
+
 	var $event = $.event,
 		$special,
 		resizeTimeout;
+
 	$special = $event.special.debouncedresize = {
 		setup: function() {
-			$( this ).on( "resize", $special.handler );
+			$( this ).on( 'resize', $special.handler );
 		},
 		teardown: function() {
-			$( this ).off( "resize", $special.handler );
+			$( this ).off( 'resize', $special.handler );
 		},
 		handler: function( event, execAsap ) {
+
 			// Save the context
 			var context = this,
 				args = arguments,
 				dispatch = function() {
-					// set correct event type
-					event.type = "debouncedresize";
+
+					// Set correct event type
+					event.type = 'debouncedresize';
 					$event.dispatch.apply( context, args );
 				};
+
 			if ( resizeTimeout ) {
 				clearTimeout( resizeTimeout );
 			}
-			execAsap ?
-				dispatch() :
+
+			if ( execAsap ) {
+				dispatch();
+			} else {
 				resizeTimeout = setTimeout( dispatch, $special.threshold );
+			}
 		},
 		threshold: 150
 	};
-})(jQuery);
+} )( jQuery );
 
-/*jslint browser: true, white: true */
-/*global console,jQuery,megamenu,window,navigator*/
+// Mega Menu jQuery Plugin
+( function ( $ ) {
 
-/**
- * Mega Menu jQuery Plugin
- */
-(function ($) {
 	'use strict';
 
 	$.fn.megaMenu = function ( options ) {
 
-		var menu = $(this),
-			duration_timeout,
-			trigger_fullscreen = 1200,
-			trigger_desktop    = 970,
-			trigger_tablet     = 768,
-			is_mobile          = false,
-			isTouchDevice, switchMobile, mobileOn, mobileOff, closePanels, hidePanel, showPanel, openOnClick, openOnHover, isInMegamenu, getMenuWidth, doubleTapToGo, init;
+		var menu = $( this ),
+			durationTimeout,
+			triggerFullscreen = 1200,
+			triggerDesktop = 970,
+			triggerTablet = 768,
+			is_mobile = false,
+			isTouchDevice,
+			switchMobile,
+			mobileOn,
+			mobileOff,
+			closePanels,
+			hidePanel,
+			showPanel,
+			openOnClick,
+			openOnHover,
+			isInMegamenu,
+			getMenuWidth,
+			doubleTapToGo,
+			panelStylesGenerator,
+			init;
 
 		menu.settings = $.extend( {
-			event:  menu.data( 'event' ),
+			event: menu.data( 'event' ),
 			effect: menu.data( 'effect' ),
 			mobile: menu.data( 'mobile-trigger' ),
 			parent: menu.data( 'parent-selector' ),
@@ -69,15 +88,18 @@
 			return ( 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0 );
 		}
 
-		isInMegamenu = function(el) {
+		isInMegamenu = function( el ) {
+
 			if ( el.parents( 'li.item-type-megamenu' ).length ) {
 				return true;
 			}
+
 			return false;
 		}
 
 		switchMobile = function() {
 			var width = window.innerWidth;
+
 			if ( width <= menu.settings.mobile ) {
 				mobileOn();
 			} else {
@@ -86,39 +108,46 @@
 		}
 
 		mobileOn = function() {
-			menu.addClass('mega-menu-mobile-on').css('display', 'none').siblings('.cherry-mega-menu-mobile-trigger').addClass('mega-menu-mobile-on');
-			menu.find('.cherry-mega-menu-sub').each(function(index, el) {
-				$(this).css('display', 'none');
+			menu.addClass( 'mega-menu-mobile-on' ).css( 'display', 'none' ).siblings( '.cherry-mega-menu-mobile-trigger' ).addClass( 'mega-menu-mobile-on' );
+			menu.find( '.cherry-mega-menu-sub' ).each( function( index, el ) {
+				$( this ).css( 'display', 'none' );
 			});
-			menu.find('.cherry-mega-menu-has-children').each(function(index, el) {
-				var hide_this = $(this).data('hide-mobile');
-				$(this).addClass(hide_this);
+			menu.find( '.cherry-mega-menu-has-children' ).each( function( index, el ) {
+				var hideThis = $( this ).data( 'hide-mobile' );
+
+				$( this ).addClass( hideThis );
 			});
 			is_mobile = true;
 		}
 
 		mobileOff = function() {
 			menu.removeClass( 'mega-menu-mobile-on' ).css( 'display', 'block' ).siblings( '.cherry-mega-menu-mobile-trigger' ).removeClass( 'mega-menu-mobile-on' );
-			menu.find( '.cherry-mega-menu-sub' ).each(function( index, el ) {
-				$(this).css( 'display', 'block' );
+			menu.find( '.cherry-mega-menu-sub' ).each( function( index, el ) {
+				$( this ).css( 'display', 'block' );
 			});
 			menu.find( '.cherry-mega-menu-has-children' ).each( function( index, el ) {
-				var hide_this = $( this ).data( 'hide-mobile' );
-				$( this ).removeClass( hide_this );
+				var hideThis = $( this ).data( 'hide-mobile' );
+				$( this ).removeClass( hideThis );
 			});
 			is_mobile = false;
 		}
 
-		getMenuWidth = function ( string_width ) {
-			if ( string_width.indexOf( '%' ) >= 0 ) {
+		getMenuWidth = function ( stringWidth ) {
+
+			if ( stringWidth.indexOf( '%' ) >= 0 ) {
 				var width = $( menu.settings.parent ).width();
-				width = ( width * parseInt( string_width ) ) / 100;
+
+				width = ( width * parseInt( stringWidth ) ) / 100;
+
 				return width;
 			}
-			if (string_width.indexOf("px") >= 0) {
-				var width = parseInt(string_width);
+
+			if ( stringWidth.indexOf( 'px' ) >= 0 ) {
+				var width = parseInt( stringWidth );
+
 				return width;
 			}
+
 			return 0;
 		}
 
@@ -132,12 +161,12 @@
 			anchor.parent().removeClass( 'mega-toggle-on cherry-mega-menu-hover' ).triggerHandler( 'close_panel' );
 			anchor.siblings( '.cherry-mega-menu-sub' ).removeClass( 'active-sub' ).addClass( 'in-transition' );
 
-			clearTimeout( duration_timeout );
-			duration_timeout = setTimeout(
+			clearTimeout( durationTimeout );
+			durationTimeout = setTimeout(
 				function() {
 					anchor.siblings( '.cherry-mega-menu-sub' ).removeClass( 'in-transition' );
 				},
-				cherry_mega_menu_data.duration
+				window.cherry_mega_menu_data.duration
 			);
 
 			if ( is_mobile == true ) {
@@ -145,158 +174,53 @@
 			}
 		}
 
-		showPanel = function(anchor) {
-
+		showPanel = function( anchor ) {
+			console.log(anchor);
 			if ( is_mobile ) {
 				return;
 			}
 
 			// All open children of open siblings
-			var item = anchor.parent();
+			var item = anchor.parent(),
+				menuWidth = '100%',
+				type = item.data( 'sub-type'),
+				widthFullscreen = item.data( 'width-fullscreen' ),
+				widthDesktop = item.data( 'width-desktop' ),
+				widthTablet = item.data( 'width-tablet' ),
+				windowWidth = $( document ).width(),
+				hrPosition = item.data( 'sub-hr-position' ),
+				vrPosition = item.data( 'sub-vr-position' ),
+				position = hrPosition,
+				styles = {},
+				duration = window.cherry_mega_menu_data.duration,
+				width,
+				left,
+				right,
+				indent,
+				top;
 
-			item
-				.addClass( 'cherry-mega-menu-hover' )
+			item.addClass( 'cherry-mega-menu-hover' )
 				.siblings()
 				.find( '.mega-toggle-on' )
 				.addBack( '.mega-toggle-on' )
 				.children( 'a' )
-				.each(function() {
+				.each( function() {
 					hidePanel( $( this ), true );
-				});
-
-			var menu_width       = '100%',
-				type             = item.data( 'sub-type'),
-				width_fullscreen = item.data( 'width-fullscreen' ),
-				width_desktop    = item.data( 'width-desktop' ),
-				width_tablet     = item.data( 'width-tablet' ),
-				window_width     = $(document).width(),
-				hr_position      = item.data( 'sub-hr-position' ),
-				vr_position      = item.data( 'sub-vr-position' ),
-				position         = hr_position,
-				styles           = new Object(),
-				duration         = cherry_mega_menu_data.duration;
-
-			styles['-webkit-transition-duration'] = duration + 'ms';
-			styles['-moz-transition-duration']    = duration + 'ms';
-			styles['transition-duration']         = duration + 'ms';
+				} );
 
 			if ( menu.settings.direction == 'vertical' ) {
-				position = vr_position;
+				position = vrPosition;
 			}
 
-			if ( position != 'fullwidth' && window_width >= trigger_fullscreen ) {
-				menu_width = width_fullscreen;
-			} else if ( position != 'fullwidth' && trigger_desktop <= window_width && window_width < trigger_fullscreen ) {
-				menu_width = width_desktop;
-			} else if ( position != 'fullwidth' && window_width < trigger_desktop ) {
-				menu_width = width_tablet;
+			if ( 'fullwidth' !== position && windowWidth >= triggerFullscreen ) {
+				menuWidth = widthFullscreen;
+			} else if ( position !== 'fullwidth' && triggerDesktop <= windowWidth && windowWidth < triggerFullscreen ) {
+				menuWidth = widthDesktop;
+			} else if ( position !== 'fullwidth' && windowWidth < triggerDesktop ) {
+				menuWidth = widthTablet;
 			}
 
-			switch ( position ) {
-				case 'fullwidth':
-					if ( type == 'standard' ) {
-						menu_width = null;
-						break
-					}
-					var menu_width = getMenuWidth( menu_width ),
-						indent = menu_width/2,
-						left = $( menu.settings.parent ).offset().left - menu.offset().left + parseInt( $( menu.settings.parent ).css( 'padding-left' ) ) + parseInt( $( menu.settings.parent ).css( 'border-left-width' ) );
-					styles['left'] = left + 'px';
-					break
-
-				case 'center':
-					if ( type == 'standard' ) {
-						menu_width = null;
-						break
-					}
-					var width  = getMenuWidth( menu_width ),
-						indent = width/2;
-					styles['left']        = '50%';
-					styles['margin-left'] = '-' + indent + 'px';
-					break
-
-				case 'left-container':
-					if ( type == 'standard' ) {
-						menu_width = null;
-						break
-					}
-					styles['left']  = '0';
-					styles['right'] = 'auto';
-					break
-
-				case 'right-container':
-					if ( type == 'standard' ) {
-						menu_width = null;
-						break
-					}
-					styles['left']  = 'auto';
-					styles['right'] = '0';
-					break
-
-				case 'left-parent':
-					if ( type == 'standard' ) {
-						menu_width = null;
-						break
-					}
-					var left = item.position().left;
-					styles['left']  = left + 'px';
-					styles['right'] = 'auto';
-
-					if ( menu_width == '100%' && left > 0 ) {
-						menu_width      = 'auto';
-						styles['right'] = '0';
-					}
-
-					break
-
-				case 'right-parent':
-					if ( type == 'standard' ) {
-						menu_width = null;
-						break
-					}
-					var right = menu.offset().left + parseInt( menu.css( 'border-left-width' ) ) + menu.width() - item.offset().left - item.width()
-					styles['left']  = 'auto';
-					styles['right'] = right + 'px';
-
-					if ( menu_width == '100%' && right > 0 ) {
-						menu_width     = 'auto';
-						styles['left'] = '0';
-					}
-
-					break
-
-				case 'vertical-full':
-
-					var top = 0;
-
-					if ( type == 'standard' ) {
-						top = $( menu.settings.parent ).offset().top - item.offset().top;
-					}
-					styles['top']   = top + 'px';
-					styles['left']  = '100%';
-					styles['right'] = 'auto';
-
-					break
-
-				case 'vertical-parent':
-					var top = item.offset().top - menu.offset().top;
-					if ( type == 'standard' ) {
-						top = 0;
-					}
-					styles['top']   = top + 'px';
-					styles['left']  = '100%';
-					styles['right'] = 'auto';
-
-					break
-			}
-
-			if ( menu_width != undefined && menu.settings.direction == 'vertical' && menu_width.indexOf("%") >= 0 ) {
-				menu_width = 'auto';
-			}
-
-			if ( null != menu_width ) {
-				styles['width'] = menu_width;
-			}
+			styles = panelStylesGenerator( item, position, type, menuWidth );
 
 			item.addClass( 'mega-toggle-on' ).triggerHandler( 'open_panel' );
 
@@ -305,7 +229,105 @@
 			if ( true === is_mobile ) {
 				anchor.siblings( '.cherry-mega-menu-sub' ).slideDown( 'fast' );
 			}
+		}
 
+		panelStylesGenerator = function( item, position, type, menuWidth ) {
+			var styles = {},
+				width,
+				left,
+				right,
+				top,
+				indent;
+
+			if ( 'standard' == type ) {
+				menuWidth = null;
+			}
+
+			switch ( position ) {
+				case 'fullwidth':
+					menuWidth = getMenuWidth( menuWidth );
+					indent = menuWidth / 2;
+					left = $( menu.settings.parent ).offset().left - menu.offset().left + parseInt( $( menu.settings.parent ).css( 'padding-left' ) ) + parseInt( $( menu.settings.parent ).css( 'border-left-width' ) );
+					styles['left'] = left + 'px';
+					break
+
+				case 'center':
+					width = getMenuWidth( menuWidth );
+					indent = width / 2;
+
+					styles['left'] = '50%';
+					styles['margin-left'] = '-' + indent + 'px';
+					break
+
+				case 'left-container':
+					styles['left'] = '0';
+					styles['right'] = 'auto';
+					break
+
+				case 'right-container':
+					styles['left'] = 'auto';
+					styles['right'] = '0';
+					break
+
+				case 'left-parent':
+					left = item.position().left;
+					styles['left'] = left + 'px';
+					styles['right'] = 'auto';
+
+					if ( '100%' == menuWidth && left > 0 ) {
+						menuWidth = 'auto';
+						styles['right'] = '0';
+					}
+					break
+
+				case 'right-parent':
+					right = menu.offset().left + parseInt( menu.css( 'border-left-width' ) ) + menu.width() - item.offset().left - item.width();
+					styles['left'] = 'auto';
+					styles['right'] = right + 'px';
+
+					if ( '100%' == menuWidth && right > 0 ) {
+						menuWidth = 'auto';
+						styles['left'] = '0';
+					}
+					break
+
+				case 'vertical-full':
+					top = 0;
+
+					if ( 'standard' == type ) {
+						top = $( menu.settings.parent ).offset().top - item.offset().top;
+					}
+
+					styles['top'] = top + 'px';
+					styles['left'] = '100%';
+					styles['right'] = 'auto';
+					break
+
+				case 'vertical-parent':
+					top = item.offset().top - menu.offset().top;
+
+					if ( 'standard' == type ) {
+						top = 0;
+					}
+					styles['top'] = top + 'px';
+					styles['left'] = '100%';
+					styles['right'] = 'auto';
+					break
+			}
+
+			if ( undefined !== menuWidth && 'vertical' == menu.settings.direction && menuWidth.indexOf( '%' ) >= 0 ) {
+				menuWidth = 'auto';
+			}
+
+			if ( null !== menuWidth ) {
+				styles['width'] = menuWidth;
+			}
+
+			styles['-webkit-transition-duration'] = window.cherry_mega_menu_data.duration + 'ms';
+			styles['-moz-transition-duration'] = window.cherry_mega_menu_data.duration + 'ms';
+			styles['transition-duration'] = window.cherry_mega_menu_data.duration + 'ms';
+
+			return styles;
 		}
 
 		openOnClick = function() {
@@ -313,7 +335,7 @@
 			var currentItem;
 
 			// Hide menu when clicked away from
-			$( document ).on('click touchstart', function( event ) {
+			$( document ).on( 'click touchstart', function( event ) {
 
 				if ( ! $( event.target ).closest( '.cherry-mega-menu li' ).length ) {
 					$( '.mega-click-click-go' ).each( function() {
@@ -322,10 +344,9 @@
 
 					closePanels();
 				}
-
 			});
 
-			$( 'li.cherry-mega-menu-has-children > a', menu ).on({
+			$( 'li.cherry-mega-menu-has-children > a', menu ).on( {
 				click: function ( e ) {
 
 					currentItem = $( this ).parent();
@@ -336,11 +357,8 @@
 
 					// Check for second click
 					if ( currentItem.hasClass( 'mega-click-click-go' ) ) {
-
 						currentItem.removeClass( 'mega-click-click-go' );
-
 					} else {
-
 						e.preventDefault();
 
 						if ( currentItem.hasClass( 'mega-toggle-on' ) ) {
@@ -351,23 +369,19 @@
 						}
 
 						currentItem.addClass( 'mega-click-click-go' );
-
 					}
-
 				}
 			});
-
 		}
 
 		openOnHover = function() {
-
-			$( 'li.cherry-mega-menu-has-children', menu ).hoverIntent({
+			$( 'li.cherry-mega-menu-has-children', menu ).hoverIntent( {
 				over: function () {
 
 					// Check if is nested item in mega sub menu
-					var in_mega = isInMegamenu( $( this ) );
+					var inMega = isInMegamenu( $( this ) );
 
-					if ( in_mega ) {
+					if ( inMega ) {
 						return;
 					}
 
@@ -376,9 +390,9 @@
 				out: function () {
 
 					// Check if is nested item in mega sub menu
-					var in_mega = isInMegamenu( $( this ) );
+					var inMega = isInMegamenu( $( this ) );
 
-					if ( in_mega ) {
+					if ( inMega ) {
 						return;
 					}
 
@@ -392,7 +406,7 @@
 
 		init = function() {
 
-			menu.removeClass('cherry-mega-no-js');
+			menu.removeClass( 'cherry-mega-no-js' );
 
 			if ( isTouchDevice() || 'click' === menu.settings.event ) {
 				openOnClick();
@@ -402,8 +416,7 @@
 
 			$( window ).on( 'debouncedresize', function( event ) {
 				switchMobile();
-			}).trigger( 'debouncedresize' );
-
+			} ).trigger( 'debouncedresize' );
 		}
 
 		init();
@@ -413,10 +426,7 @@
 
 jQuery( document ).ready( function() {
 
-	'use strict';
-
 	jQuery( '.cherry-mega-menu' ).each( function() {
 		jQuery( this ).megaMenu();
 	});
-
 });

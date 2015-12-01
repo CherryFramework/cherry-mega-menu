@@ -153,7 +153,7 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Walker' ) ) {
 				$this->is_mega_sub = false;
 			}
 
-			if ( isset( $mega_settings['align']) && 'left' !== $mega_settings['align'] && 0 == $depth ) {
+			if ( isset( $mega_settings['align'] ) && 'left' !== $mega_settings['align'] && 0 == $depth ) {
 				$classes[] = 'item-align-' . $mega_settings['align'];
 			}
 

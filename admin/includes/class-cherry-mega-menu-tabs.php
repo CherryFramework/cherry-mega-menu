@@ -43,9 +43,9 @@ if ( ! class_exists( 'Cherry_Mega_Menu_Item_Tabs' ) ) {
 
 			$all_widgets = $widget_manager->get_available_widgets();
 
-			$meta['type'] = isset($meta['type']) ? $meta['type'] : '';
+			$meta['type'] = isset( $meta['type'] ) ? $meta['type'] : '';
 
-			$return = '<label class="menu_enable"><input class="toggle_menu" type="checkbox" name="type" value="megamenu" ' . checked( $meta['type'], 'megamenu', false )  . '/>' . __("Enable Mega Menu for current item", "cherry-mega-menu") . '</label>';
+			$return = '<label class="menu_enable"><input class="toggle_menu" type="checkbox" name="type" value="megamenu" ' . checked( $meta['type'], 'megamenu', false )  . '/>' . __( 'Enable Mega Menu for current item', 'cherry-mega-menu' ) . '</label>';
 
 			$return .= '<select id="widget_selector">';
 
