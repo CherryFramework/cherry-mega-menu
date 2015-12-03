@@ -139,13 +139,13 @@
 			if ( stringWidth.indexOf( '%' ) >= 0 ) {
 				width = $( menu.settings.parent ).width();
 
-				width = ( width * parseInt( stringWidth ) ) / 100;
+				width = ( width * parseInt( stringWidth, 10 ) ) / 100;
 
 				return width;
 			}
 
 			if ( stringWidth.indexOf( 'px' ) >= 0 ) {
-				width = parseInt( stringWidth );
+				width = parseInt( stringWidth, 10 );
 
 				return width;
 			}
@@ -189,13 +189,7 @@
 				hrPosition = item.data( 'sub-hr-position' ),
 				vrPosition = item.data( 'sub-vr-position' ),
 				position = hrPosition,
-				styles = {},
-				duration = window.cherry_mega_menu_data.duration,
-				width,
-				left,
-				right,
-				indent,
-				top;
+				styles = {};
 
 			item.addClass( 'cherry-mega-menu-hover' )
 				.siblings()
@@ -206,7 +200,7 @@
 					hidePanel( $( this ), true );
 				} );
 
-			if ( 'vertical' == menu.settings.direction ) {
+			if ( 'vertical' === menu.settings.direction ) {
 				position = vrPosition;
 			}
 
@@ -237,7 +231,7 @@
 				top,
 				indent;
 
-			if ( 'standard' == type ) {
+			if ( 'standard' === type ) {
 				menuWidth = null;
 			}
 
@@ -245,7 +239,7 @@
 				case 'fullwidth':
 					menuWidth = getMenuWidth( menuWidth );
 					indent = menuWidth / 2;
-					left = $( menu.settings.parent ).offset().left - menu.offset().left + parseInt( $( menu.settings.parent ).css( 'padding-left' ) ) + parseInt( $( menu.settings.parent ).css( 'border-left-width' ) );
+					left = $( menu.settings.parent ).offset().left - menu.offset().left + parseInt( $( menu.settings.parent ).css( 'padding-left' ), 10 ) + parseInt( $( menu.settings.parent ).css( 'border-left-width' ), 10 );
 					styles.left = left + 'px';
 					break;
 
@@ -272,18 +266,18 @@
 					styles.left = left + 'px';
 					styles.right = 'auto';
 
-					if ( '100%' == menuWidth && left > 0 ) {
+					if ( '100%' === menuWidth && left > 0 ) {
 						menuWidth = 'auto';
 						styles.right = '0';
 					}
 					break;
 
 				case 'right-parent':
-					right = menu.offset().left + parseInt( menu.css( 'border-left-width' ) ) + menu.width() - item.offset().left - item.width();
+					right = menu.offset().left + parseInt( menu.css( 'border-left-width' ), 10 ) + menu.width() - item.offset().left - item.width();
 					styles.left = 'auto';
 					styles.right = right + 'px';
 
-					if ( '100%' == menuWidth && right > 0 ) {
+					if ( '100%' === menuWidth && right > 0 ) {
 						menuWidth = 'auto';
 						styles.left = '0';
 					}
@@ -292,7 +286,7 @@
 				case 'vertical-full':
 					top = 0;
 
-					if ( 'standard' == type ) {
+					if ( 'standard' === type ) {
 						top = $( menu.settings.parent ).offset().top - item.offset().top;
 					}
 
@@ -304,7 +298,7 @@
 				case 'vertical-parent':
 					top = item.offset().top - menu.offset().top;
 
-					if ( 'standard' == type ) {
+					if ( 'standard' === type ) {
 						top = 0;
 					}
 					styles.top = top + 'px';
@@ -313,7 +307,7 @@
 					break;
 			}
 
-			if ( undefined !== menuWidth && 'vertical' == menu.settings.direction && menuWidth.indexOf( '%' ) >= 0 ) {
+			if ( undefined !== menuWidth && 'vertical' === menu.settings.direction && menuWidth.indexOf( '%' ) >= 0 ) {
 				menuWidth = 'auto';
 			}
 
@@ -417,7 +411,7 @@
 				openOnHover();
 			}
 
-			$( window ).on( 'debouncedresize', function( event ) {
+			$( window ).on( 'debouncedresize', function() {
 				switchMobile();
 			} ).trigger( 'debouncedresize' );
 		};
