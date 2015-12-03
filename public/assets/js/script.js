@@ -58,7 +58,6 @@
 			durationTimeout,
 			triggerFullscreen = 1200,
 			triggerDesktop = 970,
-			//triggerTablet = 768,
 			isMobile = false,
 			isTouchDevice,
 			switchMobile,
@@ -71,7 +70,6 @@
 			openOnHover,
 			isInMegamenu,
 			getMenuWidth,
-			//doubleTapToGo,
 			panelStylesGenerator,
 			init;
 
